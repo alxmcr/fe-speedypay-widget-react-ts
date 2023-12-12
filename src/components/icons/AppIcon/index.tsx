@@ -1,12 +1,13 @@
-import { IconNames } from 'src/types/appEnums';
 import IconArrowDown from '@components/icons/IconArrowDown';
 import IconArrowUp from '@components/icons/IconArrowUp';
 import IconBankTransfer from '@components/icons/IconBankTransfer';
 import IconCash from '@components/icons/IconCash';
+import IconCopy from '@components/icons/IconCopy';
 import IconCreditCard from '@components/icons/IconCreditCard';
 import IconEmail from '@components/icons/IconEmail';
 import IconGift from '@components/icons/IconGift';
 import { AppIconWrapper } from './AppIconWrapper';
+import { IconNames } from './IconNames';
 
 type AppIconProps = {
   iconName: string;
@@ -54,6 +55,12 @@ export default function AppIcon({ iconName = IconNames.gift }: AppIconProps) {
       return (
         <AppIconWrapper>
           <IconGift />
+        </AppIconWrapper>
+      );
+    case IconNames.copy:
+      return (
+        <AppIconWrapper>
+          <IconCopy />
         </AppIconWrapper>
       );
     default:

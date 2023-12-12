@@ -6,5 +6,5 @@ export enum IconNames {
   creditCard = 'icon-credit-card',
   email = 'icon-email',
   gift = 'icon-gift',
-  copy = 'icon-copy',
+  copy = 'icon-copy'
 }
