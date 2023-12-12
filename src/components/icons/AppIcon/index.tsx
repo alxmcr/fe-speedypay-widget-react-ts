@@ -6,6 +6,10 @@ import IconCopy from '@components/icons/IconCopy';
 import IconCreditCard from '@components/icons/IconCreditCard';
 import IconEmailOutline from '@components/icons/IconEmailOutline';
 import IconGift from '@components/icons/IconGift';
+import IconCheck from '../IconCheck';
+import IconDropdownSelected from '../IconDropdownSelected';
+import IconDropdownUnselected from '../IconDropdownUnselected';
+import IconPending from '../IconPending';
 import { AppIconWrapper } from './AppIconWrapper';
 import { IconNames } from './IconNames';
 
@@ -27,13 +31,43 @@ export default function AppIcon({ iconName = IconNames.gift }: AppIconProps) {
           <IconArrowUp />
         </AppIconWrapper>
       );
+    case IconNames.check:
+      return (
+        <AppIconWrapper>
+          <IconCheck />
+        </AppIconWrapper>
+      );
+    case IconNames.pending:
+      return (
+        <AppIconWrapper>
+          <IconPending />
+        </AppIconWrapper>
+      );
+    case IconNames.copy:
+      return (
+        <AppIconWrapper>
+          <IconCopy />
+        </AppIconWrapper>
+      );
+    case IconNames.dropdownSelected:
+      return (
+        <AppIconWrapper>
+          <IconDropdownSelected />
+        </AppIconWrapper>
+      );
+    case IconNames.dropdownUnselected:
+      return (
+        <AppIconWrapper>
+          <IconDropdownUnselected />
+        </AppIconWrapper>
+      );
     case IconNames.bankTransfer:
       return (
         <AppIconWrapper>
           <IconBankTransfer />
         </AppIconWrapper>
       );
-    case IconNames.cash:
+    case IconNames.coin:
       return (
         <AppIconWrapper>
           <IconCash />
@@ -45,24 +79,20 @@ export default function AppIcon({ iconName = IconNames.gift }: AppIconProps) {
           <IconCreditCard />
         </AppIconWrapper>
       );
-    case IconNames.email:
-      return (
-        <AppIconWrapper>
-          <IconEmailOutline />
-        </AppIconWrapper>
-      );
+
     case IconNames.gift:
       return (
         <AppIconWrapper>
           <IconGift />
         </AppIconWrapper>
       );
-    case IconNames.copy:
+    case IconNames.email:
       return (
         <AppIconWrapper>
-          <IconCopy />
+          <IconEmailOutline />
         </AppIconWrapper>
       );
+
     default:
       return (
         <AppIconWrapper>

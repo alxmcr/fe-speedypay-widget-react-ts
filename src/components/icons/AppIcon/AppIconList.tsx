@@ -13,12 +13,16 @@ export default function AppIconList() {
     >
       <AppIcon iconName={IconNames.arrowDown} />
       <AppIcon iconName={IconNames.arrowUp} />
-      <AppIcon iconName={IconNames.bankTransfer} />
-      <AppIcon iconName={IconNames.cash} />
+      <AppIcon iconName={IconNames.check} />
+      <AppIcon iconName={IconNames.pending} />
       <AppIcon iconName={IconNames.copy} />
+      <AppIcon iconName={IconNames.dropdownSelected} />
+      <AppIcon iconName={IconNames.dropdownUnselected} />
+      <AppIcon iconName={IconNames.bankTransfer} />
+      <AppIcon iconName={IconNames.coin} />
       <AppIcon iconName={IconNames.creditCard} />
-      <AppIcon iconName={IconNames.email} />
       <AppIcon iconName={IconNames.gift} />
+      <AppIcon iconName={IconNames.email} />
     </div>
   );
 }

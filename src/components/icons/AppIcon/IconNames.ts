@@ -1,10 +1,14 @@
 export enum IconNames {
   arrowDown = 'icon-arrow-down',
   arrowUp = 'icon-arrow-up',
+  check = 'icon-check',
+  pending = 'icon-pending',
+  copy = 'icon-copy',
+  dropdownSelected = 'icon-dropdown--selected',
+  dropdownUnselected = 'icon-dropdown--unselected',
   bankTransfer = 'icon-bank-transfer',
-  cash = 'icon-cash',
+  coin = 'icon-coin',
   creditCard = 'icon-credit-card',
-  email = 'icon-email',
   gift = 'icon-gift',
-  copy = 'icon-copy'
+  email = 'icon-email',
 }
