@@ -5,7 +5,7 @@ export default function AppIconList() {
   return (
     <div
       style={{
-        color: '#fa0010',
+        color: '#52a6f3',
         alignItems: 'center',
         display: 'flex',
         gap: '1rem',
