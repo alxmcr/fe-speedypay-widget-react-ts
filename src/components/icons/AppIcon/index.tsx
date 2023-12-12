@@ -1,10 +1,10 @@
 import IconArrowDown from '@components/icons/IconArrowDown';
 import IconArrowUp from '@components/icons/IconArrowUp';
 import IconBankTransfer from '@components/icons/IconBankTransfer';
-import IconCash from '@components/icons/IconCash';
+import IconCash from '@components/icons/IconCoin';
 import IconCopy from '@components/icons/IconCopy';
 import IconCreditCard from '@components/icons/IconCreditCard';
-import IconEmail from '@components/icons/IconEmail';
+import IconEmailOutline from '@components/icons/IconEmailOutline';
 import IconGift from '@components/icons/IconGift';
 import { AppIconWrapper } from './AppIconWrapper';
 import { IconNames } from './IconNames';
@@ -48,7 +48,7 @@ export default function AppIcon({ iconName = IconNames.gift }: AppIconProps) {
     case IconNames.email:
       return (
         <AppIconWrapper>
-          <IconEmail />
+          <IconEmailOutline />
         </AppIconWrapper>
       );
     case IconNames.gift:

@@ -1,20 +1,20 @@
 export default function IconCreditCard() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={25} height={25} fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width={26} height={26} fill="none">
       <path
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeMiterlimit={10}
         strokeWidth={1.5}
-        d="M2.083 8.86h20.834M6.25 17.192h2.083m2.604 0h4.167"
+        d="M3 10.12h20M7 16.712h2m2.5 0h4"
       />
       <path
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M6.708 3.651h11.573c3.709 0 4.636.917 4.636 4.573v8.552c0 3.656-.927 4.573-4.625 4.573H6.708c-3.698.01-4.625-.906-4.625-4.563V8.225c0-3.656.927-4.573 4.625-4.573Z"
+        d="M7.44 6h11.11C22.11 6 23 6.725 23 9.617v6.765C23 19.276 22.11 20 18.56 20H7.44C3.89 20.008 3 19.283 3 16.39V9.618C3 6.725 3.89 6 7.44 6Z"
       />
     </svg>
   );
