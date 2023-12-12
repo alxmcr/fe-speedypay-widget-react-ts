@@ -1,0 +1,66 @@
+import { IconNames } from 'src/types/appEnums';
+import IconArrowDown from '@components/icons/IconArrowDown';
+import IconArrowUp from '@components/icons/IconArrowUp';
+import IconBankTransfer from '@components/icons/IconBankTransfer';
+import IconCash from '@components/icons/IconCash';
+import IconCreditCard from '@components/icons/IconCreditCard';
+import IconEmail from '@components/icons/IconEmail';
+import IconGift from '@components/icons/IconGift';
+import { AppIconWrapper } from './AppIconWrapper';
+
+type AppIconProps = {
+  iconName: string;
+};
+
+export default function AppIcon({ iconName = IconNames.gift }: AppIconProps) {
+  switch (iconName) {
+    case IconNames.arrowDown:
+      return (
+        <AppIconWrapper>
+          <IconArrowDown />
+        </AppIconWrapper>
+      );
+    case IconNames.arrowUp:
+      return (
+        <AppIconWrapper>
+          <IconArrowUp />
+        </AppIconWrapper>
+      );
+    case IconNames.bankTransfer:
+      return (
+        <AppIconWrapper>
+          <IconBankTransfer />
+        </AppIconWrapper>
+      );
+    case IconNames.cash:
+      return (
+        <AppIconWrapper>
+          <IconCash />
+        </AppIconWrapper>
+      );
+    case IconNames.creditCard:
+      return (
+        <AppIconWrapper>
+          <IconCreditCard />
+        </AppIconWrapper>
+      );
+    case IconNames.email:
+      return (
+        <AppIconWrapper>
+          <IconEmail />
+        </AppIconWrapper>
+      );
+    case IconNames.gift:
+      return (
+        <AppIconWrapper>
+          <IconGift />
+        </AppIconWrapper>
+      );
+    default:
+      return (
+        <AppIconWrapper>
+          <IconGift />
+        </AppIconWrapper>
+      );
+  }
+}
