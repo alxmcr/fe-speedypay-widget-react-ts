@@ -1,5 +1,5 @@
-import AppIcon from '@components/icons/AppIcon';
-import { IconNames } from 'src/types/appEnums';
+import { IconNames } from '../../../types/appEnums';
+import AppIcon from '../../icons/AppIcon';
 import './ButtonSolidIcon.scss';
 
 type ButtonSolidIconProps = {

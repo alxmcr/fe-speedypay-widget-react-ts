@@ -1,5 +1,5 @@
-import ButtonList from '@components/buttons/ButtonList';
-import AppIconList from '@components/icons/AppIcon/AppIconList';
+import ButtonList from './components/buttons/ButtonList';
+import AppIconList from './components/icons/AppIcon/AppIconList';
 
 function App() {
   return (
