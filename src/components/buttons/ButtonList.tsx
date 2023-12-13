@@ -1,6 +1,6 @@
 import { IconNames } from '../../types/enumsApp';
 import AppButton from './AppButton';
-import { AppBaseButton } from './AppButton/AppBaseButton';
+import { AppBaseButton } from './AppButton/AppBaseButton.styled';
 import ButtonSolid from './ButtonSolid';
 import ButtonSolidIcon from './ButtonSolidIcon';
 import ButtonSolidText from './ButtonSolidText';

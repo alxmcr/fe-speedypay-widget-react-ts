@@ -1,6 +1,6 @@
 import AppIcon from '../../icons/AppIcon';
 import { TextButton } from '../../typography/SupportingStyles';
-import { AppBaseButton } from './AppBaseButton';
+import { AppBaseButton } from './AppBaseButton.styled';
 
 type AppButtonProps = {
   onClick: () => void;
