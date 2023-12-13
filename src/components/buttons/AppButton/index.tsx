@@ -1,26 +1,22 @@
-.button_solid {
+import styled from 'styled-components';
+
+export const AppBaseButton = styled.button`
   background-color: #555;
   color: #888;
 
   border: none;
   border-radius: 0.5rem;
-  cursor: pointer;
-  font-size: 16px;
-
-  text-align: center;
-
-  height: 2.5625rem;
-
   padding: 0.5rem 0.5625rem;
+
+  cursor: pointer;
 
   align-items: center;
   display: flex;
   gap: 0.5rem;
   justify-content: center;
 
-  &--fullwidth {
-    width: 100%;
-  }
+  height: 2.5625rem;
+  width: auto;
 
   &:hover {
     background-color: #787;
@@ -37,4 +33,4 @@
     color: #239;
     opacity: #268;
   }
-}
+`;

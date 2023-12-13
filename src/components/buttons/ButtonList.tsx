@@ -1,4 +1,5 @@
 import { IconNames } from '../../types/appEnums';
+import { AppBaseButton } from './AppButton';
 import ButtonSolid from './ButtonSolid';
 import ButtonSolidIcon from './ButtonSolidIcon';
 import ButtonSolidText from './ButtonSolidText';
@@ -30,6 +31,7 @@ export default function ButtonList() {
         disabled
       />
       <ButtonSolidIcon btnIconName={IconNames.copy} onClick={onClick} />
+      <AppBaseButton>Hola</AppBaseButton>
     </div>
   );
 }
