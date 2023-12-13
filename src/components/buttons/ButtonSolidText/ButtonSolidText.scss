@@ -1,0 +1,29 @@
+.button-solid-text {
+  background-color: #555;
+  color: #888;
+
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  cursor: pointer;
+
+  text-align: center;
+
+  height: 2.5625rem;
+
+  &:hover {
+    background-color: #787;
+    color: #111;
+  }
+
+  &:active {
+    background-color: #238;
+    color: #987;
+  }
+
+  &:disabled {
+    background-color: #789;
+    color: #239;
+    opacity: #268;
+  }
+}

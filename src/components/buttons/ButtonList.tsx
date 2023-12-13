@@ -1,6 +1,7 @@
 import { IconNames } from '../../types/appEnums';
 import ButtonSolid from './ButtonSolid';
 import ButtonSolidIcon from './ButtonSolidIcon';
+import ButtonSolidText from './ButtonSolidText';
 
 export default function ButtonList() {
   const onClick = () => {
@@ -16,13 +17,13 @@ export default function ButtonList() {
         gap: '1rem',
       }}
     >
-      <ButtonSolid onClick={onClick}>Pay for $1234.56</ButtonSolid>
-      <ButtonSolidIcon
+      <ButtonSolidText btnText="Pay for $1234.56" onClick={onClick} />
+      <ButtonSolidIcon btnIconName={IconNames.copy} onClick={onClick} />
+      <ButtonSolid
         btnIconName={IconNames.copy}
         btnText="Copy number"
         onClick={onClick}
       />
-      <ButtonSolidIcon btnIconName={IconNames.copy} onClick={onClick} />
     </div>
   );
 }
