@@ -1,9 +1,10 @@
 import { getBtnStylesByVariant } from '../../components/buttons/AppButton/AppBaseButton.styles';
 import {
-  ButtonVariants,
+  CodeForBtnVariants,
   CodesForColorScales,
 } from '../../types/personalization/enumsPersonalization';
 import { ColorScales } from '../../types/personalization/typesColors';
+import { ButtonStylesByState } from '../../types/personalization/typesStyles';
 import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
 import { getColorScalesByCode } from './helpers-color-scales';
 import { getCommonStylesByColorScale } from './helpers-styles';
@@ -16,25 +17,27 @@ export const getThemeByColorScale = (
   const commonStyles = getCommonStylesByColorScale(theme, colorScales);
 
   // Button styles
-  const stylesBtnSolid = getBtnStylesByVariant(
+  const stylesBtnSolid: ButtonStylesByState = getBtnStylesByVariant(
     theme,
     colorScales,
-    ButtonVariants.solid,
+    CodeForBtnVariants.solid,
   );
-  const stylesBtnOutline = getBtnStylesByVariant(
+  const stylesBtnOutline: ButtonStylesByState = getBtnStylesByVariant(
     theme,
     colorScales,
-    ButtonVariants.outline,
+    CodeForBtnVariants.outline,
   );
+
+  const btnVariants = {
+    solid: stylesBtnSolid,
+    outline: stylesBtnOutline,
+  };
 
   // Theme
   const themeByColor: AppTheme = {
     mode: theme,
     ...commonStyles,
-    buttons: {
-      solid: stylesBtnSolid,
-      outline: stylesBtnOutline,
-    },
+    buttons: btnVariants,
   };
 
   return themeByColor;

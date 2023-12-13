@@ -7,7 +7,7 @@ export enum CodesForColorScales {
   iron = 'iron',
 }
 
-export enum ButtonVariants {
+export enum CodeForBtnVariants {
   solid = 'solid',
   outline = 'outline',
 }
