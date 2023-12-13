@@ -22,7 +22,12 @@ export default function AppButton({
     : 'button_solid button_solid--fullwidth';
 
   return (
-    <AppBaseButton className={className} disabled={disabled} onClick={onClick}>
+    <AppBaseButton
+      className={className}
+      disabled={disabled}
+      fullWidth={fullWidth}
+      onClick={onClick}
+    >
       {leftIconName.length > 0 ? <AppIcon iconName={leftIconName} /> : null}
       {btnText.length > 0 ? <TextButton>{btnText}</TextButton> : null}
     </AppBaseButton>
