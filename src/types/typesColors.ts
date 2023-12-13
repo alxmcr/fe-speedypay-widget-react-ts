@@ -1,3 +1,5 @@
+import { CodesColorScales } from './enumsPersonalization';
+
 export type ScalesForColors = {
   50: string;
   100: string;
@@ -10,4 +12,10 @@ export type ScalesForColors = {
   800: string;
   900: string;
   950: string;
+};
+
+export type ColorScales = {
+  id: CodesColorScales;
+  name: string;
+  scales: ScalesForColors;
 };

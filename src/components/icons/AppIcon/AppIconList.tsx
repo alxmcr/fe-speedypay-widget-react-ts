@@ -1,5 +1,5 @@
 import AppIcon from '.';
-import { IconNames } from '../../../types/appEnums';
+import { IconNames } from '../../../types/enumsApp';
 
 export default function AppIconList() {
   return (

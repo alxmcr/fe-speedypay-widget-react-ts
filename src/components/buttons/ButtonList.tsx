@@ -1,4 +1,4 @@
-import { IconNames } from '../../types/appEnums';
+import { IconNames } from '../../types/enumsApp';
 import AppButton from './AppButton';
 import { AppBaseButton } from './AppButton/AppBaseButton';
 import ButtonSolid from './ButtonSolid';

@@ -1,5 +1,5 @@
-import { CodesColorScales } from '../../types/appEnums';
-import { ColorScales } from '../../types/typeThemes';
+import { CodesColorScales } from '../../types/enumsApp';
+import { ColorScales } from '../../types/typesColors';
 import {
   ATOLL,
   IRON,

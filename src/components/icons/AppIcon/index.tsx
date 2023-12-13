@@ -1,4 +1,4 @@
-import { IconNames } from '../../../types/appEnums';
+import { IconNames } from '../../../types/enumsApp';
 import IconArrowDown from '../IconArrowDown';
 import IconArrowUp from '../IconArrowUp';
 import IconBankTransfer from '../IconBankTransfer';
