@@ -4,7 +4,7 @@ import './ButtonSolidIcon.scss';
 
 type ButtonSolidIconProps = {
   btnIconName: string;
-  btnText: string;
+  btnText?: string;
   disabled?: boolean;
   onClick: () => void;
 };

@@ -22,6 +22,7 @@ export default function ButtonList() {
         btnText="Copy number"
         onClick={onClick}
       />
+      <ButtonSolidIcon btnIconName={IconNames.copy} onClick={onClick} />
     </div>
   );
 }
