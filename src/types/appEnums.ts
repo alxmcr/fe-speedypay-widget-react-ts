@@ -12,3 +12,12 @@ export enum IconNames {
   gift = 'icon-gift',
   email = 'icon-email',
 }
+
+export enum CodesColorScales {
+  atoll = 'atoll',
+  valhalla = 'valhalla',
+  lime = 'lime',
+  sea_buckthorn = 'sea_buckthorn',
+  wineBerry = 'wine_berry',
+  iron = 'iron',
+}

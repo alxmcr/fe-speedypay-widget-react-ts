@@ -11,12 +11,3 @@ export type ColorScales = {
   900: string;
   950: string;
 };
-
-export enum CodesColorScales {
-  atoll = 'atoll',
-  valhalla = 'valhalla',
-  lime = 'lime',
-  sea_buckthorn = 'sea_buckthorn',
-  wineBerry = 'wine_berry',
-  iron = 'iron',
-}
