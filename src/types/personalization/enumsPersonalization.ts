@@ -1,9 +1,4 @@
-export enum ThemeModes {
-  dark = 'dark',
-  light = 'light',
-}
-
-export enum CodesColorScales {
+export enum CodesForColorScales {
   atoll = 'atoll',
   valhalla = 'valhalla',
   lime = 'lime',

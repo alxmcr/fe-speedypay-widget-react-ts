@@ -11,3 +11,11 @@ export type ButtonStylesByState = {
   active: ButtonStyles;
   disabled: ButtonStyles;
 };
+
+export type CommonStyles = {
+  background: string;
+  borderColor: string;
+  text: string;
+  scrollBarBackground?: string;
+  scrollBarTrackColor?: string;
+};

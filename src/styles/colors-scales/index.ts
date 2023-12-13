@@ -1,4 +1,3 @@
-import { CodesColorScales } from '../../types/enumsApp';
 import { ColorScales } from '../../types/personalization/typesColors';
 import {
   ATOLL,

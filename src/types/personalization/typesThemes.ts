@@ -1,5 +1,9 @@
-import { ThemeModes } from './enumsPersonalization';
 import { ButtonVariants } from './typeVariants';
+
+export enum ThemeModes {
+  dark = 'dark',
+  light = 'light',
+}
 
 export type AppCommonStyles = {
   mode: ThemeModes;
