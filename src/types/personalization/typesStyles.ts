@@ -1,6 +1,6 @@
 export type ButtonStyles = {
-  background: string;
-  text: string;
+  backgroundColor: string;
+  colorText: string;
   borderColor: string;
   opacity?: number;
 };

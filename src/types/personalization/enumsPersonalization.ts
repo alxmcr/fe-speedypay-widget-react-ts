@@ -6,3 +6,8 @@ export enum CodesForColorScales {
   wineBerry = 'wine_berry',
   iron = 'iron',
 }
+
+export enum ButtonVariants {
+  solid = 'solid',
+  outline = 'outline',
+}
