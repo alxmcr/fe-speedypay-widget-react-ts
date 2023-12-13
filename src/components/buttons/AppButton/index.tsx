@@ -1,36 +1,42 @@
-import styled from 'styled-components';
+import AppIcon from '../../icons/AppIcon';
+import { TextButton } from '../../typography/SupportingStyles';
+import { AppBaseButton } from './AppBaseButton';
 
-export const AppBaseButton = styled.button`
-  background-color: #555;
-  color: #888;
+type AppButtonProps = {
+  btnIconName: string;
+  btnText?: string;
+  disabled?: boolean;
+  fullWidth?: boolean;
+  onClick: () => void;
+};
 
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.5rem 0.5625rem;
+export default function AppButton({
+  btnIconName = '',
+  btnText = '',
+  disabled = false,
+  fullWidth = false,
+  onClick,
+}: AppButtonProps) {
+  const className = fullWidth
+    ? 'button_solid'
+    : 'button_solid button_solid--fullwidth';
 
-  cursor: pointer;
-
-  align-items: center;
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-
-  height: 2.5625rem;
-  width: auto;
-
-  &:hover {
-    background-color: #787;
-    color: #111;
+  if (btnText.length === 0) {
+    return (
+      <AppBaseButton
+        className={className}
+        disabled={disabled}
+        onClick={onClick}
+      >
+        <AppIcon iconName={btnIconName} />
+      </AppBaseButton>
+    );
   }
 
-  &:active {
-    background-color: #238;
-    color: #987;
-  }
-
-  &:disabled {
-    background-color: #789;
-    color: #239;
-    opacity: #268;
-  }
-`;
+  return (
+    <AppBaseButton className={className} disabled={disabled} onClick={onClick}>
+      <AppIcon iconName={btnIconName} />
+      <TextButton>{btnText}</TextButton>
+    </AppBaseButton>
+  );
+}
