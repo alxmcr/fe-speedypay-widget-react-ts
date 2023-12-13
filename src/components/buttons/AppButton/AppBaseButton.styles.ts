@@ -1,9 +1,11 @@
 import { IRON_COLOR_SCALES } from '../../../styles/colors-scales';
 import { getColorScalesByCode } from '../../../styles/helpers/helpers-color-scales';
 import { CodesForColorScales } from '../../../types/personalization/enumsPersonalization';
-import { ButtonVariants } from '../../../types/personalization/typeVariants';
 import { ColorScales } from '../../../types/personalization/typesColors';
-import { ButtonStyles } from '../../../types/personalization/typesStyles';
+import {
+    ButtonStyles,
+    ButtonStylesByState,
+} from '../../../types/personalization/typesStyles';
 import { ThemeModes } from '../../../types/personalization/typesThemes';
 
 export const getBtnStylesByVariant = (
@@ -84,7 +86,7 @@ export const getBtnSolidStyles = (
     opacity: 0.5,
   };
 
-  const btnStylesByStates: ButtonVariants = {
+  const btnStylesByStates: ButtonStylesByState = {
     default: defaultStyles,
     hover: hoverStyles,
     active: activeStyles,
