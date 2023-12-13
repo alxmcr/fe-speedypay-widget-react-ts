@@ -1,8 +1,6 @@
-import {
-  CodesForColorScales,
-  ThemeModes,
-} from '../../types/personalization/enumsPersonalization';
-import { AppTheme } from '../../types/personalization/typesThemes';
+import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
+import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
+import { getCommonStylesByColorScale } from './helpers-styles';
 
 export const getThemeByColorScale = (
   theme: ThemeModes,
@@ -11,8 +9,8 @@ export const getThemeByColorScale = (
   const commonStyles = getCommonStylesByColorScale(theme, codeColorScale);
 
   const themeByColor: AppTheme = {
-    ...commonStyles,
     mode: theme,
+    ...commonStyles,
     buttons: {
       solid: getStylesForButtonSolidStates(theme, codeColorScale),
       outline: getStylesForButtonOutlineStates(theme, codeColorScale),
