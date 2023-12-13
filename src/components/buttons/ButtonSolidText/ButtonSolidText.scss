@@ -1,4 +1,4 @@
-.button-solid-text {
+.button_solid_text {
   background-color: #555;
   color: #888;
 
@@ -12,6 +12,10 @@
   height: 2.5625rem;
 
   min-width: 2.6875rem;
+
+  &--fullwidth {
+    width: 100%;
+  }
 
   &:hover {
     background-color: #787;

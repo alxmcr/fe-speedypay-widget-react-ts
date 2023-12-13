@@ -13,7 +13,7 @@ export default function ButtonSolidIcon({
   onClick,
 }: ButtonSolidIconProps) {
   return (
-    <button className="button-solid-icon" disabled={disabled} onClick={onClick}>
+    <button className="button_solid_icon" disabled={disabled} onClick={onClick}>
       <AppIcon iconName={btnIconName} />
     </button>
   );

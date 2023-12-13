@@ -1,4 +1,4 @@
-.button-solid {
+.button_solid {
   background-color: #555;
   color: #888;
 
@@ -12,6 +12,15 @@
   height: 2.5625rem;
 
   padding: 0.5rem 0.5625rem;
+
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+
+  &--fullwidth {
+    width: 100%;
+  }
 
   &:hover {
     background-color: #787;
