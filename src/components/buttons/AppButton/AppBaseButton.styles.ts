@@ -1,30 +1,26 @@
 import { IRON_COLOR_SCALES } from '../../../styles/colors-scales';
-import { getColorScalesByCode } from '../../../styles/helpers/helpers-color-scales';
-import { CodesForColorScales } from '../../../types/personalization/enumsPersonalization';
 import { ColorScales } from '../../../types/personalization/typesColors';
 import {
-    ButtonStyles,
-    ButtonStylesByState,
+  ButtonStyles,
+  ButtonStylesByState,
 } from '../../../types/personalization/typesStyles';
 import { ThemeModes } from '../../../types/personalization/typesThemes';
 
 export const getBtnStylesByVariant = (
   theme: ThemeModes,
-  codeColorScale: CodesForColorScales,
+  colorScales: ColorScales,
   variant = 'solid',
 ) => {
   if (variant === 'solid') {
-    return getBtnSolidStyles(theme, codeColorScale);
+    return getBtnSolidStyles(theme, colorScales);
   }
-  return getBtnSolidStyles(theme, codeColorScale);
+  return getBtnSolidStyles(theme, colorScales);
 };
 
 export const getBtnSolidStyles = (
   theme: ThemeModes,
-  codeColorScale: CodesForColorScales,
+  colorScales: ColorScales,
 ) => {
-  const colorScales: ColorScales = getColorScalesByCode(codeColorScale);
-
   const defaultStyles: ButtonStyles = {
     backgroundColor:
       theme === ThemeModes.light

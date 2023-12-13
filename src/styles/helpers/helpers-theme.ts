@@ -3,25 +3,37 @@ import {
   ButtonVariants,
   CodesForColorScales,
 } from '../../types/personalization/enumsPersonalization';
+import { ColorScales } from '../../types/personalization/typesColors';
 import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
+import { getColorScalesByCode } from './helpers-color-scales';
 import { getCommonStylesByColorScale } from './helpers-styles';
 
 export const getThemeByColorScale = (
   theme: ThemeModes,
   codeColorScale: CodesForColorScales,
 ): AppTheme => {
-  const commonStyles = getCommonStylesByColorScale(theme, codeColorScale);
+  const colorScales: ColorScales = getColorScalesByCode(codeColorScale);
+  const commonStyles = getCommonStylesByColorScale(theme, colorScales);
 
+  // Button styles
+  const stylesBtnSolid = getBtnStylesByVariant(
+    theme,
+    colorScales,
+    ButtonVariants.solid,
+  );
+  const stylesBtnOutline = getBtnStylesByVariant(
+    theme,
+    colorScales,
+    ButtonVariants.outline,
+  );
+
+  // Theme
   const themeByColor: AppTheme = {
     mode: theme,
     ...commonStyles,
     buttons: {
-      solid: getBtnStylesByVariant(theme, codeColorScale, ButtonVariants.solid),
-      outline: getBtnStylesByVariant(
-        theme,
-        codeColorScale,
-        ButtonVariants.outline,
-      ),
+      solid: stylesBtnSolid,
+      outline: stylesBtnOutline,
     },
   };
 
