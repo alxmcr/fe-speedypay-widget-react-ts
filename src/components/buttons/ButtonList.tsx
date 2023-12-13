@@ -1,4 +1,5 @@
 import ButtonSolid from './ButtonSolid';
+import ButtonSolidIcon from './ButtonSolidIcon';
 
 export default function ButtonList() {
   const onClick = () => {
@@ -15,6 +16,7 @@ export default function ButtonList() {
       }}
     >
       <ButtonSolid onClick={onClick}>Pay for $1234.56</ButtonSolid>
+      <ButtonSolidIcon text="HOla" onClick={onClick} />
     </div>
   );
 }
