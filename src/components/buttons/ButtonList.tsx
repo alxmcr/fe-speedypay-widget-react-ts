@@ -18,12 +18,18 @@ export default function ButtonList() {
       }}
     >
       <ButtonSolidText btnText="Pay for $1234.56" onClick={onClick} />
-      <ButtonSolidIcon btnIconName={IconNames.copy} onClick={onClick} />
       <ButtonSolid
         btnIconName={IconNames.copy}
         btnText="Copy number"
         onClick={onClick}
       />
+      <ButtonSolid
+        btnIconName={IconNames.copy}
+        btnText="Copy number"
+        onClick={onClick}
+        disabled
+      />
+      <ButtonSolidIcon btnIconName={IconNames.copy} onClick={onClick} />
     </div>
   );
 }
