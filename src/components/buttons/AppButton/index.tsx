@@ -3,40 +3,28 @@ import { TextButton } from '../../typography/SupportingStyles';
 import { AppBaseButton } from './AppBaseButton';
 
 type AppButtonProps = {
-  btnIconName: string;
-  btnText?: string;
+  onClick: () => void;
   disabled?: boolean;
   fullWidth?: boolean;
-  onClick: () => void;
+  btnText?: string;
+  leftIconName?: string;
 };
 
 export default function AppButton({
-  btnIconName = '',
   btnText = '',
   disabled = false,
   fullWidth = false,
   onClick,
+  leftIconName = '',
 }: AppButtonProps) {
   const className = fullWidth
     ? 'button_solid'
     : 'button_solid button_solid--fullwidth';
 
-  if (btnText.length === 0) {
-    return (
-      <AppBaseButton
-        className={className}
-        disabled={disabled}
-        onClick={onClick}
-      >
-        <AppIcon iconName={btnIconName} />
-      </AppBaseButton>
-    );
-  }
-
   return (
     <AppBaseButton className={className} disabled={disabled} onClick={onClick}>
-      <AppIcon iconName={btnIconName} />
-      <TextButton>{btnText}</TextButton>
+      {leftIconName.length > 0 ? <AppIcon iconName={leftIconName} /> : null}
+      {btnText.length > 0 ? <TextButton>{btnText}</TextButton> : null}
     </AppBaseButton>
   );
 }

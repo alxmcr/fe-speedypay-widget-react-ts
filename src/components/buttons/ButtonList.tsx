@@ -35,10 +35,22 @@ export default function ButtonList() {
       <ButtonSolidIcon btnIconName={IconNames.copy} onClick={onClick} />
       <AppBaseButton>Hola</AppBaseButton>
       <AppButton
-        btnIconName={IconNames.copy}
+        leftIconName={IconNames.copy}
+        btnText="Pay for $1234.56"
+        onClick={onClick}
+        fullWidth
+      />
+      <AppButton
+        leftIconName={IconNames.copy}
         btnText="Copy number"
         onClick={onClick}
       />
+      <AppButton
+        leftIconName={IconNames.coin}
+        btnText="Coin"
+        onClick={onClick}
+      />
+      <AppButton leftIconName={IconNames.gift} onClick={onClick} />
     </div>
   );
 }
