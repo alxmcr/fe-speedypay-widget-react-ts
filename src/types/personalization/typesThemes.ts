@@ -1,7 +1,7 @@
 import { ThemeModes } from './enumsPersonalization';
 import { ButtonVariants } from './typeVariants';
 
-export type AppBaseTheme = {
+export type AppCommonStyles = {
   mode: ThemeModes;
   background: string;
   borderColor: string;
@@ -10,8 +10,8 @@ export type AppBaseTheme = {
   scrollBarTrackColor?: string;
 };
 
-export type AppThemeElements = {
+export type AppStylesByElements = {
   buttons: ButtonVariants;
 };
 
-export type AppTheme = AppBaseTheme & AppThemeElements;
+export type AppTheme = AppCommonStyles & AppStylesByElements;
