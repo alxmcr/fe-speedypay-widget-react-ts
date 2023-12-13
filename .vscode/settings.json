@@ -2,25 +2,28 @@
   // Theme
   "workbench.colorTheme": "Rosé Pine Moon",
   // More settings...
+  "workbench.tree.enableStickyScroll": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.wordWrap": "on",
+  "editor.rulers": [80, 120],
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#ff4081"
+  },
   "window.zoomLevel": 1,
   "editor.fontSize": 17,
   "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
-  "editor.stickyScroll.enabled": true,
   "editor.fontLigatures": true,
   "files.eol": "\r\n",
   "editor.minimap.enabled": false,
   "editor.linkedEditing": true,
+  /* JS, TS */
   "javascript.referencesCodeLens.enabled": true,
   "javascript.referencesCodeLens.showOnAllFunctions": true,
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.referencesCodeLens.showOnAllFunctions": true,
   "editor.guides.bracketPairs": true,
-  "editor.wordWrap": "on",
-  "editor.rulers": [80, 120],
-  "workbench.colorCustomizations": {
-    "editorRuler.foreground": "#ff4081"
-  },
+  /* Diff editor */
   "diffEditor.wordWrap": "on",
   "diffEditor.codeLens": true,
   "diffEditor.experimental.showMoves": true,
