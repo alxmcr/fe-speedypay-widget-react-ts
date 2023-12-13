@@ -1,22 +1,35 @@
-import { IconNames } from '../../../types/appEnums';
 import AppIcon from '../../icons/AppIcon';
 import './ButtonSolidIcon.scss';
 
 type ButtonSolidIconProps = {
+  btnIconName: string;
+  btnText: string;
   disabled?: boolean;
   onClick: () => void;
-  text: string;
 };
 
 export default function ButtonSolidIcon({
-  text,
+  btnIconName = '',
+  btnText = '',
   disabled = false,
   onClick,
 }: ButtonSolidIconProps) {
+  if (btnText.length === 0) {
+    return (
+      <button
+        className="button-solid-icon"
+        disabled={disabled}
+        onClick={onClick}
+      >
+        <AppIcon iconName={btnIconName} />
+      </button>
+    );
+  }
+
   return (
     <button className="button-solid-icon" disabled={disabled} onClick={onClick}>
-      <AppIcon iconName={IconNames.arrowDown} />
-      <p>{text}</p>
+      <AppIcon iconName={btnIconName} />
+      <p>{btnText}</p>
     </button>
   );
 }

@@ -1,3 +1,4 @@
+import { IconNames } from '../../types/appEnums';
 import ButtonSolid from './ButtonSolid';
 import ButtonSolidIcon from './ButtonSolidIcon';
 
@@ -16,7 +17,11 @@ export default function ButtonList() {
       }}
     >
       <ButtonSolid onClick={onClick}>Pay for $1234.56</ButtonSolid>
-      <ButtonSolidIcon text="HOla" onClick={onClick} />
+      <ButtonSolidIcon
+        btnIconName={IconNames.copy}
+        btnText="Copy number"
+        onClick={onClick}
+      />
     </div>
   );
 }
