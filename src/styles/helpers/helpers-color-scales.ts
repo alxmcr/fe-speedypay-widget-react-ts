@@ -1,3 +1,4 @@
+import { ColorScales } from '../../types/personalization/typesColors';
 import {
   ATOLL_COLOR_SCALES,
   IRON_COLOR_SCALES,
@@ -7,7 +8,7 @@ import {
   WINE_BERRY_COLOR_SCALES,
 } from '../colors-scales';
 
-export const getScalesForColorsByCode = (codeColorScale = '') => {
+export const getColorScalesByCode = (codeColorScale = '') => {
   switch (codeColorScale) {
     case 'atoll':
       return ATOLL_COLOR_SCALES;

@@ -1,16 +1,15 @@
-import {
-  CodesForColorScales,
-  ThemeModes,
-} from '../../types/personalization/enumsPersonalization';
+import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
+import { ColorScales } from '../../types/personalization/typesColors';
 import { CommonStyles } from '../../types/personalization/typesStyles';
+import { ThemeModes } from '../../types/personalization/typesThemes';
 import { IRON } from '../colors';
+import { getColorScalesByCode } from './helpers-color-scales';
 
 export const getCommonStylesByColorScale = (
   theme: ThemeModes,
   codeColorScale: CodesForColorScales,
 ): CommonStyles => {
-  const colorScale: ThemeColorScales =
-    getPresentationColorScalesByName(codeColorScale);
+  const colorScale: ColorScales = getColorScalesByCode(codeColorScale);
 
   const baseTheme: CommonStyles = {
     background: theme === ThemeModes.light ? IRON[50] : colorScale.scales[950],
