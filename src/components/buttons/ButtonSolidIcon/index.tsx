@@ -1,4 +1,5 @@
 import AppIcon from '../../icons/AppIcon';
+import { TextButton } from '../../typography/SupportingStyles';
 import './ButtonSolidIcon.scss';
 
 type ButtonSolidIconProps = {
@@ -29,7 +30,7 @@ export default function ButtonSolidIcon({
   return (
     <button className="button-solid-icon" disabled={disabled} onClick={onClick}>
       <AppIcon iconName={btnIconName} />
-      <p>{btnText}</p>
+      <TextButton>{btnText}</TextButton>
     </button>
   );
 }
