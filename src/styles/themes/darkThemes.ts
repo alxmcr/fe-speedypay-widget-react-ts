@@ -1,4 +1,4 @@
-import { CodesColorScales, ThemeModes } from '../../types/enumsPersonalization';
+import { CodesColorScales, ThemeModes } from '../../types/personalization/enumsPersonalization';
 
 export const DARK_THEME_ATOLL: AppTheme = getThemeByColorScale(
   ThemeModes.dark,

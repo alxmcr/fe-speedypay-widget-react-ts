@@ -1,4 +1,4 @@
-import { ScalesForColors } from '../../types/typesColors';
+import { ScalesForColors } from '../../types/personalization/typesColors';
 
 export const LIME: ScalesForColors = {
   '50': '#fbffe5',
