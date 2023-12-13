@@ -1,6 +1,6 @@
-import { ColorScales } from '../../types/typesColors';
+import { ScalesForColors } from '../../types/typesColors';
 
-export const WINE_BERRY: ColorScales = {
+export const WINE_BERRY: ScalesForColors = {
   50: '#faf5f9',
   100: '#f6edf4',
   200: '#efdbea',

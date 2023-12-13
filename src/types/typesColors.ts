@@ -1,4 +1,4 @@
-export type ColorScales = {
+export type ScalesForColors = {
   50: string;
   100: string;
   200: string;

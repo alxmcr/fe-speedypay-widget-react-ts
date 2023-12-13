@@ -1,6 +1,6 @@
-import { ColorScales } from '../../types/typesColors';
+import { ScalesForColors } from '../../types/typesColors';
 
-export const SEA_BUCKTHORN: ColorScales = {
+export const SEA_BUCKTHORN: ScalesForColors = {
   50: '#fef7ec',
   100: '#fbe9ca',
   200: '#f8d38f',

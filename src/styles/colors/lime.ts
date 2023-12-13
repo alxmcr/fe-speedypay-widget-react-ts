@@ -1,6 +1,6 @@
-import { ColorScales } from '../../types/typesColors';
+import { ScalesForColors } from '../../types/typesColors';
 
-export const LIME: ColorScales = {
+export const LIME: ScalesForColors = {
   '50': '#fbffe5',
   '100': '#f4ffc7',
   '200': '#e7ff95',

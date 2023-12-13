@@ -1,6 +1,6 @@
-import { ColorScales } from '../../types/typesColors';
+import { ScalesForColors } from '../../types/typesColors';
 
-export const VALHALLA: ColorScales = {
+export const VALHALLA: ScalesForColors = {
   50: '#edefff',
   100: '#dde2ff',
   200: '#c2c8ff',

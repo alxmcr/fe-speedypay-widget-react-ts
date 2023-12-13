@@ -1,6 +1,6 @@
-import { ColorScales } from '../../types/typesColors';
+import { ScalesForColors } from '../../types/typesColors';
 
-export const IRON: ColorScales = {
+export const IRON: ScalesForColors = {
   50: '#f7f7f7',
   100: '#ededed',
   200: '#dfdfdf',

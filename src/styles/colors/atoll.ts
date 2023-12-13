@@ -1,6 +1,6 @@
-import { ColorScales } from '../../types/typesColors';
+import { ScalesForColors } from '../../types/typesColors';
 
-export const ATOLL: ColorScales = {
+export const ATOLL: ScalesForColors = {
   50: '#ebfffd',
   100: '#cdfffd',
   200: '#a1ffff',
