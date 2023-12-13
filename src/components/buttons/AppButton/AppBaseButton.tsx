@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 const AppBaseButton = styled.button`
-  background-color: #555;
-  color: #888;
-
   border: none;
   border-radius: 0.5rem;
   padding: 0.5rem 0.5625rem;
@@ -17,6 +14,9 @@ const AppBaseButton = styled.button`
 
   height: 2.5625rem;
   width: auto;
+
+  background-color: #555;
+  color: #888;
 
   &:hover {
     background-color: #787;
