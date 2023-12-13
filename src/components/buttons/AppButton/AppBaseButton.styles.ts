@@ -23,66 +23,66 @@ export const getBtnSolidStyles = (
   theme: ThemeModes,
   codeColorScale: CodesForColorScales,
 ) => {
-  const colorScale: ColorScales = getColorScalesByCode(codeColorScale);
+  const colorScales: ColorScales = getColorScalesByCode(codeColorScale);
 
   const defaultStyles: ButtonStyles = {
     backgroundColor:
       theme === ThemeModes.light
-        ? colorScale.scales[500]
-        : colorScale.scales[400],
+        ? colorScales.scales[500]
+        : colorScales.scales[400],
     borderColor:
       theme === ThemeModes.light
-        ? colorScale.scales[500]
-        : colorScale.scales[400],
+        ? colorScales.scales[500]
+        : colorScales.scales[400],
     colorText:
       theme === ThemeModes.light
         ? IRON_COLOR_SCALES.scales[50]
-        : colorScale.scales[950],
+        : colorScales.scales[950],
   };
 
   const hoverStyles: ButtonStyles = {
     backgroundColor:
       theme === ThemeModes.light
-        ? colorScale.scales[600]
-        : colorScale.scales[300],
+        ? colorScales.scales[600]
+        : colorScales.scales[300],
     borderColor:
       theme === ThemeModes.light
-        ? colorScale.scales[600]
-        : colorScale.scales[300],
+        ? colorScales.scales[600]
+        : colorScales.scales[300],
     colorText:
       theme === ThemeModes.light
         ? IRON_COLOR_SCALES.scales[50]
-        : colorScale.scales[950],
+        : colorScales.scales[950],
   };
 
   const activeStyles: ButtonStyles = {
     backgroundColor:
       theme === ThemeModes.light
-        ? colorScale.scales[700]
-        : colorScale.scales[500],
+        ? colorScales.scales[700]
+        : colorScales.scales[500],
     borderColor:
       theme === ThemeModes.light
-        ? colorScale.scales[700]
-        : colorScale.scales[500],
+        ? colorScales.scales[700]
+        : colorScales.scales[500],
     colorText:
       theme === ThemeModes.light
         ? IRON_COLOR_SCALES.scales[50]
-        : colorScale.scales[950],
+        : colorScales.scales[950],
   };
 
   const disabledStyles: ButtonStyles = {
     backgroundColor:
       theme === ThemeModes.light
-        ? colorScale.scales[200]
-        : colorScale.scales[800],
+        ? colorScales.scales[200]
+        : colorScales.scales[800],
     borderColor:
       theme === ThemeModes.light
-        ? colorScale.scales[200]
-        : colorScale.scales[800],
+        ? colorScales.scales[200]
+        : colorScales.scales[800],
     colorText:
       theme === ThemeModes.light
-        ? colorScale.scales[700]
-        : colorScale.scales[100],
+        ? colorScales.scales[700]
+        : colorScales.scales[100],
     opacity: 0.5,
   };
 
