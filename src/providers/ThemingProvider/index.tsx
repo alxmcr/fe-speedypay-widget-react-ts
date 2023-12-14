@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { LIGHT_THEME_ATOLL } from '../../styles/themes/lightThemes';
 import { ThemingContext, ThemingContextData } from './ThemingContext';
-import { ThemeModes } from '../../types/personalization/typesThemes';
+import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
 import { ToggleModeThemeContext } from '../ToggleModeThemeProvider/ToggleModeThemeContext';
 import { ToggleCodeColorScalesContext } from '../ToggleCodeColorScalesProvider/ToggleCodeColorScalesContext';
 
@@ -15,7 +15,7 @@ export default function ThemingProvider({ children }: ThemingProviderProps) {
   const { codeColorScales } = React.useContext(ToggleCodeColorScalesContext);
 
   const [themePersonalized, setThemePersonalized] =
-    React.useState(LIGHT_THEME_ATOLL);
+    React.useState<AppTheme>(LIGHT_THEME_ATOLL);
 
   const value: ThemingContextData = {
     themePersonalized,
