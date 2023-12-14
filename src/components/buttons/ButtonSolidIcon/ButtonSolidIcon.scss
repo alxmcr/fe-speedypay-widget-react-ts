@@ -1,0 +1,30 @@
+.button_solid_icon {
+  background-color: #555;
+  border: none;
+  border-radius: 0.5rem;
+  color: #888;
+  cursor: pointer;
+
+  font-size: 16px;
+  text-align: center;
+
+  height: 2.5625rem;
+
+  padding: 0.5rem 0.5625rem;
+
+  &:hover {
+    background-color: #f787;
+    color: #111;
+  }
+
+  &:active {
+    background-color: #238;
+    color: #987;
+  }
+
+  &:disabled {
+    background-color: #789;
+    color: #239;
+    opacity: #268;
+  }
+}

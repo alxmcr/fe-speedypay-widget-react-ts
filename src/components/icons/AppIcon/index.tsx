@@ -1,17 +1,16 @@
-import IconArrowDown from '@components/icons/IconArrowDown';
-import IconArrowUp from '@components/icons/IconArrowUp';
-import IconBankTransfer from '@components/icons/IconBankTransfer';
-import IconCash from '@components/icons/IconCoin';
-import IconCopy from '@components/icons/IconCopy';
-import IconCreditCard from '@components/icons/IconCreditCard';
-import IconEmailOutline from '@components/icons/IconEmailOutline';
-import IconGift from '@components/icons/IconGift';
+import { IconNames } from '../../../types/enumsApp';
+import IconArrowDown from '../IconArrowDown';
+import IconArrowUp from '../IconArrowUp';
+import IconBankTransfer from '../IconBankTransfer';
 import IconCheck from '../IconCheck';
+import IconCoin from '../IconCoin';
+import IconCopy from '../IconCopy';
+import IconCreditCard from '../IconCreditCard';
 import IconDropdownSelected from '../IconDropdownSelected';
 import IconDropdownUnselected from '../IconDropdownUnselected';
+import IconEmailOutline from '../IconEmailOutline';
+import IconGift from '../IconGift';
 import IconPending from '../IconPending';
-import { AppIconWrapper } from './AppIconWrapper';
-import { IconNames } from './IconNames';
 
 type AppIconProps = {
   iconName: string;
@@ -20,84 +19,31 @@ type AppIconProps = {
 export default function AppIcon({ iconName = IconNames.gift }: AppIconProps) {
   switch (iconName) {
     case IconNames.arrowDown:
-      return (
-        <AppIconWrapper>
-          <IconArrowDown />
-        </AppIconWrapper>
-      );
+      return <IconArrowDown />;
     case IconNames.arrowUp:
-      return (
-        <AppIconWrapper>
-          <IconArrowUp />
-        </AppIconWrapper>
-      );
+      return <IconArrowUp />;
     case IconNames.check:
-      return (
-        <AppIconWrapper>
-          <IconCheck />
-        </AppIconWrapper>
-      );
+      return <IconCheck />;
     case IconNames.pending:
-      return (
-        <AppIconWrapper>
-          <IconPending />
-        </AppIconWrapper>
-      );
+      return <IconPending />;
     case IconNames.copy:
-      return (
-        <AppIconWrapper>
-          <IconCopy />
-        </AppIconWrapper>
-      );
+      return <IconCopy />;
     case IconNames.dropdownSelected:
-      return (
-        <AppIconWrapper>
-          <IconDropdownSelected />
-        </AppIconWrapper>
-      );
+      return <IconDropdownSelected />;
     case IconNames.dropdownUnselected:
-      return (
-        <AppIconWrapper>
-          <IconDropdownUnselected />
-        </AppIconWrapper>
-      );
+      return <IconDropdownUnselected />;
     case IconNames.bankTransfer:
-      return (
-        <AppIconWrapper>
-          <IconBankTransfer />
-        </AppIconWrapper>
-      );
+      return <IconBankTransfer />;
     case IconNames.coin:
-      return (
-        <AppIconWrapper>
-          <IconCash />
-        </AppIconWrapper>
-      );
+      return <IconCoin />;
     case IconNames.creditCard:
-      return (
-        <AppIconWrapper>
-          <IconCreditCard />
-        </AppIconWrapper>
-      );
-
+      return <IconCreditCard />;
     case IconNames.gift:
-      return (
-        <AppIconWrapper>
-          <IconGift />
-        </AppIconWrapper>
-      );
+      return <IconGift />;
     case IconNames.email:
-      return (
-        <AppIconWrapper>
-          <IconEmailOutline />
-        </AppIconWrapper>
-      );
+      return <IconEmailOutline />;
 
     default:
-      return (
-        <AppIconWrapper>
-          <IconGift />
-        </AppIconWrapper>
-      );
+      return <IconGift />;
   }
 }
