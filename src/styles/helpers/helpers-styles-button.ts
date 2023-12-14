@@ -1,5 +1,6 @@
-import { getBtnStylesByVariant } from '../../components/buttons/AppButton/xAppBaseButton.styles';
+import { getBtnStylesByVariant } from '../../components/buttons/AppButton/AppBaseButton.styles';
 import { CodeForBtnVariants } from '../../types/personalization/enumsPersonalization';
+import { ButtonStylesVariants } from '../../types/personalization/typeVariants';
 import { ColorScales } from '../../types/personalization/typesColors';
 import { ButtonStylesByState } from '../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../types/personalization/typesThemes';
@@ -17,7 +18,7 @@ export const getBtnVariants = (theme: ThemeModes, colorScales: ColorScales) => {
     CodeForBtnVariants.outline,
   );
 
-  const btnVariants = {
+  const btnVariants: ButtonStylesVariants = {
     solid: stylesBtnSolid,
     outline: stylesBtnOutline,
   };
