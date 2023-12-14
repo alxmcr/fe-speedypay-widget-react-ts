@@ -6,7 +6,6 @@ function App() {
   return (
     <div
       style={{
-        backgroundColor: '#000',
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',

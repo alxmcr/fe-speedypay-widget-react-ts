@@ -11,5 +11,4 @@ export const ToggleLabel = styled.label`
 
   padding: 0.5rem;
   width: 110px;
-  height: 56px;
 `;

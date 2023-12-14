@@ -14,6 +14,6 @@ export const ToggleInputCheckbox = styled.input`
   }
 
   &:checked + span {
-    transform: translateX(50px);
+    transform: translateX(70px);
   }
 `;
