@@ -1,5 +1,6 @@
 import ButtonList from './components/buttons/ButtonList';
 import AppIconList from './components/icons/AppIcon/AppIconList';
+import ThemeModeToggler from './components/toggles/ThemeModeToggler';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         gap: '1rem',
       }}
     >
-      {/* <ThemeModeToggler /> */}
+      <ThemeModeToggler />
       <AppIconList />
       <ButtonList />
     </div>

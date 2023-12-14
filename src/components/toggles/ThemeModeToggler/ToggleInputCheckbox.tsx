@@ -5,12 +5,12 @@ export const ToggleInputCheckbox = styled.input`
 
   &:checked + span {
     background-color: ${(props) =>
-      props.theme.tooglers.themeToggler.default.ballBackground};
+      props.theme.styles.togglers.default.ballBackground};
   }
 
   &:focus + span {
     box-shadow: 0 0 1px
-      ${(props) => props.theme.tooglers.themeToggler.default.ballBackground};
+      ${(props) => props.theme.styles.togglers.default.ballBackground};
   }
 
   &:checked + span {

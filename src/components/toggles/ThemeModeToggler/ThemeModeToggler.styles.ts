@@ -1,7 +1,7 @@
 import { ColorScales } from '../../../types/personalization/typesColors';
 import {
-    ToggleStyles,
-    ToggleStylesByState,
+  ToggleStyles,
+  ToggleStylesByState,
 } from '../../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../../types/personalization/typesThemes';
 
@@ -10,7 +10,7 @@ export const getStylesForTogglerStates = (
   colorScales: ColorScales,
 ): ToggleStylesByState => {
   const defaultStyles: ToggleStyles = {
-    background:
+    backgroundColor:
       theme === ThemeModes.light
         ? colorScales.scales[100]
         : colorScales.scales[300],
