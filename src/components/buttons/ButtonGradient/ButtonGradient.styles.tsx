@@ -1,67 +1,76 @@
-import { StylesButtonGradientStates } from '../../../../../@types/styles/stylesElementsTypes';
-import { ATOLL } from '../../../../../styles/_color-scales/atoll';
-import { IRON } from '../../../../../styles/_color-scales/iron';
+import { IRON_COLOR_SCALES } from '../../../styles/colors-scales';
+import { ColorScales } from '../../../types/personalization/typesColors';
+import {
+  ButtonCommonStyles,
+  ButtonStylesByState,
+} from '../../../types/personalization/typesElementsStyles';
+import { ThemeModes } from '../../../types/personalization/typesThemes';
 
-export const lightThemeBtnGradient: StylesButtonGradientStates = {
-  default: {
-    gradientColors: {
-      gradientEnd: ATOLL[400],
-      gradientStart: ATOLL[600],
-    },
-    text: IRON[50],
-  },
-  hover: {
-    gradientColors: {
-      gradientEnd: ATOLL[500],
-      gradientStart: ATOLL[700],
-    },
-    text: IRON[50],
-  },
-  active: {
-    gradientColors: {
-      gradientEnd: ATOLL[600],
-      gradientStart: ATOLL[800],
-    },
-    text: IRON[50],
-  },
-  disabled: {
-    gradientColors: {
-      gradientEnd: ATOLL[100],
-      gradientStart: ATOLL[300],
-    },
-    text: ATOLL[700],
-    opacity: 0.5,
-  },
-};
+export const getBtnGradientStyles = (
+  theme: ThemeModes,
+  colorScales: ColorScales,
+) => {
+  const defaultStyles: ButtonCommonStyles = {
+    backgroundColor: theme === ThemeModes.light ? 'transparent' : 'transparent',
+    borderColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
+    colorText:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
+  };
 
-export const darkThemeBtnGradient: StylesButtonGradientStates = {
-  default: {
-    gradientColors: {
-      gradientEnd: ATOLL[300],
-      gradientStart: ATOLL[300],
-    },
-    text: ATOLL[950],
-  },
-  hover: {
-    gradientColors: {
-      gradientEnd: ATOLL[200],
-      gradientStart: ATOLL[400],
-    },
-    text: ATOLL[950],
-  },
-  active: {
-    gradientColors: {
-      gradientEnd: ATOLL[400],
-      gradientStart: ATOLL[600],
-    },
-    text: ATOLL[950],
-  },
-  disabled: {
-    gradientColors: {
-      gradientEnd: ATOLL[700],
-      gradientStart: ATOLL[900],
-    },
-    text: ATOLL[100],
+  const hoverStyles: ButtonCommonStyles = {
+    backgroundColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[500]
+        : colorScales.scales[400],
+    borderColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[500]
+        : colorScales.scales[400],
+    colorText:
+      theme === ThemeModes.light
+        ? IRON_COLOR_SCALES.scales[50]
+        : colorScales.scales[950],
+  };
+
+  const activeStyles: ButtonCommonStyles = {
+    backgroundColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[100]
+        : colorScales.scales[900],
+    borderColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
+    colorText:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
+  };
+
+  const disabledStyles: ButtonCommonStyles = {
+    backgroundColor: theme === ThemeModes.light ? 'transparent' : 'transparent',
+    borderColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
+    colorText:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
     opacity: 0.5,
-  },
+  };
+
+  const btnStylesByStates: ButtonStylesByState = {
+    default: defaultStyles,
+    hover: hoverStyles,
+    active: activeStyles,
+    disabled: disabledStyles,
+  };
+
+  return btnStylesByStates;
 };

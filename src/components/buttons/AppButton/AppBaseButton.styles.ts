@@ -1,7 +1,7 @@
 import { IRON_COLOR_SCALES } from '../../../styles/colors-scales';
 import { ColorScales } from '../../../types/personalization/typesColors';
 import {
-  ButtonStyles,
+  ButtonCommonStyles,
   ButtonStylesByState,
 } from '../../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../../types/personalization/typesThemes';
@@ -10,7 +10,7 @@ export const getBtnSolidStyles = (
   theme: ThemeModes,
   colorScales: ColorScales,
 ) => {
-  const defaultStyles: ButtonStyles = {
+  const defaultStyles: ButtonCommonStyles = {
     backgroundColor:
       theme === ThemeModes.light
         ? colorScales.scales[500]
@@ -25,7 +25,7 @@ export const getBtnSolidStyles = (
         : colorScales.scales[950],
   };
 
-  const hoverStyles: ButtonStyles = {
+  const hoverStyles: ButtonCommonStyles = {
     backgroundColor:
       theme === ThemeModes.light
         ? colorScales.scales[600]
@@ -40,7 +40,7 @@ export const getBtnSolidStyles = (
         : colorScales.scales[950],
   };
 
-  const activeStyles: ButtonStyles = {
+  const activeStyles: ButtonCommonStyles = {
     backgroundColor:
       theme === ThemeModes.light
         ? colorScales.scales[700]
@@ -55,7 +55,7 @@ export const getBtnSolidStyles = (
         : colorScales.scales[950],
   };
 
-  const disabledStyles: ButtonStyles = {
+  const disabledStyles: ButtonCommonStyles = {
     backgroundColor:
       theme === ThemeModes.light
         ? colorScales.scales[200]
@@ -85,7 +85,7 @@ export const getBtnOutlineStyles = (
   theme: ThemeModes,
   colorScales: ColorScales,
 ) => {
-  const defaultStyles: ButtonStyles = {
+  const defaultStyles: ButtonCommonStyles = {
     backgroundColor: theme === ThemeModes.light ? 'transparent' : 'transparent',
     borderColor:
       theme === ThemeModes.light
@@ -97,7 +97,7 @@ export const getBtnOutlineStyles = (
         : colorScales.scales[300],
   };
 
-  const hoverStyles: ButtonStyles = {
+  const hoverStyles: ButtonCommonStyles = {
     backgroundColor:
       theme === ThemeModes.light
         ? colorScales.scales[500]
@@ -112,7 +112,7 @@ export const getBtnOutlineStyles = (
         : colorScales.scales[950],
   };
 
-  const activeStyles: ButtonStyles = {
+  const activeStyles: ButtonCommonStyles = {
     backgroundColor:
       theme === ThemeModes.light
         ? colorScales.scales[100]
@@ -127,7 +127,7 @@ export const getBtnOutlineStyles = (
         : colorScales.scales[300],
   };
 
-  const disabledStyles: ButtonStyles = {
+  const disabledStyles: ButtonCommonStyles = {
     backgroundColor: theme === ThemeModes.light ? 'transparent' : 'transparent',
     borderColor:
       theme === ThemeModes.light

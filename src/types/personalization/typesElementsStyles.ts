@@ -1,4 +1,4 @@
-export type ButtonStyles = {
+export type ButtonCommonStyles = {
   backgroundColor: string;
   colorText: string;
   borderColor: string;
@@ -6,10 +6,10 @@ export type ButtonStyles = {
 };
 
 export type ButtonStylesByState = {
-  default: ButtonStyles;
-  hover: ButtonStyles;
-  active: ButtonStyles;
-  disabled: ButtonStyles;
+  default: ButtonCommonStyles;
+  hover: ButtonCommonStyles;
+  active: ButtonCommonStyles;
+  disabled: ButtonCommonStyles;
 };
 
 export type ToggleStyles = {
