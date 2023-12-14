@@ -16,7 +16,7 @@ export default function HomePage() {
       <ThemeModeToggler />
       <AppIconList />
       <ButtonList />
-      <InputList />
+      {/* <InputList /> */}
     </div>
   );
 }

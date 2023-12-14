@@ -37,3 +37,16 @@ export type ToggleStyles = {
 export type ToggleStylesByState = {
   default: ToggleStyles;
 };
+
+export type InputStyles = {
+  backgroundColor: string;
+  colorText: string;
+  borderColor: string;
+  placeholderColor?: string;
+};
+
+export type InputStylesByState = {
+  default: InputStyles;
+  focus: InputStyles;
+  disabled: InputStyles;
+};

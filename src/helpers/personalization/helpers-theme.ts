@@ -2,8 +2,9 @@ import { CodesForColorScales } from '../../types/personalization/enumsPersonaliz
 import { ColorScales } from '../../types/personalization/typesColors';
 import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
 import { getColorScalesByCode } from './helpers-color-scales';
-import { getCommonStylesByColorScale } from './helpers-styles-common';
 import { getBtnStylesVariants } from './helpers-styles-button';
+import { getCommonStylesByColorScale } from './helpers-styles-common';
+import { getInputStyles } from './helpers-styles-inputs';
 import { getToggleStyles } from './helpers-styles-toggles';
 
 export const getThemeByColorScale = (
@@ -20,6 +21,7 @@ export const getThemeByColorScale = (
       ...commonStyles,
       buttons: getBtnStylesVariants(theme, colorScales),
       togglers: getToggleStyles(theme, colorScales),
+      inputs: getInputStyles(theme, colorScales),
     },
   };
 
