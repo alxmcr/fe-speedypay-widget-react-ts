@@ -3,7 +3,7 @@ import { ColorScales } from '../../types/personalization/typesColors';
 import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
 import { getColorScalesByCode } from './helpers-color-scales';
 import { getCommonStylesByColorScale } from './helpers-styles-common';
-import { getBtnVariants } from './helpers-styles-button';
+import { getBtnStylesVariants } from './helpers-styles-button';
 
 export const getThemeByColorScale = (
   theme: ThemeModes,
@@ -17,7 +17,7 @@ export const getThemeByColorScale = (
     mode: theme,
     styles: {
       ...commonStyles,
-      buttons: getBtnVariants(theme, colorScales),
+      buttons: getBtnStylesVariants(theme, colorScales),
     },
   };
 

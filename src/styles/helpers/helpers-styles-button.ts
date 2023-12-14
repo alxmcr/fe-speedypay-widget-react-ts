@@ -5,7 +5,7 @@ import { ColorScales } from '../../types/personalization/typesColors';
 import { ButtonStylesByState } from '../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 
-export const getBtnVariants = (theme: ThemeModes, colorScales: ColorScales) => {
+export const getBtnStylesVariants = (theme: ThemeModes, colorScales: ColorScales) => {
   // Button styles
   const stylesBtnSolid: ButtonStylesByState = getBtnStylesByVariant(
     theme,
