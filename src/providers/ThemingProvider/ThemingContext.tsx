@@ -3,8 +3,8 @@ import { getThemeByColorScale } from '../../helpers/personalization/helpers-them
 import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
 import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
 
-export const LIGHT_THEME_ATOLL: AppTheme = getThemeByColorScale(
-  ThemeModes.light,
+export const DARK_THEME_ATOLL: AppTheme = getThemeByColorScale(
+  ThemeModes.dark,
   CodesForColorScales.atoll,
 );
 
@@ -14,7 +14,7 @@ export type ThemingContextData = {
 };
 
 const initialThemePersonalized: ThemingContextData = {
-  themePersonalized: LIGHT_THEME_ATOLL,
+  themePersonalized: DARK_THEME_ATOLL,
   setThemePersonalized: () => {},
 };
 

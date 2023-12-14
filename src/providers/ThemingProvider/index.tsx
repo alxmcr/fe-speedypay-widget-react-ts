@@ -4,9 +4,9 @@ import { getThemeByColorScale } from '../../helpers/personalization/helpers-them
 import { ToggleCodeColorScalesContext } from '../ToggleCodeColorScalesProvider/ToggleCodeColorScalesContext';
 import { ToggleModeThemeContext } from '../ToggleModeThemeProvider/ToggleModeThemeContext';
 import {
-  LIGHT_THEME_ATOLL,
+  DARK_THEME_ATOLL,
   ThemingContext,
-  ThemingContextData,
+  ThemingContextData
 } from './ThemingContext';
 
 type ThemingProviderProps = {
@@ -18,7 +18,7 @@ export default function ThemingProvider({ children }: ThemingProviderProps) {
   const { codeColorScales } = React.useContext(ToggleCodeColorScalesContext);
 
   const [themePersonalized, setThemePersonalized] =
-    React.useState(LIGHT_THEME_ATOLL);
+    React.useState(DARK_THEME_ATOLL);
 
   const value: ThemingContextData = {
     themePersonalized,
