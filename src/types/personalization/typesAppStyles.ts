@@ -1,4 +1,5 @@
 import { ButtonStylesVariants } from './typeVariants';
+import { ToggleStylesByState } from './typesElementsStyles';
 
 export type AppCommonStyles = {
   background: string;
@@ -10,6 +11,7 @@ export type AppCommonStyles = {
 
 export type AppStylesByElements = {
   buttons: ButtonStylesVariants;
+  togglers: ToggleStylesByState;
 };
 
 export type AppStyles = AppCommonStyles & AppStylesByElements;

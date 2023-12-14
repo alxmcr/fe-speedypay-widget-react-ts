@@ -29,7 +29,7 @@ export type ButtonGradientStylesByState = {
 };
 
 export type ToggleStyles = {
-  background: string;
+  backgroundColor: string;
   borderColor: string;
   ballBackground: string;
 };

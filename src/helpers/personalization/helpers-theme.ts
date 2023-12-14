@@ -4,6 +4,7 @@ import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
 import { getColorScalesByCode } from './helpers-color-scales';
 import { getCommonStylesByColorScale } from './helpers-styles-common';
 import { getBtnStylesVariants } from './helpers-styles-button';
+import { getToggleStyles } from './helpers-styles-toggles';
 
 export const getThemeByColorScale = (
   theme: ThemeModes,
@@ -18,6 +19,7 @@ export const getThemeByColorScale = (
     styles: {
       ...commonStyles,
       buttons: getBtnStylesVariants(theme, colorScales),
+      togglers: getToggleStyles(theme, colorScales),
     },
   };
 
