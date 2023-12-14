@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ButtonSolid } from '.';
+import { ButtonSolid } from './ButtonBaseSolid';
 import IconBankTransfer from '../../../_icons/IconBankTransfer';
 
 const meta = {
