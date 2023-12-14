@@ -1,5 +1,5 @@
 import React from 'react';
-import { BaseInputStyled } from '../BaseInput.styled';
+import { AppInputStyled } from './AppInput/AppInput.styled';
 
 type AppInputNumberProps = {
   id: string;
@@ -25,7 +25,7 @@ export default function AppInputText({
   };
 
   return maxLength ? (
-    <BaseInputStyled
+    <AppInputStyled
       type="text"
       id={id}
       placeholder={placeholder}
@@ -37,7 +37,7 @@ export default function AppInputText({
       value={valueInput}
     />
   ) : (
-    <BaseInputStyled
+    <AppInputStyled
       type="text"
       id={id}
       placeholder={placeholder}

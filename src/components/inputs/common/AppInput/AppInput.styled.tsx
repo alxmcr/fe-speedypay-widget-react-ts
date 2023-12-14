@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-type BaseInputStyledProps = {
+type AppInputStyledProps = {
   $fullWidth?: boolean;
 };
 
-export const BaseInputStyled = styled.input<BaseInputStyledProps>`
+export const AppInputStyled = styled.input<AppInputStyledProps>`
   background-color: ${(props) => props.theme.styles.inputs.default.background};
   border: 1px solid ${(props) => props.theme.styles.inputs.default.borderColor};
   color: ${(props) => props.theme.styles.inputs.default.text};
