@@ -5,6 +5,15 @@ export type ButtonCommonStyles = {
   opacity?: number;
 };
 
+export type ButtonGradientStyles = {
+  text: string;
+  gradientColors: {
+    gradientStart: string;
+    gradientEnd: string;
+  };
+  opacity?: number;
+};
+
 export type ButtonStylesByState = {
   default: ButtonCommonStyles;
   hover: ButtonCommonStyles;
