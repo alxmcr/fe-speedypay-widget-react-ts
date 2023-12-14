@@ -1,4 +1,3 @@
-import { ColorScales } from '../../types/personalization/typesColors';
 import {
   ATOLL_COLOR_SCALES,
   IRON_COLOR_SCALES,
