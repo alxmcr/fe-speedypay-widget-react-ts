@@ -1,8 +1,8 @@
-import { AppStylesByElements, CommonStyles } from './typesStyles';
+import { AppStylesByElements, AppCommonStyles } from './typesStyles';
 
 export enum ThemeModes {
   dark = 'dark',
   light = 'light',
 }
 
-export type AppTheme = CommonStyles & AppStylesByElements;
+export type AppTheme = AppCommonStyles & AppStylesByElements;

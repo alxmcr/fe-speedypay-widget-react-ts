@@ -1,6 +1,6 @@
 import { ButtonVariants as ButtonStylesVariants } from './typeVariants';
 
-export type CommonStyles = {
+export type AppCommonStyles = {
   background: string;
   borderColor: string;
   text: string;
