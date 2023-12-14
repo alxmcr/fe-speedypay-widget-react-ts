@@ -1,7 +1,7 @@
 import { getBtnStylesByVariant } from '../../components/buttons/AppButton/xAppBaseButton.styles';
 import { CodeForBtnVariants } from '../../types/personalization/enumsPersonalization';
 import { ColorScales } from '../../types/personalization/typesColors';
-import { ButtonStylesByState } from '../../types/personalization/typesStyles';
+import { ButtonStylesByState } from '../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 
 export const getBtnVariants = (theme: ThemeModes, colorScales: ColorScales) => {

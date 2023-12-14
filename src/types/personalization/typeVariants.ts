@@ -1,4 +1,4 @@
-import { ButtonStylesByState } from './typesStyles';
+import { ButtonStylesByState } from './typesElementsStyles';
 
 export type ButtonStylesVariants = {
   solid: ButtonStylesByState;

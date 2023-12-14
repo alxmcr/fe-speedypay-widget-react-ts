@@ -2,7 +2,7 @@ import { ColorScales } from '../../../types/personalization/typesColors';
 import {
     ToggleStyles,
     ToggleStylesByState,
-} from '../../../types/personalization/typesStyles';
+} from '../../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../../types/personalization/typesThemes';
 
 export const getStylesForTogglerStates = (
