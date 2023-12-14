@@ -1,11 +1,25 @@
-import { getBtnStylesByVariant } from '../../components/buttons/AppButton/AppBaseButton.styles';
+import { getBtnSolidStyles } from '../../components/buttons/AppButton/AppBaseButton.styles';
 import { CodeForBtnVariants } from '../../types/personalization/enumsPersonalization';
 import { ButtonStylesVariants } from '../../types/personalization/typeVariants';
 import { ColorScales } from '../../types/personalization/typesColors';
 import { ButtonStylesByState } from '../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 
-export const getBtnStylesVariants = (theme: ThemeModes, colorScales: ColorScales) => {
+export const getBtnStylesByVariant = (
+  theme: ThemeModes,
+  colorScales: ColorScales,
+  variant = 'solid',
+) => {
+  if (variant === 'solid') {
+    return getBtnSolidStyles(theme, colorScales);
+  }
+  return getBtnSolidStyles(theme, colorScales);
+};
+
+export const getBtnStylesVariants = (
+  theme: ThemeModes,
+  colorScales: ColorScales,
+) => {
   // Button styles
   const stylesBtnSolid: ButtonStylesByState = getBtnStylesByVariant(
     theme,

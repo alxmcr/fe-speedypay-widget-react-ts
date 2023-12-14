@@ -6,17 +6,6 @@ import {
 } from '../../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../../types/personalization/typesThemes';
 
-export const getBtnStylesByVariant = (
-  theme: ThemeModes,
-  colorScales: ColorScales,
-  variant = 'solid',
-) => {
-  if (variant === 'solid') {
-    return getBtnSolidStyles(theme, colorScales);
-  }
-  return getBtnSolidStyles(theme, colorScales);
-};
-
 export const getBtnSolidStyles = (
   theme: ThemeModes,
   colorScales: ColorScales,
