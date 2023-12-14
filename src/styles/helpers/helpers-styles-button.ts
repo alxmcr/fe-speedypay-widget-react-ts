@@ -1,11 +1,14 @@
 import {
+  getBtnGradientStyles,
   getBtnOutlineStyles,
   getBtnSolidStyles,
 } from '../../components/buttons/AppButton/AppBaseButton.styles';
-import { CodeForBtnVariants } from '../../types/personalization/enumsPersonalization';
 import { ButtonStylesVariants } from '../../types/personalization/typeVariants';
 import { ColorScales } from '../../types/personalization/typesColors';
-import { ButtonCommonStylesByState } from '../../types/personalization/typesElementsStyles';
+import {
+  ButtonCommonStylesByState,
+  ButtonGradientStylesByState
+} from '../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 
 export const getBtnStylesByVariant = (
@@ -24,20 +27,24 @@ export const getBtnStylesVariants = (
   colorScales: ColorScales,
 ) => {
   // Button styles
-  const stylesBtnSolid: ButtonCommonStylesByState = getBtnStylesByVariant(
+  const stylesBtnSolid: ButtonCommonStylesByState = getBtnSolidStyles(
     theme,
     colorScales,
-    CodeForBtnVariants.solid,
   );
-  const stylesBtnOutline: ButtonCommonStylesByState = getBtnStylesByVariant(
+  const stylesBtnOutline: ButtonCommonStylesByState = getBtnOutlineStyles(
     theme,
     colorScales,
-    CodeForBtnVariants.outline,
+  );
+
+  const stylesBtnGradient: ButtonGradientStylesByState = getBtnGradientStyles(
+    theme,
+    colorScales,
   );
 
   const btnVariants: ButtonStylesVariants = {
     solid: stylesBtnSolid,
     outline: stylesBtnOutline,
+    gradient: stylesBtnGradient,
   };
 
   return btnVariants;
