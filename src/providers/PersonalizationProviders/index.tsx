@@ -6,7 +6,9 @@ type AppProvidersProps = {
   children: React.ReactNode;
 };
 
-export default function AppProviders({ children }: AppProvidersProps) {
+export default function PersonalizationProviders({
+  children,
+}: AppProvidersProps) {
   return (
     <ToggleModeThemeProvider>
       <ToggleCodeColorScalesProvider>

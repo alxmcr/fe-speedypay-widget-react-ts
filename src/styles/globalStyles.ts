@@ -6,8 +6,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #000;
-    color: #52a6f3;
+    background-color: ${(props) => props.theme.styles.backgroundColor};
+    color: ${(props) => props.theme.styles.colorText};
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
   }

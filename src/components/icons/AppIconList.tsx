@@ -1,11 +1,10 @@
-import AppIcon from '.';
-import { IconNames } from '../../../types/enumsApp';
+import AppIcon from './AppIcon';
+import { IconNames } from '../../types/enumsApp';
 
 export default function AppIconList() {
   return (
     <div
       style={{
-        color: '#52a6f3',
         alignItems: 'center',
         display: 'flex',
         gap: '1rem',
