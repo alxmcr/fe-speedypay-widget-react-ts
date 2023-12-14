@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-type ButtonBaseOutlineProps = {
+type ButtonBaseOutlineStyledProps = {
   $fullWidth?: boolean;
 };
 
-export const ButtonBaseOutline = styled.button<ButtonBaseOutlineProps>`
+export const ButtonBaseOutlineStyled = styled.button<ButtonBaseOutlineStyledProps>`
   background-color: transparent;
   color: ${(props) => props.theme.styles.buttons.outline.default.colorText};
 

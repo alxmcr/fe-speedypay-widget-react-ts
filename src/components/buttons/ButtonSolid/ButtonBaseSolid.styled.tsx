@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-type ButtonBaseSolidProps = {
+type ButtonBaseSolidStyledProps = {
   $fullWidth?: boolean;
 };
 
-export const ButtonBaseSolid = styled.button<ButtonBaseSolidProps>`
-  background-color: ${(props) => props.theme.styles.buttons.solid.default.backgroundColor};
+export const ButtonBaseSolidStyled = styled.button<ButtonBaseSolidStyledProps>`
+  background-color: ${(props) =>
+    props.theme.styles.buttons.solid.default.backgroundColor};
   color: ${(props) => props.theme.styles.buttons.solid.default.colorText};
 
   border: none;
@@ -23,14 +24,18 @@ export const ButtonBaseSolid = styled.button<ButtonBaseSolidProps>`
   width: ${(props) => (props.$fullWidth ? '100%' : 'auto')};
 
   &:hover {
-    background-color: ${(props) => props.theme.styles.buttons.solid.hover.backgroundColor};
-    border: 1px solid ${(props) => props.theme.styles.buttons.solid.hover.borderColor};
+    background-color: ${(props) =>
+      props.theme.styles.buttons.solid.hover.backgroundColor};
+    border: 1px solid
+      ${(props) => props.theme.styles.buttons.solid.hover.borderColor};
     color: ${(props) => props.theme.styles.buttons.solid.hover.colorText};
   }
 
   &:active {
-    background-color: ${(props) => props.theme.styles.buttons.solid.active.backgroundColor};
-    border: 1px solid ${(props) => props.theme.styles.buttons.solid.active.borderColor};
+    background-color: ${(props) =>
+      props.theme.styles.buttons.solid.active.backgroundColor};
+    border: 1px solid
+      ${(props) => props.theme.styles.buttons.solid.active.borderColor};
     color: ${(props) => props.theme.styles.buttons.solid.active.colorText};
   }
 

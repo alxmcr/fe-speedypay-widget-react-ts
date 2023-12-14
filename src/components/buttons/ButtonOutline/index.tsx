@@ -1,6 +1,6 @@
 import AppIcon from '../../icons/AppIcon';
 import { TextButton } from '../../typography/SupportingStyles';
-import { ButtonBaseOutline } from './ButtonBaseOutline';
+import { ButtonBaseOutlineStyled } from './ButtonBaseOutline.styled';
 
 type ButtonOutlineProps = {
   onClick: () => void;
@@ -18,13 +18,13 @@ export default function ButtonOutline({
   leftIconName = '',
 }: ButtonOutlineProps) {
   return (
-    <ButtonBaseOutline
+    <ButtonBaseOutlineStyled
       disabled={disabled}
       $fullWidth={fullWidth}
       onClick={onClick}
     >
       {leftIconName.length > 0 ? <AppIcon iconName={leftIconName} /> : null}
       {btnText.length > 0 ? <TextButton>{btnText}</TextButton> : null}
-    </ButtonBaseOutline>
+    </ButtonBaseOutlineStyled>
   );
 }
