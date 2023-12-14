@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { getThemeByColorScale } from '../../styles/helpers/helpers-theme';
+import { getThemeByColorScale } from '../../helpers/personalization/helpers-theme';
 import { ToggleCodeColorScalesContext } from '../ToggleCodeColorScalesProvider/ToggleCodeColorScalesContext';
 import { ToggleModeThemeContext } from '../ToggleModeThemeProvider/ToggleModeThemeContext';
 import {

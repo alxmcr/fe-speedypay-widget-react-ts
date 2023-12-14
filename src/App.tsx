@@ -12,6 +12,7 @@ function App() {
         gap: '1rem',
       }}
     >
+      {/* <ThemeModeToggler /> */}
       <AppIconList />
       <ButtonList />
     </div>

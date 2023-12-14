@@ -1,5 +1,5 @@
 import React from 'react';
-import { getThemeByColorScale } from '../../styles/helpers/helpers-theme';
+import { getThemeByColorScale } from '../../helpers/personalization/helpers-theme';
 import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
 import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
 

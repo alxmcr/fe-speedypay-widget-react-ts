@@ -1,7 +1,7 @@
 import { AppCommonStyles } from '../../types/personalization/typesAppStyles';
 import { ColorScales } from '../../types/personalization/typesColors';
 import { ThemeModes } from '../../types/personalization/typesThemes';
-import { IRON } from '../colors';
+import { IRON } from '../../styles/colors';
 
 export const getCommonStylesByColorScale = (
   theme: ThemeModes,
