@@ -1,4 +1,7 @@
-import { getBtnSolidStyles } from '../../components/buttons/AppButton/AppBaseButton.styles';
+import {
+  getBtnOutlineStyles,
+  getBtnSolidStyles,
+} from '../../components/buttons/AppButton/AppBaseButton.styles';
 import { CodeForBtnVariants } from '../../types/personalization/enumsPersonalization';
 import { ButtonStylesVariants } from '../../types/personalization/typeVariants';
 import { ColorScales } from '../../types/personalization/typesColors';
@@ -13,7 +16,7 @@ export const getBtnStylesByVariant = (
   if (variant === 'solid') {
     return getBtnSolidStyles(theme, colorScales);
   }
-  return getBtnSolidStyles(theme, colorScales);
+  return getBtnOutlineStyles(theme, colorScales);
 };
 
 export const getBtnStylesVariants = (

@@ -80,3 +80,72 @@ export const getBtnSolidStyles = (
 
   return btnStylesByStates;
 };
+
+export const getBtnOutlineStyles = (
+  theme: ThemeModes,
+  colorScales: ColorScales,
+) => {
+  const defaultStyles: ButtonStyles = {
+    backgroundColor: theme === ThemeModes.light ? 'transparent' : 'transparent',
+    borderColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
+    colorText:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
+  };
+
+  const hoverStyles: ButtonStyles = {
+    backgroundColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[500]
+        : colorScales.scales[400],
+    borderColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[500]
+        : colorScales.scales[400],
+    colorText:
+      theme === ThemeModes.light
+        ? IRON_COLOR_SCALES.scales[50]
+        : colorScales.scales[950],
+  };
+
+  const activeStyles: ButtonStyles = {
+    backgroundColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[100]
+        : colorScales.scales[900],
+    borderColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
+    colorText:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
+  };
+
+  const disabledStyles: ButtonStyles = {
+    backgroundColor: theme === ThemeModes.light ? 'transparent' : 'transparent',
+    borderColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
+    colorText:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
+    opacity: 0.5,
+  };
+
+  const btnStylesByStates: ButtonStylesByState = {
+    default: defaultStyles,
+    hover: hoverStyles,
+    active: activeStyles,
+    disabled: disabledStyles,
+  };
+
+  return btnStylesByStates;
+};
