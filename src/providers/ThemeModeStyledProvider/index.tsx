@@ -1,11 +1,10 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { LIGHT_THEME_ATOLL } from '../../styles/themes/lightThemes';
 import {
   ThemeModeStyledContext,
   ThemeModeStyledContextData,
 } from './ThemeModeStyledContext';
-import { ThemeModes } from '../../types/personalization/typesThemes';
-import { LIGHT_THEME_ATOLL } from '../../styles/themes/lightThemes';
 
 type ThemeModeStyledProviderProps = {
   children: React.ReactNode;
