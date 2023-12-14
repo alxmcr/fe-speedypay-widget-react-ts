@@ -27,6 +27,7 @@ export default function InputList() {
       <AppInputWithMask
         mask="9999 9999 9999 9999"
         placeholder="Enter your card number"
+        fullWidth={true}
       />
       <AppInputWithMask mask="999" placeholder="CVC" />
       <AppInputWithMask mask="99/99" placeholder="MM/DD" />
