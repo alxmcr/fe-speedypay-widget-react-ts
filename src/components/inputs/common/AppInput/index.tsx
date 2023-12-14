@@ -7,6 +7,7 @@ type AppInputProps = {
   placeholder: string;
   required?: boolean;
   disabled?: boolean;
+  fullWidth?: boolean;
   maxLength?: number;
 };
 
@@ -16,6 +17,7 @@ export default function AppInput({
   placeholder = 'Enter something',
   required = false,
   disabled = false,
+  fullWidth = false,
   maxLength,
 }: AppInputProps) {
   if (type === 'email') {
@@ -25,6 +27,7 @@ export default function AppInput({
         placeholder={placeholder}
         required={required}
         disabled={disabled}
+        fullWidth={fullWidth}
         maxLength={maxLength}
       />
     );
@@ -36,6 +39,7 @@ export default function AppInput({
       placeholder={placeholder}
       required={required}
       disabled={disabled}
+      fullWidth={fullWidth}
       maxLength={maxLength}
     />
   );

@@ -7,6 +7,7 @@ type AppInputNumberProps = {
   required?: boolean;
   disabled?: boolean;
   maxLength?: number;
+  fullWidth?: boolean;
 };
 
 export default function AppInputText({
@@ -14,6 +15,7 @@ export default function AppInputText({
   placeholder = 'Enter a text',
   required = false,
   disabled = false,
+  fullWidth = false,
   maxLength,
 }: AppInputNumberProps) {
   const [valueInput, setValueInput] = React.useState('');
@@ -28,6 +30,7 @@ export default function AppInputText({
       id={id}
       placeholder={placeholder}
       disabled={disabled}
+      $fullWidth={fullWidth}
       required={required}
       maxLength={maxLength}
       onChange={handlerInput}
@@ -39,6 +42,7 @@ export default function AppInputText({
       id={id}
       placeholder={placeholder}
       disabled={disabled}
+      $fullWidth={fullWidth}
       required={required}
       onChange={handlerInput}
       value={valueInput}

@@ -12,8 +12,18 @@ export default function InputList() {
         gap: '1rem',
       }}
     >
-      <AppInput type="text" id="name" placeholder="Enter your name" />
-      <AppInput type="email" id="email" placeholder="Enter your email" />
+      <AppInput
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        fullWidth={true}
+      />
+      <AppInput
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        fullWidth={true}
+      />
       <AppInputWithMask
         mask="9999 9999 9999 9999"
         placeholder="Enter your card number"

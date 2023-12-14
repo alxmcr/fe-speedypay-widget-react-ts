@@ -6,6 +6,7 @@ type AppInputNumberProps = {
   placeholder: string;
   required?: boolean;
   disabled?: boolean;
+  fullWidth?: boolean;
   width?: string;
   maxLength?: number;
 };
@@ -15,6 +16,7 @@ export default function AppInputEmail({
   placeholder = 'Enter an email',
   required = false,
   disabled = false,
+  fullWidth = false,
   maxLength,
 }: AppInputNumberProps) {
   const [valueInput, setValueInput] = React.useState('');
@@ -29,6 +31,7 @@ export default function AppInputEmail({
       id={id}
       placeholder={placeholder}
       disabled={disabled}
+      $fullWidth={fullWidth}
       required={required}
       maxLength={maxLength}
       onChange={handlerInput}
@@ -40,6 +43,7 @@ export default function AppInputEmail({
       id={id}
       placeholder={placeholder}
       disabled={disabled}
+      $fullWidth={fullWidth}
       required={required}
       onChange={handlerInput}
       value={valueInput}
