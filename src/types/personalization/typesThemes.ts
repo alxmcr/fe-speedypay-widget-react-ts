@@ -1,21 +1,11 @@
-import { ButtonVariants } from './typeVariants';
+import { AppStyles } from './typesAppStyles';
 
 export enum ThemeModes {
   dark = 'dark',
   light = 'light',
 }
 
-export type AppCommonStyles = {
+export type AppTheme = {
   mode: ThemeModes;
-  background: string;
-  borderColor: string;
-  text: string;
-  scrollBarBackground?: string;
-  scrollBarTrackColor?: string;
+  styles: AppStyles;
 };
-
-export type AppStylesByElements = {
-  buttons: ButtonVariants;
-};
-
-export type AppTheme = AppCommonStyles & AppStylesByElements;

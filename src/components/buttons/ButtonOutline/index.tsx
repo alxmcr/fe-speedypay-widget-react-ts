@@ -1,8 +1,8 @@
 import AppIcon from '../../icons/AppIcon';
 import { TextButton } from '../../typography/SupportingStyles';
-import { ButtonBaseSolid } from './ButtonBaseSolid';
+import { ButtonBaseOutline } from './ButtonBaseOutline';
 
-type ButtonSolidProps = {
+type ButtonOutlineProps = {
   onClick: () => void;
   disabled?: boolean;
   fullWidth?: boolean;
@@ -10,21 +10,21 @@ type ButtonSolidProps = {
   leftIconName?: string;
 };
 
-export default function ButtonSolid({
+export default function ButtonOutline({
   btnText = '',
   disabled = false,
   fullWidth = false,
   onClick,
   leftIconName = '',
-}: ButtonSolidProps) {
+}: ButtonOutlineProps) {
   return (
-    <ButtonBaseSolid
+    <ButtonBaseOutline
       disabled={disabled}
       $fullWidth={fullWidth}
       onClick={onClick}
     >
       {leftIconName.length > 0 ? <AppIcon iconName={leftIconName} /> : null}
       {btnText.length > 0 ? <TextButton>{btnText}</TextButton> : null}
-    </ButtonBaseSolid>
+    </ButtonBaseOutline>
   );
 }

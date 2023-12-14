@@ -1,13 +1,13 @@
+import { AppCommonStyles } from '../../types/personalization/typesAppStyles';
 import { ColorScales } from '../../types/personalization/typesColors';
-import { CommonStyles } from '../../types/personalization/typesStyles';
 import { ThemeModes } from '../../types/personalization/typesThemes';
-import { IRON } from '../colors';
+import { IRON } from '../../styles/colors';
 
 export const getCommonStylesByColorScale = (
   theme: ThemeModes,
   colorScales: ColorScales,
-): CommonStyles => {
-  const baseTheme: CommonStyles = {
+): AppCommonStyles => {
+  const baseTheme: AppCommonStyles = {
     background: theme === ThemeModes.light ? IRON[50] : colorScales.scales[950],
     borderColor: theme === ThemeModes.light ? IRON[50] : IRON[50],
     scrollBarBackground:
