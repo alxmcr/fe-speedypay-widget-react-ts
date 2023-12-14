@@ -1,39 +1,35 @@
 import styled from 'styled-components';
 
 export const BaseInputStyled = styled.input`
-  background-color: ${(props) =>
-    props.theme.inputs.inputText.default.background};
-  border: 1px solid
-    ${(props) => props.theme.inputs.inputText.default.borderColor};
-  color: ${(props) => props.theme.inputs.inputText.default.text};
+  background-color: ${(props) => props.theme.styles.inputs.default.background};
+  border: 1px solid ${(props) => props.theme.styles.inputs.default.borderColor};
+  color: ${(props) => props.theme.styles.inputs.default.text};
   border-radius: 0.5rem;
   font-size: 16px;
   padding: 0.75rem 1.5rem;
   height: 41px;
 
   &::placeholder {
-    color: ${(props) => props.theme.inputs.inputText.default.placeholderColor};
+    color: ${(props) => props.theme.styles.inputs.default.placeholderColor};
   }
 
   &:focus {
-    border: 1px solid
-      ${(props) => props.theme.inputs.inputText.focus.borderColor};
+    border: 1px solid ${(props) => props.theme.styles.inputs.focus.borderColor};
 
     box-shadow: 0 0 7px
-      ${(props) => props.theme.inputs.inputText.focus.borderColor};
-    color: ${(props) => props.theme.inputs.inputText.focus.text};
+      ${(props) => props.theme.styles.inputs.focus.borderColor};
+    color: ${(props) => props.theme.styles.inputs.focus.text};
   }
 
   &:disabled {
     background-color: ${(props) =>
-      props.theme.inputs.inputText.disabled.background};
+      props.theme.styles.inputs.disabled.background};
     border: 1px solid
-      ${(props) => props.theme.inputs.inputText.disabled.borderColor};
-    color: ${(props) => props.theme.inputs.inputText.disabled.text};
+      ${(props) => props.theme.styles.inputs.disabled.borderColor};
+    color: ${(props) => props.theme.styles.inputs.disabled.text};
 
     &::placeholder {
-      color: ${(props) =>
-        props.theme.inputs.inputText.disabled.placeholderColor};
+      color: ${(props) => props.theme.styles.inputs.disabled.placeholderColor};
     }
   }
 `;
