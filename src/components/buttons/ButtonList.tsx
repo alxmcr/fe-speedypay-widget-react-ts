@@ -11,7 +11,6 @@ export default function ButtonList() {
   return (
     <div
       style={{
-        color: '#52a6f3',
         alignItems: 'center',
         display: 'flex',
         flexDirection: 'column',
