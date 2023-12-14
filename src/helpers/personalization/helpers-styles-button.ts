@@ -7,20 +7,9 @@ import { ButtonStylesVariants } from '../../types/personalization/typeVariants';
 import { ColorScales } from '../../types/personalization/typesColors';
 import {
   ButtonCommonStylesByState,
-  ButtonGradientStylesByState
+  ButtonGradientStylesByState,
 } from '../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../types/personalization/typesThemes';
-
-export const getBtnStylesByVariant = (
-  theme: ThemeModes,
-  colorScales: ColorScales,
-  variant = 'solid',
-) => {
-  if (variant === 'solid') {
-    return getBtnSolidStyles(theme, colorScales);
-  }
-  return getBtnOutlineStyles(theme, colorScales);
-};
 
 export const getBtnStylesVariants = (
   theme: ThemeModes,
