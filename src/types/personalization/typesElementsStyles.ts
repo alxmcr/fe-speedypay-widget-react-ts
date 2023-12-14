@@ -5,8 +5,15 @@ export type ButtonCommonStyles = {
   opacity?: number;
 };
 
+export type ButtonCommonStylesByState = {
+  default: ButtonCommonStyles;
+  hover: ButtonCommonStyles;
+  active: ButtonCommonStyles;
+  disabled: ButtonCommonStyles;
+};
+
 export type ButtonGradientStyles = {
-  text: string;
+  colorText: string;
   gradientColors: {
     gradientStart: string;
     gradientEnd: string;
@@ -14,11 +21,11 @@ export type ButtonGradientStyles = {
   opacity?: number;
 };
 
-export type ButtonStylesByState = {
-  default: ButtonCommonStyles;
-  hover: ButtonCommonStyles;
-  active: ButtonCommonStyles;
-  disabled: ButtonCommonStyles;
+export type ButtonGradientStylesByState = {
+  default: ButtonGradientStyles;
+  hover: ButtonGradientStyles;
+  active: ButtonGradientStyles;
+  disabled: ButtonGradientStyles;
 };
 
 export type ToggleStyles = {

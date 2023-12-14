@@ -2,7 +2,7 @@ import { IRON_COLOR_SCALES } from '../../../styles/colors-scales';
 import { ColorScales } from '../../../types/personalization/typesColors';
 import {
   ButtonCommonStyles,
-  ButtonStylesByState,
+  ButtonCommonStylesByState,
 } from '../../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../../types/personalization/typesThemes';
 
@@ -71,7 +71,7 @@ export const getBtnSolidStyles = (
     opacity: 0.5,
   };
 
-  const btnStylesByStates: ButtonStylesByState = {
+  const btnStylesByStates: ButtonCommonStylesByState = {
     default: defaultStyles,
     hover: hoverStyles,
     active: activeStyles,

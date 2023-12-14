@@ -1,6 +1,6 @@
-import { ButtonStylesByState } from './typesElementsStyles';
+import { ButtonCommonStylesByState } from './typesElementsStyles';
 
 export type ButtonStylesVariants = {
-  solid: ButtonStylesByState;
-  outline: ButtonStylesByState;
+  solid: ButtonCommonStylesByState;
+  outline: ButtonCommonStylesByState;
 };

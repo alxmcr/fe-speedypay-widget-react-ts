@@ -5,7 +5,7 @@ import {
 import { CodeForBtnVariants } from '../../types/personalization/enumsPersonalization';
 import { ButtonStylesVariants } from '../../types/personalization/typeVariants';
 import { ColorScales } from '../../types/personalization/typesColors';
-import { ButtonStylesByState } from '../../types/personalization/typesElementsStyles';
+import { ButtonCommonStylesByState } from '../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 
 export const getBtnStylesByVariant = (
@@ -24,12 +24,12 @@ export const getBtnStylesVariants = (
   colorScales: ColorScales,
 ) => {
   // Button styles
-  const stylesBtnSolid: ButtonStylesByState = getBtnStylesByVariant(
+  const stylesBtnSolid: ButtonCommonStylesByState = getBtnStylesByVariant(
     theme,
     colorScales,
     CodeForBtnVariants.solid,
   );
-  const stylesBtnOutline: ButtonStylesByState = getBtnStylesByVariant(
+  const stylesBtnOutline: ButtonCommonStylesByState = getBtnStylesByVariant(
     theme,
     colorScales,
     CodeForBtnVariants.outline,
