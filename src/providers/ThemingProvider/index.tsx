@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { LIGHT_THEME_ATOLL } from '../../styles/themes/lightThemes';
 import { ThemingContext, ThemingContextData } from './ThemingContext';
-import { ToogleModeThemeContext } from '../ToogleModeThemeProvider/ToogleModeThemeContext';
+import { ToogleModeThemeContext } from '../ToggleModeThemeProvider/ToggleModeThemeContext';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 
 type ThemingProviderProps = {
