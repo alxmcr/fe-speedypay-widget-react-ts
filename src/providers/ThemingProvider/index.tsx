@@ -17,8 +17,10 @@ export default function ThemingProvider({ children }: ThemingProviderProps) {
   };
 
   return (
-    <ThemingContext.Provider value={value}>
-      <ThemeProvider theme={themePersonalized}>{children}</ThemeProvider>
-    </ThemingContext.Provider>
+    <ThemeProvider theme={themePersonalized}>
+      <ThemingContext.Provider value={value}>
+        {children}
+      </ThemingContext.Provider>
+    </ThemeProvider>
   );
 }
