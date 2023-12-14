@@ -1,4 +1,4 @@
-import { getBtnStylesByVariant } from '../../components/buttons/AppButton/AppBaseButton.styles';
+import { getBtnStylesByVariant } from '../../components/buttons/AppButton/xAppBaseButton.styles';
 import { CodeForBtnVariants } from '../../types/personalization/enumsPersonalization';
 import { ColorScales } from '../../types/personalization/typesColors';
 import { ButtonStylesByState } from '../../types/personalization/typesStyles';

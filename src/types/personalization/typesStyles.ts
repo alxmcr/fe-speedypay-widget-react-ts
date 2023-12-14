@@ -1,3 +1,11 @@
+export type CommonStyles = {
+  background: string;
+  borderColor: string;
+  text: string;
+  scrollBarBackground?: string;
+  scrollBarTrackColor?: string;
+};
+
 export type ButtonStyles = {
   backgroundColor: string;
   colorText: string;
@@ -12,10 +20,12 @@ export type ButtonStylesByState = {
   disabled: ButtonStyles;
 };
 
-export type CommonStyles = {
+export type ToggleStyles = {
   background: string;
   borderColor: string;
-  text: string;
-  scrollBarBackground?: string;
-  scrollBarTrackColor?: string;
+  ballBackground: string;
+};
+
+export type ToggleStylesByState = {
+  default: ToggleStyles;
 };
