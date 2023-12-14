@@ -17,17 +17,8 @@ export default function AppButton({
   onClick,
   leftIconName = '',
 }: AppButtonProps) {
-  const className = fullWidth
-    ? 'button_solid'
-    : 'button_solid button_solid--fullwidth';
-
   return (
-    <AppBaseButton
-      className={className}
-      disabled={disabled}
-      $fullWidth={fullWidth}
-      onClick={onClick}
-    >
+    <AppBaseButton disabled={disabled} $fullWidth={fullWidth} onClick={onClick}>
       {leftIconName.length > 0 ? <AppIcon iconName={leftIconName} /> : null}
       {btnText.length > 0 ? <TextButton>{btnText}</TextButton> : null}
     </AppBaseButton>
