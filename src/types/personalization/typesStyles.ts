@@ -12,6 +12,8 @@ export type AppStylesByElements = {
   buttons: ButtonStylesVariants;
 };
 
+export type AppStyles = AppCommonStyles & AppStylesByElements;
+
 export type ButtonStyles = {
   backgroundColor: string;
   colorText: string;

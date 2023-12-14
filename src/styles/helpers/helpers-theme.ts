@@ -1,6 +1,6 @@
 import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
 import { ColorScales } from '../../types/personalization/typesColors';
-import { AppStyles, ThemeModes } from '../../types/personalization/typesThemes';
+import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
 import { getColorScalesByCode } from './helpers-color-scales';
 import { getCommonStylesByColorScale } from './helpers-styles';
 import { getBtnVariants } from './helpers-styles-button';
@@ -8,15 +8,17 @@ import { getBtnVariants } from './helpers-styles-button';
 export const getThemeByColorScale = (
   theme: ThemeModes,
   codeColorScale: CodesForColorScales,
-): AppStyles => {
+): AppTheme => {
   const colorScales: ColorScales = getColorScalesByCode(codeColorScale);
   const commonStyles = getCommonStylesByColorScale(theme, colorScales);
 
   // Theme
-  const themeByColor: AppStyles = {
+  const themeByColor: AppTheme = {
     mode: theme,
-    ...commonStyles,
-    buttons: getBtnVariants(theme, colorScales),
+    styles: {
+      ...commonStyles,
+      buttons: getBtnVariants(theme, colorScales),
+    },
   };
 
   return themeByColor;
