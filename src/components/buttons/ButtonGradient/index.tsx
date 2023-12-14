@@ -1,47 +1,30 @@
-import styled from 'styled-components';
-import { ButtonBase } from '../ButtonBase';
+import AppIcon from '../../icons/AppIcon';
+import { TextButton } from '../../typography/SupportingStyles';
+import { ButtonBaseGradient } from './ButtonBaseGradient';
 
-export const ButtonGradient = styled(ButtonBase)`
-  background: linear-gradient(
-    135deg,
-    ${(props) =>
-      props.theme.buttons.gradient.default.gradientColors.gradientStart},
-    ${(props) =>
-      props.theme.buttons.gradient.default.gradientColors.gradientEnd}
+type ButtonGradientProps = {
+  onClick: () => void;
+  disabled?: boolean;
+  fullWidth?: boolean;
+  btnText?: string;
+  leftIconName?: string;
+};
+
+export default function ButtonGradient({
+  btnText = '',
+  disabled = false,
+  fullWidth = false,
+  onClick,
+  leftIconName = '',
+}: ButtonGradientProps) {
+  return (
+    <ButtonBaseGradient
+      disabled={disabled}
+      $fullWidth={fullWidth}
+      onClick={onClick}
+    >
+      {leftIconName.length > 0 ? <AppIcon iconName={leftIconName} /> : null}
+      {btnText.length > 0 ? <TextButton>{btnText}</TextButton> : null}
+    </ButtonBaseGradient>
   );
-  color: ${(props) => props.theme.buttons.gradient.default.text};
-
-  &:hover {
-    background: linear-gradient(
-      135deg,
-      ${(props) =>
-        props.theme.buttons.gradient.hover.gradientColors.gradientStart},
-      ${(props) =>
-        props.theme.buttons.gradient.hover.gradientColors.gradientEnd}
-    );
-    color: ${(props) => props.theme.buttons.gradient.hover.text};
-  }
-
-  &:active {
-    background: linear-gradient(
-      135deg,
-      ${(props) =>
-        props.theme.buttons.gradient.active.gradientColors.gradientStart},
-      ${(props) =>
-        props.theme.buttons.gradient.active.gradientColors.gradientEnd}
-    );
-    color: ${(props) => props.theme.buttons.gradient.active.text};
-  }
-
-  &:disabled {
-    background: linear-gradient(
-      135deg,
-      ${(props) =>
-        props.theme.buttons.gradient.disabled.gradientColors.gradientStart},
-      ${(props) =>
-        props.theme.buttons.gradient.disabled.gradientColors.gradientEnd}
-    );
-    color: ${(props) => props.theme.buttons.gradient.disabled.text};
-    opacity: ${(props) => props.theme.buttons.gradient.disabled.opacity};
-  }
-`;
+}

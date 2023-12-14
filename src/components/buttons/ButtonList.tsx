@@ -1,4 +1,5 @@
 import { IconNames } from '../../types/enumsApp';
+import ButtonGradient from './ButtonGradient';
 import ButtonOutline from './ButtonOutline';
 import ButtonSolid from './ButtonSolid';
 
@@ -80,6 +81,38 @@ export default function ButtonList() {
         onClick={onClick}
       />
       <ButtonOutline leftIconName={IconNames.gift} onClick={onClick} />
+      <hr />
+      <ButtonGradient btnText="Pay for $1234.56" onClick={onClick} />
+
+      <ButtonGradient
+        leftIconName={IconNames.copy}
+        btnText="Copy number"
+        onClick={onClick}
+      />
+      <ButtonGradient
+        leftIconName={IconNames.copy}
+        btnText="Copy number"
+        onClick={onClick}
+        disabled
+      />
+      <ButtonGradient leftIconName={IconNames.copy} onClick={onClick} />
+      <ButtonGradient
+        leftIconName={IconNames.copy}
+        btnText="Pay for $1234.56"
+        onClick={onClick}
+        fullWidth={true}
+      />
+      <ButtonGradient
+        leftIconName={IconNames.copy}
+        btnText="Copy number"
+        onClick={onClick}
+      />
+      <ButtonGradient
+        leftIconName={IconNames.coin}
+        btnText="Coin"
+        onClick={onClick}
+      />
+      <ButtonGradient leftIconName={IconNames.gift} onClick={onClick} />
     </div>
   );
 }
