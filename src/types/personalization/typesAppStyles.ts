@@ -2,9 +2,9 @@ import { ButtonStylesVariants } from './typeVariants';
 import { ToggleStylesByState } from './typesElementsStyles';
 
 export type AppCommonStyles = {
-  background: string;
+  backgroundColor: string;
   borderColor: string;
-  text: string;
+  colorText: string;
   scrollBarBackground?: string;
   scrollBarTrackColor?: string;
 };

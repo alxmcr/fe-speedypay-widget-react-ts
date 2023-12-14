@@ -8,7 +8,8 @@ export const getCommonStylesByColorScale = (
   colorScales: ColorScales,
 ): AppCommonStyles => {
   const baseTheme: AppCommonStyles = {
-    background: theme === ThemeModes.light ? IRON[50] : colorScales.scales[950],
+    backgroundColor:
+      theme === ThemeModes.light ? IRON[50] : colorScales.scales[950],
     borderColor: theme === ThemeModes.light ? IRON[50] : IRON[50],
     scrollBarBackground:
       theme === ThemeModes.light
@@ -18,7 +19,7 @@ export const getCommonStylesByColorScale = (
       theme === ThemeModes.light
         ? colorScales.scales[950]
         : colorScales.scales[300],
-    text:
+    colorText:
       theme === ThemeModes.light
         ? colorScales.scales[800]
         : colorScales.scales[300],
