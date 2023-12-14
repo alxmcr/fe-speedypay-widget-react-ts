@@ -1,35 +1,30 @@
-import styled from 'styled-components';
-import { ButtonBase } from '../ButtonBase';
+import AppIcon from '../../icons/AppIcon';
+import { TextButton } from '../../typography/SupportingStyles';
+import { ButtonBaseOutline } from './ButtonBaseOutline';
 
-export const ButtonOutline = styled(ButtonBase)`
-  background-color: ${(props) =>
-    props.theme.buttons.outline.default.background};
-  border: 1px solid
-    ${(props) => props.theme.buttons.outline.default.borderColor};
-  color: ${(props) => props.theme.buttons.outline.default.text};
+type ButtonOutlineProps = {
+  onClick: () => void;
+  disabled?: boolean;
+  fullWidth?: boolean;
+  btnText?: string;
+  leftIconName?: string;
+};
 
-  &:hover {
-    background-color: ${(props) =>
-      props.theme.buttons.outline.hover.background};
-    border: 1px solid
-      ${(props) => props.theme.buttons.outline.hover.borderColor};
-    color: ${(props) => props.theme.buttons.outline.hover.text};
-  }
-
-  &:active {
-    background-color: ${(props) =>
-      props.theme.buttons.outline.active.background};
-    border: 1px solid
-      ${(props) => props.theme.buttons.outline.active.borderColor};
-    color: ${(props) => props.theme.buttons.outline.active.text};
-  }
-
-  &:disabled {
-    background-color: ${(props) =>
-      props.theme.buttons.outline.disabled.background};
-    border: 1px solid
-      ${(props) => props.theme.buttons.outline.disabled.borderColor};
-    color: ${(props) => props.theme.buttons.outline.disabled.text};
-    opacity: ${(props) => props.theme.buttons.outline.disabled.opacity};
-  }
-`;
+export default function ButtonOutline({
+  btnText = '',
+  disabled = false,
+  fullWidth = false,
+  onClick,
+  leftIconName = '',
+}: ButtonOutlineProps) {
+  return (
+    <ButtonBaseOutline
+      disabled={disabled}
+      $fullWidth={fullWidth}
+      onClick={onClick}
+    >
+      {leftIconName.length > 0 ? <AppIcon iconName={leftIconName} /> : null}
+      {btnText.length > 0 ? <TextButton>{btnText}</TextButton> : null}
+    </ButtonBaseOutline>
+  );
+}

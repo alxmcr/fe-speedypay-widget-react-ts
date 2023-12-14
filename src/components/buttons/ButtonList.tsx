@@ -1,4 +1,5 @@
 import { IconNames } from '../../types/enumsApp';
+import ButtonOutline from './ButtonOutline';
 import ButtonSolid from './ButtonSolid';
 
 export default function ButtonList() {
@@ -47,6 +48,38 @@ export default function ButtonList() {
         onClick={onClick}
       />
       <ButtonSolid leftIconName={IconNames.gift} onClick={onClick} />
+      <hr />
+      <ButtonOutline btnText="Pay for $1234.56" onClick={onClick} />
+
+      <ButtonOutline
+        leftIconName={IconNames.copy}
+        btnText="Copy number"
+        onClick={onClick}
+      />
+      <ButtonOutline
+        leftIconName={IconNames.copy}
+        btnText="Copy number"
+        onClick={onClick}
+        disabled
+      />
+      <ButtonOutline leftIconName={IconNames.copy} onClick={onClick} />
+      <ButtonOutline
+        leftIconName={IconNames.copy}
+        btnText="Pay for $1234.56"
+        onClick={onClick}
+        fullWidth={true}
+      />
+      <ButtonOutline
+        leftIconName={IconNames.copy}
+        btnText="Copy number"
+        onClick={onClick}
+      />
+      <ButtonOutline
+        leftIconName={IconNames.coin}
+        btnText="Coin"
+        onClick={onClick}
+      />
+      <ButtonOutline leftIconName={IconNames.gift} onClick={onClick} />
     </div>
   );
 }
