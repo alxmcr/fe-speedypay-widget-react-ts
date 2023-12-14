@@ -1,6 +1,6 @@
 import AppIcon from '../../icons/AppIcon';
 import { TextButton } from '../../typography/SupportingStyles';
-import { ButtonBaseGradient } from './ButtonBaseGradient';
+import { ButtonGradientStyled } from './ButtonGradient.styled';
 
 type ButtonGradientProps = {
   onClick: () => void;
@@ -18,13 +18,13 @@ export default function ButtonGradient({
   leftIconName = '',
 }: ButtonGradientProps) {
   return (
-    <ButtonBaseGradient
+    <ButtonGradientStyled
       disabled={disabled}
       $fullWidth={fullWidth}
       onClick={onClick}
     >
       {leftIconName.length > 0 ? <AppIcon iconName={leftIconName} /> : null}
       {btnText.length > 0 ? <TextButton>{btnText}</TextButton> : null}
-    </ButtonBaseGradient>
+    </ButtonGradientStyled>
   );
 }

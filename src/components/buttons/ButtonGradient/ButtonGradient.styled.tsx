@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-type ButtonGradientProps = {
+type ButtonGradientStyledProps = {
   $fullWidth?: boolean;
 };
 
-export const ButtonBaseGradient = styled.button<ButtonGradientProps>`
+export const ButtonGradientStyled = styled.button<ButtonGradientStyledProps>`
   background: linear-gradient(
     135deg,
     ${(props) =>

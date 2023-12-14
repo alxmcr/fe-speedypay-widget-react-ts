@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
-type ButtonBaseOutlineStyledProps = {
+type ButtonOutlineStyledProps = {
   $fullWidth?: boolean;
 };
 
-export const ButtonBaseOutlineStyled = styled.button<ButtonBaseOutlineStyledProps>`
+export const ButtonOutlineStyled = styled.button<ButtonOutlineStyledProps>`
   background-color: transparent;
   color: ${(props) => props.theme.styles.buttons.outline.default.colorText};
 
-  border: 1px solid ${(props) => props.theme.styles.buttons.outline.default.borderColor};;
+  border: 1px solid
+    ${(props) => props.theme.styles.buttons.outline.default.borderColor};
   border-radius: 0.5rem;
   padding: 0.5rem 0.5625rem;
 

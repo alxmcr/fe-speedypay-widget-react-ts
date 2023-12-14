@@ -1,6 +1,6 @@
 import AppIcon from '../../icons/AppIcon';
 import { TextButton } from '../../typography/SupportingStyles';
-import { ButtonBaseSolidStyled } from './ButtonBaseSolid.styled';
+import { ButtonSolidStyled } from './ButtonBaseSolid.styled';
 
 type ButtonSolidProps = {
   onClick: () => void;
@@ -18,13 +18,13 @@ export default function ButtonSolid({
   leftIconName = '',
 }: ButtonSolidProps) {
   return (
-    <ButtonBaseSolidStyled
+    <ButtonSolidStyled
       disabled={disabled}
       $fullWidth={fullWidth}
       onClick={onClick}
     >
       {leftIconName.length > 0 ? <AppIcon iconName={leftIconName} /> : null}
       {btnText.length > 0 ? <TextButton>{btnText}</TextButton> : null}
-    </ButtonBaseSolidStyled>
+    </ButtonSolidStyled>
   );
 }

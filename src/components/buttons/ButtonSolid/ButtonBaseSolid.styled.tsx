@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-type ButtonBaseSolidStyledProps = {
+type ButtonSolidStyledProps = {
   $fullWidth?: boolean;
 };
 
-export const ButtonBaseSolidStyled = styled.button<ButtonBaseSolidStyledProps>`
+export const ButtonSolidStyled = styled.button<ButtonSolidStyledProps>`
   background-color: ${(props) =>
     props.theme.styles.buttons.solid.default.backgroundColor};
   color: ${(props) => props.theme.styles.buttons.solid.default.colorText};

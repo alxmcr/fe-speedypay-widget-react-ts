@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ButtonOutline } from './ButtonBaseOutline.styled';
+import { ButtonOutline } from './ButtonOutline.styled';
 import IconBankTransfer from '../../../_icons/IconBankTransfer';
 import IconCopy from '../../../_icons/IconCopy';
 
