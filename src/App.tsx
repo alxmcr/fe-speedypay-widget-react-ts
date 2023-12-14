@@ -6,7 +6,7 @@ function App() {
     <div
       style={{
         backgroundColor: '#000',
-        height: '100vh',
+        minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
         gap: '1rem',
