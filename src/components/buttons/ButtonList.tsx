@@ -1,9 +1,5 @@
 import { IconNames } from '../../types/enumsApp';
-import AppButton from './AppButton';
-import { AppBaseButton } from './AppButton/AppBaseButton.styled';
-import ButtonSolid from './ButtonSolid/ButtonBaseSolid';
-import ButtonSolidIcon from './ButtonSolidIcon';
-import ButtonSolidText from './ButtonSolidText';
+import ButtonSolid from './ButtonSolid';
 
 export default function ButtonList() {
   const onClick = () => {
@@ -20,37 +16,37 @@ export default function ButtonList() {
         gap: '1rem',
       }}
     >
-      <ButtonSolidText btnText="Pay for $1234.56" onClick={onClick} />
+      <ButtonSolid btnText="Pay for $1234.56" onClick={onClick} />
+
       <ButtonSolid
-        btnIconName={IconNames.copy}
+        leftIconName={IconNames.copy}
         btnText="Copy number"
         onClick={onClick}
       />
       <ButtonSolid
-        btnIconName={IconNames.copy}
+        leftIconName={IconNames.copy}
         btnText="Copy number"
         onClick={onClick}
         disabled
       />
-      <ButtonSolidIcon btnIconName={IconNames.copy} onClick={onClick} />
-      <AppBaseButton>Hola</AppBaseButton>
-      <AppButton
+      <ButtonSolid leftIconName={IconNames.copy} onClick={onClick} />
+      <ButtonSolid
         leftIconName={IconNames.copy}
         btnText="Pay for $1234.56"
         onClick={onClick}
         fullWidth={true}
       />
-      <AppButton
+      <ButtonSolid
         leftIconName={IconNames.copy}
         btnText="Copy number"
         onClick={onClick}
       />
-      <AppButton
+      <ButtonSolid
         leftIconName={IconNames.coin}
         btnText="Coin"
         onClick={onClick}
       />
-      <AppButton leftIconName={IconNames.gift} onClick={onClick} />
+      <ButtonSolid leftIconName={IconNames.gift} onClick={onClick} />
     </div>
   );
 }

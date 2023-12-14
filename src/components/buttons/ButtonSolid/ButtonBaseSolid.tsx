@@ -1,10 +1,26 @@
 import styled from 'styled-components';
-import { ButtonBase } from '../ButtonBase';
 
-export const ButtonBaseSolid = styled(ButtonBase)`
+type ButtonBaseSolidProps = {
+  $fullWidth?: boolean;
+};
+
+export const ButtonBaseSolid = styled.button<ButtonBaseSolidProps>`
   background-color: ${(props) => props.theme.buttons.solid.default.background};
-  border: 1px solid ${(props) => props.theme.buttons.solid.default.borderColor};
   color: ${(props) => props.theme.buttons.solid.default.text};
+
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5625rem;
+
+  cursor: pointer;
+
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+
+  height: 2.5625rem;
+  width: ${(props) => (props.$fullWidth ? '100%' : 'auto')};
 
   &:hover {
     background-color: ${(props) => props.theme.buttons.solid.hover.background};
