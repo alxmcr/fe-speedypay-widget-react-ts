@@ -6,7 +6,6 @@ type AppInputNumberProps = {
   placeholder: string;
   required?: boolean;
   disabled?: boolean;
-  width?: string;
   maxLength?: number;
 };
 
