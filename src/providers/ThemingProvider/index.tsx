@@ -1,29 +1,24 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { LIGHT_THEME_ATOLL } from '../../styles/themes/lightThemes';
-import {
-  ThemeModeStyledContext,
-  ThemeModeStyledContextData,
-} from './ThemeModeStyledContext';
+import { ThemingContext, ThemingContextData } from './ThemingContext';
 
-type ThemeModeStyledProviderProps = {
+type ThemingProviderProps = {
   children: React.ReactNode;
 };
 
-export default function ThemeModeStyledProvider({
-  children,
-}: ThemeModeStyledProviderProps) {
+export default function ThemingProvider({ children }: ThemingProviderProps) {
   const [themePersonalized, setThemePersonalized] =
     React.useState(LIGHT_THEME_ATOLL);
 
-  const value: ThemeModeStyledContextData = {
+  const value: ThemingContextData = {
     themePersonalized,
     setThemePersonalized,
   };
 
   return (
-    <ThemeModeStyledContext.Provider value={value}>
+    <ThemingContext.Provider value={value}>
       <ThemeProvider theme={themePersonalized}>{children}</ThemeProvider>
-    </ThemeModeStyledContext.Provider>
+    </ThemingContext.Provider>
   );
 }
