@@ -5,8 +5,8 @@ type ButtonBaseSolidProps = {
 };
 
 export const ButtonBaseSolid = styled.button<ButtonBaseSolidProps>`
-  background-color: ${(props) => props.theme.buttons.solid.default.background};
-  color: ${(props) => props.theme.buttons.solid.default.text};
+  background-color: ${(props) => props.theme.styles.buttons.solid.default.backgroundColor};
+  color: ${(props) => props.theme.styles.buttons.solid.default.colorText};
 
   border: none;
   border-radius: 0.5rem;
@@ -23,23 +23,23 @@ export const ButtonBaseSolid = styled.button<ButtonBaseSolidProps>`
   width: ${(props) => (props.$fullWidth ? '100%' : 'auto')};
 
   &:hover {
-    background-color: ${(props) => props.theme.buttons.solid.hover.background};
-    border: 1px solid ${(props) => props.theme.buttons.solid.hover.borderColor};
-    color: ${(props) => props.theme.buttons.solid.hover.text};
+    background-color: ${(props) => props.theme.styles.buttons.solid.hover.backgroundColor};
+    border: 1px solid ${(props) => props.theme.styles.buttons.solid.hover.borderColor};
+    color: ${(props) => props.theme.styles.buttons.solid.hover.colorText};
   }
 
   &:active {
-    background-color: ${(props) => props.theme.buttons.solid.active.background};
-    border: 1px solid ${(props) => props.theme.buttons.solid.active.borderColor};
-    color: ${(props) => props.theme.buttons.solid.active.text};
+    background-color: ${(props) => props.theme.styles.buttons.solid.active.backgroundColor};
+    border: 1px solid ${(props) => props.theme.styles.buttons.solid.active.borderColor};
+    color: ${(props) => props.theme.styles.buttons.solid.active.colorText};
   }
 
   &:disabled {
     background-color: ${(props) =>
-      props.theme.buttons.solid.disabled.background};
+      props.theme.styles.buttons.solid.disabled.backgroundColor};
     border: 1px solid
-      ${(props) => props.theme.buttons.solid.disabled.borderColor};
-    color: ${(props) => props.theme.buttons.solid.disabled.text};
-    opacity: ${(props) => props.theme.buttons.solid.disabled.opacity};
+      ${(props) => props.theme.styles.buttons.solid.disabled.borderColor};
+    color: ${(props) => props.theme.styles.buttons.solid.disabled.colorText};
+    opacity: ${(props) => props.theme.styles.buttons.solid.disabled.opacity};
   }
 `;
