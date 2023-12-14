@@ -1,10 +1,11 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { getThemeByColorScale } from '../../styles/helpers/helpers-theme';
 import { LIGHT_THEME_ATOLL } from '../../styles/themes/lightThemes';
-import { ThemingContext, ThemingContextData } from './ThemingContext';
-import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
-import { ToggleModeThemeContext } from '../ToggleModeThemeProvider/ToggleModeThemeContext';
+import { AppTheme } from '../../types/personalization/typesThemes';
 import { ToggleCodeColorScalesContext } from '../ToggleCodeColorScalesProvider/ToggleCodeColorScalesContext';
+import { ToggleModeThemeContext } from '../ToggleModeThemeProvider/ToggleModeThemeContext';
+import { ThemingContext, ThemingContextData } from './ThemingContext';
 
 type ThemingProviderProps = {
   children: React.ReactNode;
@@ -23,9 +24,8 @@ export default function ThemingProvider({ children }: ThemingProviderProps) {
   };
 
   React.useEffect(() => {
-    if (themeMode === ThemeModes.light) {
-    } else if (themeMode === ThemeModes.dark) {
-    }
+    const theme = getThemeByColorScale(themeMode, codeColorScales);
+    setThemePersonalized(theme);
   }, [themeMode]);
 
   return (
