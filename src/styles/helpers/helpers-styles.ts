@@ -1,5 +1,5 @@
+import { AppCommonStyles } from '../../types/personalization/typesAppStyles';
 import { ColorScales } from '../../types/personalization/typesColors';
-import { AppCommonStyles } from '../../types/personalization/typesStyles';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 import { IRON } from '../colors';
 

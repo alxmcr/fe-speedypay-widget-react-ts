@@ -1,6 +1,6 @@
 import { ButtonStylesByState } from './typesStyles';
 
-export type ButtonVariants = {
+export type ButtonStylesVariants = {
   solid: ButtonStylesByState;
   outline: ButtonStylesByState;
 };
