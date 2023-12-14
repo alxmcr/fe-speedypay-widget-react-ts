@@ -1,16 +1,16 @@
 import React from 'react';
 import { getThemeByColorScale } from '../../styles/helpers/helpers-theme';
 import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
-import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
+import { AppThemeStyles, ThemeModes } from '../../types/personalization/typesThemes';
 
-export const LIGHT_THEME_ATOLL: AppTheme = getThemeByColorScale(
+export const LIGHT_THEME_ATOLL: AppThemeStyles = getThemeByColorScale(
   ThemeModes.light,
   CodesForColorScales.atoll,
 );
 
 export type ThemingContextData = {
-  themePersonalized: AppTheme;
-  setThemePersonalized: React.Dispatch<React.SetStateAction<AppTheme>>;
+  themePersonalized: AppThemeStyles;
+  setThemePersonalized: React.Dispatch<React.SetStateAction<AppThemeStyles>>;
 };
 
 const initialThemePersonalized: ThemingContextData = {

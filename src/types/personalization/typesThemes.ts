@@ -5,4 +5,4 @@ export enum ThemeModes {
   light = 'light',
 }
 
-export type AppTheme = AppCommonStyles & AppStylesByElements;
+export type AppThemeStyles = AppCommonStyles & AppStylesByElements;
