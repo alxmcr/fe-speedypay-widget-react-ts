@@ -38,7 +38,7 @@ export default function ButtonList() {
         leftIconName={IconNames.copy}
         btnText="Pay for $1234.56"
         onClick={onClick}
-        fullWidth
+        fullWidth={true}
       />
       <AppButton
         leftIconName={IconNames.copy}

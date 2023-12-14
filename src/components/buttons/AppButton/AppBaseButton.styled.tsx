@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 type AppBaseButtonProps = {
-  fullWidth?: boolean;
+  $fullWidth?: boolean;
 };
 
 const AppBaseButton = styled.button<AppBaseButtonProps>`
@@ -17,7 +17,7 @@ const AppBaseButton = styled.button<AppBaseButtonProps>`
   justify-content: center;
 
   height: 2.5625rem;
-  width: ${(props) => (props.fullWidth ? '100%' : 'auto')};
+  width: ${(props) => (props.$fullWidth ? '100%' : 'auto')};
 
   background-color: #555;
   color: #888;

@@ -25,7 +25,7 @@ export default function AppButton({
     <AppBaseButton
       className={className}
       disabled={disabled}
-      fullWidth={fullWidth}
+      $fullWidth={fullWidth}
       onClick={onClick}
     >
       {leftIconName.length > 0 ? <AppIcon iconName={leftIconName} /> : null}
