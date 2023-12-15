@@ -18,7 +18,7 @@ export default function HomePage() {
       }}
     >
       <ThemeModeToggler />
-      <SelectsList />
+      {/* <SelectsList /> */}
       <FormFieldList />
       <PillList />
       <AppIconList />

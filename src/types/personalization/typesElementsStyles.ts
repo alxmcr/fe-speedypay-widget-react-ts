@@ -60,3 +60,16 @@ export type PillStyles = {
 export type PillStylesByState = {
   default: PillStyles;
 };
+
+export type SelectStyles = {
+  backgroundColor: string;
+  colorText: string;
+  borderColor: string;
+  placeholderColor?: string;
+};
+
+export type SelectStylesByState = {
+  default: SelectStyles;
+  focus: SelectStyles;
+  disabled: SelectStyles;
+};
