@@ -2,8 +2,9 @@ import { ButtonStylesVariants } from './typeVariants';
 import {
   InputStylesByState,
   PillStylesByState,
+  SelectStylesByState,
   ToggleStylesByState,
-} from './typesElementsStyles';
+} from './typesStylesElements';
 
 export type AppCommonStyles = {
   backgroundColor: string;
@@ -18,6 +19,7 @@ export type AppStylesByElements = {
   togglers: ToggleStylesByState;
   inputs: InputStylesByState;
   pills: PillStylesByState;
+  selects: SelectStylesByState;
 };
 
 export type AppStyles = AppCommonStyles & AppStylesByElements;

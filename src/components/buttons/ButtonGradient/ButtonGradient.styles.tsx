@@ -3,7 +3,7 @@ import { ColorScales } from '../../../types/personalization/typesColors';
 import {
   ButtonGradientStyles,
   ButtonGradientStylesByState,
-} from '../../../types/personalization/typesElementsStyles';
+} from '../../../types/personalization/typesStylesElements';
 import { ThemeModes } from '../../../types/personalization/typesThemes';
 
 export const getBtnGradientStyles = (

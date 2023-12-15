@@ -1,4 +1,4 @@
-import { AppStyles } from './typesAppStyles';
+import { AppStyles } from './typesStylesTheme';
 
 export enum ThemeModes {
   dark = 'dark',
