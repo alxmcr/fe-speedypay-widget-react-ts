@@ -12,7 +12,9 @@ export default function PillPaymentStatus({
 }: PillPaymentStatusProps) {
   return (
     <PillBaseStyled>
-      <AppIcon iconName={IconNames.pending} />
+      <AppIcon
+        iconName={status === 'pending' ? IconNames.pending : IconNames.check}
+      />
       <BodyTextOne>
         {status === 'pending' ? 'Need to pay' : 'Success'}
       </BodyTextOne>
