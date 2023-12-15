@@ -1,4 +1,5 @@
 import ButtonList from '../../components/buttons/ButtonList';
+import FormFieldList from '../../components/form-fields/FormFieldList';
 import AppIconList from '../../components/icons/AppIconList';
 import InputList from '../../components/inputs/InputList';
 import PillList from '../../components/pills/PillList';
@@ -16,6 +17,7 @@ export default function HomePage() {
       }}
     >
       <ThemeModeToggler />
+      <FormFieldList />
       <PillList />
       <AppIconList />
       <ButtonList />
