@@ -10,7 +10,7 @@ const TextCaption = styled.span`
 `;
 
 const TextLabel = styled.label`
-  color: ${(props) => props.theme.text};
+  color: ${(props) => props.theme.styles.colorText};
   font-weight: 400;
   font-size: 0.875rem;
 `;
