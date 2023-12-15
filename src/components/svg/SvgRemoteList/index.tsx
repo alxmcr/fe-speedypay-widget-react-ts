@@ -1,7 +1,7 @@
 import SvgRemote from '../SvgRemote';
 
 export default function SvgRemoteList() {
-  const BASE_URL = 'http://localhost:6006';
+  const BASE_URL = 'http://localhost:5173/public';
 
   return (
     <div>
