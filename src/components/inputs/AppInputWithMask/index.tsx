@@ -4,11 +4,13 @@ import { AppInputWithMaskStyled } from './AppInputWithMask.styled';
 type AppInputWithMaskProps = {
   mask: string;
   placeholder: string;
+  required?: boolean;
 };
 
 export default function AppInputWithMask({
   mask = '9999 9999 9999 9999',
   placeholder = '0000 0000 0000 0000',
+  required = false,
 }: AppInputWithMaskProps) {
   const [value, setValue] = React.useState('');
 
@@ -20,9 +22,10 @@ export default function AppInputWithMask({
     <AppInputWithMaskStyled
       value={value}
       mask={mask}
-      onChange={handlerInput}
       className="input-special-card"
       placeholder={placeholder}
+      required={required}
+      onChange={handlerInput}
     />
   );
 }
