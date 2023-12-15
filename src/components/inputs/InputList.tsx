@@ -14,6 +14,12 @@ export default function InputList() {
     >
       <AppInput
         type="text"
+        id="full-name"
+        placeholder="Enter your first and last name"
+        fullWidth={true}
+      />
+      <AppInput
+        type="text"
         id="card-holder-name"
         placeholder="Enter card holder name"
         fullWidth={true}

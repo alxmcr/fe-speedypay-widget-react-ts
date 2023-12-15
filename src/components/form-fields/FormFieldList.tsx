@@ -12,6 +12,22 @@ export default function FormFieldList() {
         gap: '1rem',
       }}
     >
+      <FormField labelText="Full name" id="full-name">
+        <AppInput
+          type="text"
+          id="full-name"
+          placeholder="Enter your first and last name"
+          fullWidth={true}
+        />
+      </FormField>
+      <FormField labelText="Email" id="email">
+        <AppInput
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          fullWidth={true}
+        />
+      </FormField>
       <FormField labelText="Card holder name" id="card-holder-name">
         <AppInput
           type="text"
