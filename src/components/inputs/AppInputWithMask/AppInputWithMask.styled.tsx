@@ -1,10 +1,7 @@
+import InputMask from 'react-input-mask';
 import styled from 'styled-components';
 
-type AppInputWithMaskStyledProps = {
-  $fullWidth?: boolean;
-};
-
-export const AppInputWithMaskStyled = styled.input<AppInputWithMaskStyledProps>`
+export const AppInputWithMaskStyled = styled(InputMask)`
   background-color: ${(props) => props.theme.styles.inputs.default.background};
   border: 1px solid ${(props) => props.theme.styles.inputs.default.borderColor};
   color: ${(props) => props.theme.styles.inputs.default.text};
@@ -13,7 +10,6 @@ export const AppInputWithMaskStyled = styled.input<AppInputWithMaskStyledProps>`
   padding: 0.75rem 1.5rem;
 
   height: 2.5625rem;
-  width: ${(props) => (props.$fullWidth ? '100%' : 'auto')};
 
   &::placeholder {
     color: ${(props) => props.theme.styles.inputs.default.placeholderColor};
