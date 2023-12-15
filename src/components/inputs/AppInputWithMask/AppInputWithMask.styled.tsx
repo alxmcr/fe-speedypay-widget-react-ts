@@ -10,7 +10,6 @@ export const AppInputWithMaskStyled = styled(InputMask)`
   padding: 0.75rem 1.5rem;
 
   height: 2.5625rem;
-  width: ${(props) => (props.$fullWidth ? '100%' : 'auto')};
 
   &::placeholder {
     color: ${(props) => props.theme.styles.inputs.default.placeholderColor};
