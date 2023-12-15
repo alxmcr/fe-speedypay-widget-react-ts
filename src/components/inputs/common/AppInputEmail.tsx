@@ -29,6 +29,7 @@ export default function AppInputEmail({
     <AppInputStyled
       type="email"
       id={id}
+      name={id}
       placeholder={placeholder}
       disabled={disabled}
       $fullWidth={fullWidth}
@@ -41,6 +42,7 @@ export default function AppInputEmail({
     <AppInputStyled
       type="email"
       id={id}
+      name={id}
       placeholder={placeholder}
       disabled={disabled}
       $fullWidth={fullWidth}

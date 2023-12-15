@@ -14,8 +14,14 @@ export default function InputList() {
     >
       <AppInput
         type="text"
-        id="name"
-        placeholder="Enter your name"
+        id="full-name"
+        placeholder="Enter your first and last name"
+        fullWidth={true}
+      />
+      <AppInput
+        type="text"
+        id="card-holder-name"
+        placeholder="Enter card holder name"
         fullWidth={true}
       />
       <AppInput
@@ -27,7 +33,6 @@ export default function InputList() {
       <AppInputWithMask
         mask="9999 9999 9999 9999"
         placeholder="Enter your card number"
-        fullWidth={true}
       />
       <AppInputWithMask mask="999" placeholder="CVC" />
       <AppInputWithMask mask="99/99" placeholder="MM/DD" />
