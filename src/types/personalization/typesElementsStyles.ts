@@ -52,7 +52,7 @@ export type InputStylesByState = {
 };
 
 export type PillStyles = {
-  background: string;
+  backgroundColor: string;
   colorText: string;
   borderColor: string;
 };

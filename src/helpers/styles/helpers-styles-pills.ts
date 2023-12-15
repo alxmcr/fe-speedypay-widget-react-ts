@@ -10,7 +10,7 @@ export const getPillStyles = (
   colorScales: ColorScales,
 ): PillStylesByState => {
   const defaultStyles: PillStyles = {
-    background:
+    backgroundColor:
       theme === ThemeModes.light
         ? colorScales.scales[900]
         : colorScales.scales[300],
