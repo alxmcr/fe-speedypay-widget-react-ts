@@ -11,7 +11,10 @@ export const getSelectStyles = (
   colorScales: ColorScales,
 ): SelectStylesByState => {
   const defaultStyles: SelectStyles = {
-    backgroundColor: 'transparent',
+    backgroundColor:
+      theme === ThemeModes.light
+        ? IRON_COLOR_SCALES.scales[50]
+        : 'transparent',
     borderColor:
       theme === ThemeModes.light
         ? IRON_COLOR_SCALES.scales[300]
