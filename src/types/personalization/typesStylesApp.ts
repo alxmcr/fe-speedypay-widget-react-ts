@@ -3,7 +3,7 @@ import {
   InputStylesByState,
   PillStylesByState,
   ToggleStylesByState,
-} from './typesElementsStyles';
+} from './typesStylesElements';
 
 export type AppCommonStyles = {
   backgroundColor: string;
