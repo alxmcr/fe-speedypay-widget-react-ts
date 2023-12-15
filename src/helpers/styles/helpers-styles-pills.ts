@@ -1,0 +1,32 @@
+import { ColorScales } from '../../types/personalization/typesColors';
+import {
+  PillStyles,
+  PillStylesByState,
+} from '../../types/personalization/typesElementsStyles';
+import { ThemeModes } from '../../types/personalization/typesThemes';
+
+export const getPillStyles = (
+  theme: ThemeModes,
+  colorScales: ColorScales,
+): PillStylesByState => {
+  const defaultStyles: PillStyles = {
+    background:
+      theme === ThemeModes.light
+        ? colorScales.scales[900]
+        : colorScales.scales[300],
+    borderColor:
+      theme === ThemeModes.light
+        ? colorScales.scales[900]
+        : colorScales.scales[300],
+    colorText:
+      theme === ThemeModes.light
+        ? colorScales.scales[300]
+        : colorScales.scales[900],
+  };
+
+  const pillAmountToPayStylesByStates: PillStylesByState = {
+    default: defaultStyles,
+  };
+
+  return pillAmountToPayStylesByStates;
+};
