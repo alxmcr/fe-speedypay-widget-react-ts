@@ -7,7 +7,7 @@ type AppInputStyledProps = {
 export const AppInputStyled = styled.input<AppInputStyledProps>`
   background-color: ${(props) => props.theme.styles.inputs.default.background};
   border: 1px solid ${(props) => props.theme.styles.inputs.default.borderColor};
-  color: ${(props) => props.theme.styles.inputs.default.text};
+  color: ${(props) => props.theme.styles.inputs.default.colorText};
   border-radius: 0.5rem;
   font-size: 16px;
   padding: 0.75rem 1.5rem;
@@ -24,7 +24,7 @@ export const AppInputStyled = styled.input<AppInputStyledProps>`
 
     box-shadow: 0 0 7px
       ${(props) => props.theme.styles.inputs.focus.borderColor};
-    color: ${(props) => props.theme.styles.inputs.focus.text};
+    color: ${(props) => props.theme.styles.inputs.focus.colorText};
   }
 
   &:disabled {
@@ -32,7 +32,7 @@ export const AppInputStyled = styled.input<AppInputStyledProps>`
       props.theme.styles.inputs.disabled.background};
     border: 1px solid
       ${(props) => props.theme.styles.inputs.disabled.borderColor};
-    color: ${(props) => props.theme.styles.inputs.disabled.text};
+    color: ${(props) => props.theme.styles.inputs.disabled.colorText};
 
     &::placeholder {
       color: ${(props) => props.theme.styles.inputs.disabled.placeholderColor};
