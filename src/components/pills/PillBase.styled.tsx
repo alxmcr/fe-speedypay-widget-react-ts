@@ -13,5 +13,6 @@ export const PillBaseStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.625rem;
   flex-shrink: 0;
 `;

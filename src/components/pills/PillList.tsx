@@ -1,4 +1,5 @@
 import PillAmountToPay from './PillAmountToPay';
+import PillPaymentStatus from './PillPaymentStatus';
 
 export default function PillList() {
   return (
@@ -11,6 +12,8 @@ export default function PillList() {
     >
       <PillAmountToPay amountToPay="MXN 2,780.00" />
       <PillAmountToPay amountToPay="$ 325.89" />
+      <PillPaymentStatus status="pending" />
+      <PillPaymentStatus status="success" />
     </div>
   );
 }
