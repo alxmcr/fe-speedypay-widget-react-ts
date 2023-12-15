@@ -6,7 +6,6 @@ export default function FormFieldList() {
   return (
     <div
       style={{
-        color: '#52a6f3',
         alignItems: 'center',
         display: 'flex',
         flexDirection: 'column',
@@ -28,12 +27,21 @@ export default function FormFieldList() {
           required
         />
       </FormField>
-      <FormField labelText="Expiration date" id="expiration-date">
-        <AppInputWithMask mask="99/99" placeholder="MM/DD" required />
-      </FormField>
-      <FormField labelText="CVC" id="CVC">
-        <AppInputWithMask mask="999" placeholder="CVC" required />
-      </FormField>
+      <div
+        style={{
+          alignItems: 'center',
+          display: 'flex',
+          gap: '1rem',
+          width: '100%',
+        }}
+      >
+        <FormField labelText="Expiration date" id="expiration-date">
+          <AppInputWithMask mask="99/99" placeholder="MM/DD" required />
+        </FormField>
+        <FormField labelText="CVC" id="CVC">
+          <AppInputWithMask mask="999" placeholder="CVC" required />
+        </FormField>
+      </div>
     </div>
   );
 }
