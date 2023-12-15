@@ -50,3 +50,13 @@ export type InputStylesByState = {
   focus: InputStyles;
   disabled: InputStyles;
 };
+
+export type PillStyles = {
+  backgroundColor: string;
+  colorText: string;
+  borderColor: string;
+};
+
+export type PillStylesByState = {
+  default: PillStyles;
+};

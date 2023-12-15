@@ -6,6 +6,7 @@ import { getBtnStylesVariants } from '../styles/helpers-styles-button';
 import { getCommonStylesByColorScale } from '../styles/helpers-styles-common';
 import { getInputStyles } from '../styles/helpers-styles-inputs';
 import { getToggleStyles } from '../styles/helpers-styles-toggles';
+import { getPillStyles } from '../styles/helpers-styles-pills';
 
 export const getThemeByColorScale = (
   theme: ThemeModes,
@@ -22,6 +23,7 @@ export const getThemeByColorScale = (
       buttons: getBtnStylesVariants(theme, colorScales),
       togglers: getToggleStyles(theme, colorScales),
       inputs: getInputStyles(theme, colorScales),
+      pills: getPillStyles(theme, colorScales),
     },
   };
 
