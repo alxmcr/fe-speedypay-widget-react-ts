@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const PillBaseStyled = styled.div`
   border-radius: 0.5rem;
-  background: var(--Atoll-900, #135766);
-  color: #fff;
+  background-color: ${(props) =>
+    props.theme.styles.pills.default.backgroundColor};
+  color: ${(props) => props.theme.styles.pills.default.colorText};
 
   width: 10rem;
   height: 2.625rem;
