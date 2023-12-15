@@ -7,6 +7,7 @@ export default function AppIconList() {
       style={{
         alignItems: 'center',
         display: 'flex',
+        flexWrap: 'wrap',
         gap: '1rem',
       }}
     >

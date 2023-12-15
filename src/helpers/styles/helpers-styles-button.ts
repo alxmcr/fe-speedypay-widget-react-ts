@@ -1,8 +1,6 @@
-import {
-  getBtnGradientStyles,
-  getBtnOutlineStyles,
-  getBtnSolidStyles,
-} from '../../components/buttons/AppButton/AppBaseButton.styles';
+import { getBtnGradientStyles } from '../../components/buttons/ButtonGradient/ButtonGradient.styles';
+import { getBtnOutlineStyles } from '../../components/buttons/ButtonOutline/ButtonOutline.styles';
+import { getBtnSolidStyles } from '../../components/buttons/ButtonSolid/ButtonSolid.styles';
 import { ButtonStylesVariants } from '../../types/personalization/typeVariants';
 import { ColorScales } from '../../types/personalization/typesColors';
 import {

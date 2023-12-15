@@ -1,5 +1,6 @@
 import ButtonList from '../../components/buttons/ButtonList';
 import AppIconList from '../../components/icons/AppIconList';
+import InputList from '../../components/inputs/InputList';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
       <ThemeModeToggler />
       <AppIconList />
       <ButtonList />
+      <InputList />
     </div>
   );
 }
