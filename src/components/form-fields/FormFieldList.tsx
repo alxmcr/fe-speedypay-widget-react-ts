@@ -1,4 +1,5 @@
 import AppInputWithMask from '../inputs/AppInputWithMask';
+import AppInput from '../inputs/common/AppInput';
 import FormField from './FormField';
 
 export default function FormFieldList() {
@@ -12,6 +13,14 @@ export default function FormFieldList() {
         gap: '1rem',
       }}
     >
+      <FormField labelText="Card holder name" id="card-holder-name">
+        <AppInput
+          type="text"
+          id="card-holder-name"
+          placeholder="Enter card holder name"
+          fullWidth={true}
+        />
+      </FormField>
       <FormField labelText="Card number" id="card-number">
         <AppInputWithMask
           mask="9999 9999 9999 9999"
