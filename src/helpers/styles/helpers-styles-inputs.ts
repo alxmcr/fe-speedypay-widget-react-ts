@@ -1,8 +1,8 @@
 import { IRON_COLOR_SCALES } from '../../styles/colors-scales';
 import { ColorScales } from '../../types/personalization/typesColors';
 import {
-    InputStyles,
-    InputStylesByState,
+  InputStyles,
+  InputStylesByState,
 } from '../../types/personalization/typesElementsStyles';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 
@@ -11,7 +11,8 @@ export const getInputStyles = (
   colorScales: ColorScales,
 ): InputStylesByState => {
   const defaultStyles: InputStyles = {
-    backgroundColor: 'transparent',
+    backgroundColor:
+      theme === ThemeModes.light ? IRON_COLOR_SCALES.scales[50] : 'transparent',
     borderColor:
       theme === ThemeModes.light
         ? IRON_COLOR_SCALES.scales[300]

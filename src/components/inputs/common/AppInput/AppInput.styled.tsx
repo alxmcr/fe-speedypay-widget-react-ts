@@ -5,15 +5,16 @@ type AppInputStyledProps = {
 };
 
 export const AppInputStyled = styled.input<AppInputStyledProps>`
-  background-color: ${(props) => props.theme.styles.inputs.default.background};
+  width: ${(props) => (props.$fullWidth ? '100%' : 'auto')};
+  height: 2.5625rem;
+
+  background-color: ${(props) =>
+    props.theme.styles.inputs.default.backgroundColor};
   border: 1px solid ${(props) => props.theme.styles.inputs.default.borderColor};
   color: ${(props) => props.theme.styles.inputs.default.colorText};
   border-radius: 0.5rem;
   font-size: 16px;
   padding: 0.75rem 1.5rem;
-
-  height: 2.5625rem;
-  width: ${(props) => (props.$fullWidth ? '100%' : 'auto')};
 
   &::placeholder {
     color: ${(props) => props.theme.styles.inputs.default.placeholderColor};
@@ -29,7 +30,7 @@ export const AppInputStyled = styled.input<AppInputStyledProps>`
 
   &:disabled {
     background-color: ${(props) =>
-      props.theme.styles.inputs.disabled.background};
+      props.theme.styles.inputs.disabled.backgroundColor};
     border: 1px solid
       ${(props) => props.theme.styles.inputs.disabled.borderColor};
     color: ${(props) => props.theme.styles.inputs.disabled.colorText};
