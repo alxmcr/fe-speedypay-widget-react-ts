@@ -3,7 +3,12 @@ import TabPaymentMethod from './TabPaymentMethod';
 
 export default function TabList() {
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        gap: '1rem',
+      }}
+    >
       <TabPaymentMethod
         paymentMethodName="Bank transfer"
         nameIcon={IconNames.bankTransfer}

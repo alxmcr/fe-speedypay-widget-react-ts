@@ -10,9 +10,9 @@ export const TabPaymentMethodStyled = styled.button<TabPaymentMethodStyledStyled
     ${(props) =>
       props.$isSelected ? 'red' : props.theme.styles.tabs.default.borderColor};
   background-color: ${(props) =>
-    props.$isSelected ? 'green' : props.theme.styles.tabs.default.background};
+    props.$isSelected ? 'green' : props.theme.styles.tabs.default.backgroundColor};
   color: ${(props) =>
-    props.$isSelected ? 'blue' : props.theme.styles.tabs.default.text};
+    props.$isSelected ? 'blue' : props.theme.styles.tabs.default.colorText};
 
   align-items: center;
   align-content: center;
@@ -28,8 +28,8 @@ export const TabPaymentMethodStyled = styled.button<TabPaymentMethodStyledStyled
 
   &:active {
     border: 1px solid ${(props) => props.theme.styles.tabs.active.borderColor};
-    background-color: ${(props) => props.theme.styles.tabs.active.background};
-    color: ${(props) => props.theme.styles.tabs.active.text};
+    background-color: ${(props) => props.theme.styles.tabs.active.backgroundColor};
+    color: ${(props) => props.theme.styles.tabs.active.colorText};
   }
 
   /* Selected state styles */
@@ -37,20 +37,20 @@ export const TabPaymentMethodStyled = styled.button<TabPaymentMethodStyledStyled
     isSelected &&
     `
     border: 1px solid ${theme.styles.tabs.hover.borderColor};
-    background-color: ${theme.styles.tabs.hover.background};
-    color: ${theme.styles.tabs.hover.text};
+    background-color: ${theme.styles.tabs.hover.backgroundColor};
+    color: ${theme.styles.tabs.hover.colorText};
     `}
 
   &:hover {
     border: 1px solid ${(props) => props.theme.styles.tabs.hover.borderColor};
-    background-color: ${(props) => props.theme.styles.tabs.hover.background};
-    color: ${(props) => props.theme.styles.tabs.hover.text};
+    background-color: ${(props) => props.theme.styles.tabs.hover.backgroundColor};
+    color: ${(props) => props.theme.styles.tabs.hover.colorText};
   }
 
   &:disabled {
-    background-color: ${(props) => props.theme.styles.tabs.disabled.background};
+    background-color: ${(props) => props.theme.styles.tabs.disabled.backgroundColor};
     border: 1px solid ${(props) => props.theme.styles.tabs.disabled.borderColor};
-    color: ${(props) => props.theme.styles.tabs.disabled.text};
+    color: ${(props) => props.theme.styles.tabs.disabled.colorText};
     opacity: ${(props) => props.theme.styles.tabs.disabled.opacity};
   }
 `;
