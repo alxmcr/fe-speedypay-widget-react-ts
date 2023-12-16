@@ -4,7 +4,7 @@ import { FormFieldsGroupStyled } from './FormFieldsGroup.styled';
 
 export default function FormElementsContactInfo() {
   return (
-    <FormFieldsGroupStyled>
+    <FormFieldsGroupStyled $flexDirection="column">
       <FormField labelText="Email" id="email">
         <AppInput
           type="email"

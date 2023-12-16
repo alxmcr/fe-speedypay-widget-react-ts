@@ -4,7 +4,7 @@ import { FormFieldsGroupStyled } from './FormFieldsGroup.styled';
 
 export default function FormElementsCardDetails() {
   return (
-    <FormFieldsGroupStyled>
+    <FormFieldsGroupStyled $flexDirection="row">
       <FormField labelText="Expiration date" id="expiration-date">
         <AppInputWithMask
           id="expiration-date"

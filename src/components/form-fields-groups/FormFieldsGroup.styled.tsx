@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
-export const FormFieldsGroupStyled = styled.div`
+type FormFieldsGroupStyledProps = {
+  $flexDirection: 'row' | 'column';
+};
+
+export const FormFieldsGroupStyled = styled.div<FormFieldsGroupStyledProps>`
   display: flex;
-  flex-direction: column;
+  flex-direction: ${(props) => props.$flexDirection};
   gap: 1.25rem;
 `;
