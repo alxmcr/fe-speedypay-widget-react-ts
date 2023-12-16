@@ -4,7 +4,7 @@ import { BodyTextTwo } from '../../typography/BodyTexts';
 import { TabPaymentMethodStyled } from './TabPaymentMethod.styled';
 
 type TabPaymentMethodProps = {
-  nameIcon: IconNames;
+  nameIcon: string;
   paymentMethodName: string;
   isSelected?: boolean;
   disabled?: boolean;
