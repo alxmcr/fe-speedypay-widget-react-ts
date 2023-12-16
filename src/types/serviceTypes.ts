@@ -16,4 +16,5 @@ export type DbCheckout = {
   ch_amount_to_pay: number;
   ch_currency_amount: string;
   ch_company: DbCompany;
+  ch_payment_methods: DbPaymentMethod[];
 };
