@@ -59,16 +59,16 @@ export default function FormFieldList() {
         <FormField labelText="CVC" id="CVC">
           <AppInputWithMask mask="999" placeholder="CVC" required />
         </FormField>
-        <FormField labelText="Installments" id="select-installments">
-          <AppSelect
-            id="select-installments"
-            name="select-installments"
-            placeholder="Choose an installment"
-            options={mockInstallmentsFull}
-            width="100%"
-          />
-        </FormField>
       </div>
+      <FormField labelText="Installments" id="select-installments">
+        <AppSelect
+          id="select-installments"
+          name="select-installments"
+          placeholder="Choose an installment"
+          options={mockInstallmentsFull}
+          width="100%"
+        />
+      </FormField>
     </div>
   );
 }
