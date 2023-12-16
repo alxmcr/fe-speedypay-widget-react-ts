@@ -7,15 +7,17 @@ type TabPaymentMethodProps = {
   nameIcon: IconNames;
   paymentMethodName: string;
   isSelected?: boolean;
+  disabled?: boolean;
 };
 
 export default function TabPaymentMethod({
   nameIcon = IconNames.email,
   paymentMethodName = '',
   isSelected = false,
+  disabled = false,
 }: TabPaymentMethodProps) {
   return (
-    <TabPaymentMethodStyled $isSelected={isSelected}>
+    <TabPaymentMethodStyled $isSelected={isSelected} disabled={disabled}>
       <AppIcon iconName={nameIcon} />
       <BodyTextTwo>{paymentMethodName}</BodyTextTwo>
     </TabPaymentMethodStyled>

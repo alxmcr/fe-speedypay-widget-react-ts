@@ -20,6 +20,11 @@ export default function TabList() {
         paymentMethodName="Card"
         nameIcon={IconNames.creditCard}
       />
+      <TabPaymentMethod
+        paymentMethodName="Cash"
+        nameIcon={IconNames.coin}
+        disabled
+      />
     </div>
   );
 }

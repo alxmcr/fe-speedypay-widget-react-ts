@@ -44,6 +44,7 @@ export const TabPaymentMethodStyled = styled.button<TabPaymentMethodStyledStyled
     background-color: ${(props) =>
       props.theme.styles.tabs.hover.backgroundColor};
     color: ${(props) => props.theme.styles.tabs.hover.colorText};
+    cursor: pointer;
   }
 
   &:disabled {
@@ -52,5 +53,6 @@ export const TabPaymentMethodStyled = styled.button<TabPaymentMethodStyledStyled
     border: 1px solid ${(props) => props.theme.styles.tabs.disabled.borderColor};
     color: ${(props) => props.theme.styles.tabs.disabled.colorText};
     opacity: ${(props) => props.theme.styles.tabs.disabled.opacity};
+    cursor: not-allowed;
   }
 `;
