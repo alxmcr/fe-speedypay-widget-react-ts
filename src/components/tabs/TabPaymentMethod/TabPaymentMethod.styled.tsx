@@ -8,17 +8,11 @@ export const TabPaymentMethodStyled = styled.button<TabPaymentMethodStyledStyled
   border-radius: 0.5rem;
   border: 1px solid
     ${(props) =>
-      props.$isSelected
-        ? 'red'
-        : props.theme.styles.tabs.default.borderColor};
+      props.$isSelected ? 'red' : props.theme.styles.tabs.default.borderColor};
   background-color: ${(props) =>
-    props.$isSelected
-      ? 'green'
-      : props.theme.styles.tabs.default.background};
+    props.$isSelected ? 'green' : props.theme.styles.tabs.default.background};
   color: ${(props) =>
-    props.$isSelected
-      ? 'blue'
-      : props.theme.styles.tabs.default.text};
+    props.$isSelected ? 'blue' : props.theme.styles.tabs.default.text};
 
   align-items: center;
   align-content: center;
@@ -33,10 +27,8 @@ export const TabPaymentMethodStyled = styled.button<TabPaymentMethodStyledStyled
   padding: 0.625rem 0.75rem;
 
   &:active {
-    border: 1px solid
-      ${(props) => props.theme.styles.tabs.active.borderColor};
-    background-color: ${(props) =>
-      props.theme.styles.tabs.active.background};
+    border: 1px solid ${(props) => props.theme.styles.tabs.active.borderColor};
+    background-color: ${(props) => props.theme.styles.tabs.active.background};
     color: ${(props) => props.theme.styles.tabs.active.text};
   }
 
@@ -44,25 +36,20 @@ export const TabPaymentMethodStyled = styled.button<TabPaymentMethodStyledStyled
   ${({ $isSelected: isSelected, theme }) =>
     isSelected &&
     `
-  border: 1px solid
-    ${theme.tabs.hover.borderColor};
-  background-color: ${theme.tabs.hover.background};
-  color: ${theme.tabs.hover.text};
-`}
+    border: 1px solid ${theme.styles.tabs.hover.borderColor};
+    background-color: ${theme.styles.tabs.hover.background};
+    color: ${theme.styles.tabs.hover.text};
+    `}
 
   &:hover {
-    border: 1px solid
-      ${(props) => props.theme.styles.tabs.hover.borderColor};
-    background-color: ${(props) =>
-      props.theme.styles.tabs.hover.background};
+    border: 1px solid ${(props) => props.theme.styles.tabs.hover.borderColor};
+    background-color: ${(props) => props.theme.styles.tabs.hover.background};
     color: ${(props) => props.theme.styles.tabs.hover.text};
   }
 
   &:disabled {
-    background-color: ${(props) =>
-      props.theme.styles.tabs.disabled.background};
-    border: 1px solid
-      ${(props) => props.theme.styles.tabs.disabled.borderColor};
+    background-color: ${(props) => props.theme.styles.tabs.disabled.background};
+    border: 1px solid ${(props) => props.theme.styles.tabs.disabled.borderColor};
     color: ${(props) => props.theme.styles.tabs.disabled.text};
     opacity: ${(props) => props.theme.styles.tabs.disabled.opacity};
   }
