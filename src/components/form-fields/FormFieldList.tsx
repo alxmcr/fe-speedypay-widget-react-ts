@@ -1,5 +1,7 @@
+import { mockInstallmentsFull } from '../../mock/mock-installments';
 import AppInputWithMask from '../inputs/AppInputWithMask';
 import AppInput from '../inputs/common/AppInput';
+import AppSelect from '../selects/AppSelect';
 import FormField from './FormField';
 
 export default function FormFieldList() {
@@ -56,6 +58,15 @@ export default function FormFieldList() {
         </FormField>
         <FormField labelText="CVC" id="CVC">
           <AppInputWithMask mask="999" placeholder="CVC" required />
+        </FormField>
+        <FormField labelText="Installments" id="select-installments">
+          <AppSelect
+            id="select-installments"
+            name="select-installments"
+            placeholder="Choose an installment"
+            options={mockInstallmentsFull}
+            width="100%"
+          />
         </FormField>
       </div>
     </div>
