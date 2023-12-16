@@ -11,6 +11,7 @@ import IconDropdownUnselected from '../IconDropdownUnselected';
 import IconEmailOutline from '../IconEmailOutline';
 import IconGift from '../IconGift';
 import IconPending from '../IconPending';
+import { AppIconStyled } from './AppIcon.styled';
 
 type AppIconProps = {
   iconName: string;
@@ -19,31 +20,83 @@ type AppIconProps = {
 export default function AppIcon({ iconName = IconNames.gift }: AppIconProps) {
   switch (iconName) {
     case IconNames.arrowDown:
-      return <IconArrowDown />;
+      return (
+        <AppIconStyled>
+          <IconArrowDown />
+        </AppIconStyled>
+      );
     case IconNames.arrowUp:
-      return <IconArrowUp />;
+      return (
+        <AppIconStyled>
+          <IconArrowUp />
+        </AppIconStyled>
+      );
     case IconNames.check:
-      return <IconCheck />;
+      return (
+        <AppIconStyled>
+          <IconCheck />
+        </AppIconStyled>
+      );
     case IconNames.pending:
-      return <IconPending />;
+      return (
+        <AppIconStyled>
+          <IconPending />
+        </AppIconStyled>
+      );
     case IconNames.copy:
-      return <IconCopy />;
+      return (
+        <AppIconStyled>
+          <IconCopy />
+        </AppIconStyled>
+      );
     case IconNames.dropdownSelected:
-      return <IconDropdownSelected />;
+      return (
+        <AppIconStyled>
+          <IconDropdownSelected />
+        </AppIconStyled>
+      );
     case IconNames.dropdownUnselected:
-      return <IconDropdownUnselected />;
+      return (
+        <AppIconStyled>
+          <IconDropdownUnselected />
+        </AppIconStyled>
+      );
     case IconNames.bankTransfer:
-      return <IconBankTransfer />;
+      return (
+        <AppIconStyled>
+          <IconBankTransfer />
+        </AppIconStyled>
+      );
     case IconNames.coin:
-      return <IconCoin />;
+      return (
+        <AppIconStyled>
+          <IconCoin />
+        </AppIconStyled>
+      );
     case IconNames.creditCard:
-      return <IconCreditCard />;
+      return (
+        <AppIconStyled>
+          <IconCreditCard />
+        </AppIconStyled>
+      );
     case IconNames.gift:
-      return <IconGift />;
+      return (
+        <AppIconStyled>
+          <IconGift />
+        </AppIconStyled>
+      );
     case IconNames.email:
-      return <IconEmailOutline />;
+      return (
+        <AppIconStyled>
+          <IconEmailOutline />
+        </AppIconStyled>
+      );
 
     default:
-      return <IconGift />;
+      return (
+        <AppIconStyled>
+          <IconGift />
+        </AppIconStyled>
+      );
   }
 }
