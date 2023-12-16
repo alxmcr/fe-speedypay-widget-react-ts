@@ -3,6 +3,7 @@ import FormElementsCardInfo from '../../components/form-fields-groups/FormElemen
 import FormElementsContactInfo from '../../components/form-fields-groups/FormElementsContactInfo';
 import AppIconList from '../../components/icons/AppIconList';
 import InputList from '../../components/inputs/InputList';
+import MessagesList from '../../components/messages/MessagesList';
 import PillList from '../../components/pills/PillList';
 import SvgRemoteList from '../../components/svg/SvgRemoteList';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
@@ -18,7 +19,7 @@ export default function HomePage() {
       }}
     >
       <ThemeModeToggler />
-
+      <MessagesList />
       <FormElementsContactInfo />
       <FormElementsCardInfo />
       <PillList />

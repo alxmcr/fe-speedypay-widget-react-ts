@@ -8,6 +8,7 @@ import { getInputStyles } from '../styles/helpers-styles-inputs';
 import { getToggleStyles } from '../styles/helpers-styles-toggles';
 import { getPillStyles } from '../styles/helpers-styles-pills';
 import { getSelectStyles } from '../styles/helpers-styles-selects';
+import { getMessagesStyles } from '../styles/helpers-styles-messages';
 
 export const getThemeByColorScale = (
   theme: ThemeModes,
@@ -26,6 +27,7 @@ export const getThemeByColorScale = (
       inputs: getInputStyles(theme, colorScales),
       pills: getPillStyles(theme, colorScales),
       selects: getSelectStyles(theme, colorScales),
+      messages: getMessagesStyles(theme, colorScales),
     },
   };
 

@@ -73,3 +73,13 @@ export type SelectStylesByState = {
   focus: SelectStyles;
   disabled: SelectStyles;
 };
+
+export type MessageStyles = {
+  backgroundColor: string;
+  colorText: string;
+  borderColor: string;
+};
+
+export type MessageStylesByState = {
+  default: MessageStyles;
+};
