@@ -1,4 +1,4 @@
-import { PaymentMethod } from '../../../types/typesApp';
+import { PaymentMethod } from '../../../types/appTypes';
 import { BodyTextTwo } from '../../typography/BodyTexts';
 import TabPaymentMethod from '../TabPaymentMethod';
 

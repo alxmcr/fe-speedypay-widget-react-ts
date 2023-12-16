@@ -1,4 +1,4 @@
-import { AppOptionOnSelect } from '../types/typesApp';
+import { AppOptionOnSelect } from '../types/appTypes';
 
 export const mockInstallmentsBasic: AppOptionOnSelect[] = [
   {
