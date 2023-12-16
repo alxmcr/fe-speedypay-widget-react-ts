@@ -4,6 +4,7 @@ import {
   MessageStylesByState,
   PillStylesByState,
   SelectStylesByState,
+  TabStylesByState,
   ToggleStylesByState,
 } from './typesStylesElements';
 
@@ -22,6 +23,7 @@ export type AppStylesByElements = {
   pills: PillStylesByState;
   selects: SelectStylesByState;
   messages: MessageStylesByState;
+  tabs: TabStylesByState;
 };
 
 export type AppStyles = AppCommonStyles & AppStylesByElements;

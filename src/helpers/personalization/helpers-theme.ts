@@ -1,14 +1,15 @@
 import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
 import { ColorScales } from '../../types/personalization/typesColors';
 import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
-import { getColorScalesByCode } from './helpers-color-scales';
 import { getBtnStylesVariants } from '../styles/helpers-styles-button';
 import { getCommonStylesByColorScale } from '../styles/helpers-styles-common';
 import { getInputStyles } from '../styles/helpers-styles-inputs';
-import { getToggleStyles } from '../styles/helpers-styles-toggles';
+import { getMessagesStyles } from '../styles/helpers-styles-messages';
 import { getPillStyles } from '../styles/helpers-styles-pills';
 import { getSelectStyles } from '../styles/helpers-styles-selects';
-import { getMessagesStyles } from '../styles/helpers-styles-messages';
+import { getTabStyles } from '../styles/helpers-styles-tabs';
+import { getToggleStyles } from '../styles/helpers-styles-toggles';
+import { getColorScalesByCode } from './helpers-color-scales';
 
 export const getThemeByColorScale = (
   theme: ThemeModes,
@@ -28,6 +29,7 @@ export const getThemeByColorScale = (
       pills: getPillStyles(theme, colorScales),
       selects: getSelectStyles(theme, colorScales),
       messages: getMessagesStyles(theme, colorScales),
+      tabs: getTabStyles(theme, colorScales),
     },
   };
 

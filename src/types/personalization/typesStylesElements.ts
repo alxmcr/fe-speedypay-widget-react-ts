@@ -1,3 +1,4 @@
+// Buttons
 export type ButtonCommonStyles = {
   backgroundColor: string;
   colorText: string;
@@ -11,6 +12,7 @@ export type ButtonCommonStylesByState = {
   active: ButtonCommonStyles;
   disabled: ButtonCommonStyles;
 };
+
 
 export type ButtonGradientStyles = {
   colorText: string;
@@ -28,6 +30,7 @@ export type ButtonGradientStylesByState = {
   disabled: ButtonGradientStyles;
 };
 
+// Toggle
 export type ToggleStyles = {
   backgroundColor: string;
   borderColor: string;
@@ -38,6 +41,7 @@ export type ToggleStylesByState = {
   default: ToggleStyles;
 };
 
+// Input
 export type InputStyles = {
   backgroundColor: string;
   colorText: string;
@@ -51,6 +55,7 @@ export type InputStylesByState = {
   disabled: InputStyles;
 };
 
+// Pill
 export type PillStyles = {
   backgroundColor: string;
   colorText: string;
@@ -61,6 +66,7 @@ export type PillStylesByState = {
   default: PillStyles;
 };
 
+// Select
 export type SelectStyles = {
   backgroundColor: string;
   colorText: string;
@@ -74,6 +80,7 @@ export type SelectStylesByState = {
   disabled: SelectStyles;
 };
 
+// Messages
 export type MessageStyles = {
   backgroundColor: string;
   colorText: string;
@@ -82,4 +89,21 @@ export type MessageStyles = {
 
 export type MessageStylesByState = {
   default: MessageStyles;
+};
+
+// Tabs
+export type TabStyles = {
+  backgroundColor: string;
+  colorText: string;
+  borderColor: string;
+  placeholderColor?: string;
+  opacity?: number;
+};
+
+export type TabStylesByState = {
+  default: TabStyles;
+  active: TabStyles;
+  hover: TabStyles;
+  disabled: TabStyles;
+  selected: TabStyles;
 };
