@@ -7,6 +7,7 @@ export default function TabList() {
       style={{
         display: 'flex',
         gap: '1rem',
+        flexWrap: 'wrap',
       }}
     >
       <TabPaymentMethod

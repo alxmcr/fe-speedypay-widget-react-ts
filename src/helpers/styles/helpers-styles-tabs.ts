@@ -21,15 +21,15 @@ export const getTabStyles = (
   const hoverStyles: TabStyles = {
     backgroundColor:
       theme === ThemeModes.light
-        ? colorScales.scales[600]
+        ? colorScales.scales[50]
         : colorScales.scales[300],
     borderColor:
       theme === ThemeModes.light
-        ? colorScales.scales[600]
+        ? colorScales.scales[700]
         : colorScales.scales[300],
     colorText:
       theme === ThemeModes.light
-        ? IRON_COLOR_SCALES.scales[50]
+        ? colorScales.scales[700]
         : colorScales.scales[950],
   };
 
