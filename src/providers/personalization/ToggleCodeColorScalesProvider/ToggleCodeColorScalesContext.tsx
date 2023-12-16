@@ -1,5 +1,5 @@
 import React from 'react';
-import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
+import { CodesForColorScales } from '../../../types/personalization/enumsPersonalization';
 
 export type ToggleCodeColorScalesContextData = {
   codeColorScales: CodesForColorScales;

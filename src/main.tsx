@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import PersonalizationProviders from './providers/PersonalizationProviders/index.tsx';
+import PersonalizationProviders from './providers/personalization/PersonalizationProviders/index.tsx';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { routes } from './router/routes.tsx';
 import { GlobalStyles } from './styles/globalStyles.ts';
