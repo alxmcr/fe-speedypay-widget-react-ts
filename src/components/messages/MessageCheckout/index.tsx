@@ -1,6 +1,6 @@
 import { IconNames } from '../../../types/enumsApp';
 import AppIcon from '../../icons/AppIcon';
-import { TextParagraph } from '../../typography/SupportingStyles';
+import { BodyTextTwo } from '../../typography/BodyTexts';
 import { MessageCheckoutStyled } from './MessageCheckout.styled';
 
 type MessageCheckoutProps = {
@@ -15,7 +15,7 @@ export default function MessageCheckout({
   return (
     <MessageCheckoutStyled>
       <AppIcon iconName={nameIcon} />
-      <TextParagraph>{messageText}</TextParagraph>
+      <BodyTextTwo>{messageText}</BodyTextTwo>
     </MessageCheckoutStyled>
   );
 }

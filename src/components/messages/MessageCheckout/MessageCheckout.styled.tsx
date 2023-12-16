@@ -13,4 +13,7 @@ export const MessageCheckoutStyled = styled.article`
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+
+  height: 6.6875rem;
+  width: 20.5rem;
 `;

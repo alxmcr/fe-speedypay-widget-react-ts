@@ -4,7 +4,13 @@ import MessageCheckout from './MessageCheckout';
 
 export default function MessagesList() {
   return (
-    <div>
+    <div
+      style={{
+        alignItems: 'center',
+        display: 'flex',
+        gap: '1rem',
+      }}
+    >
       <MessageCheckout
         messageText={MESSAGES.cash.sendInstructions}
         nameIcon={IconNames.coin}

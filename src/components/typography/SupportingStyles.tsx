@@ -21,6 +21,7 @@ const TextOverline = styled.span`
 
 const TextParagraph = styled.p`
   font-size: 0.75rem;
+  margin: 0;
 `;
 
 const TextSpan = styled.span`
