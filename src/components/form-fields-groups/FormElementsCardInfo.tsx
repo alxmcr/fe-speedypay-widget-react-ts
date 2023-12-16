@@ -11,6 +11,7 @@ export default function FormElementsCardInfo() {
     <FormFieldsGroupStyled>
       <FormField labelText="Card number" id="card-number">
         <AppInputWithMask
+          id="card-number"
           mask="9999 9999 9999 9999"
           placeholder="Enter your card number"
           required

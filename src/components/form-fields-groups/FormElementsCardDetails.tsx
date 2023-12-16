@@ -6,10 +6,15 @@ export default function FormElementsCardDetails() {
   return (
     <FormFieldsGroupStyled>
       <FormField labelText="Expiration date" id="expiration-date">
-        <AppInputWithMask mask="99/99" placeholder="MM/DD" required />
+        <AppInputWithMask
+          id="expiration-date"
+          mask="99/99"
+          placeholder="MM/DD"
+          required
+        />
       </FormField>
       <FormField labelText="CVC" id="CVC">
-        <AppInputWithMask mask="999" placeholder="CVC" required />
+        <AppInputWithMask id="CVC" mask="999" placeholder="CVC" required />
       </FormField>
     </FormFieldsGroupStyled>
   );
