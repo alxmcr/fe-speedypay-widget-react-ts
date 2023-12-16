@@ -40,7 +40,7 @@
   "git-graph.repository.sign.commits": false,
   "git-graph.repository.sign.tags": false,
   // --- icon theme
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
