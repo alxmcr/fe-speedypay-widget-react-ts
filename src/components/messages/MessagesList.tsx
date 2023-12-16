@@ -1,4 +1,4 @@
-import { MESSAGES } from '../../helpers/constants-messages';
+import { MESSAGES } from '../../helpers/constants/constants-messages';
 import { IconNames } from '../../types/enumsApp';
 import MessageCheckout from './MessageCheckout';
 
