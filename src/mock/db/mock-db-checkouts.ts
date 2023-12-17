@@ -29,7 +29,7 @@ export const dbCheckout002: DbCheckout = {
   ch_company: dbCompanyFinberry,
   ch_amount_to_pay: 787.36,
   ch_currency_amount: 'MXN',
-  ch_payment_methods: [DbCreditCardSample, DbCashSample],
+  ch_payment_methods: [DbCashSample, DbCreditCardSample],
 };
 
 export const dbCheckout003: DbCheckout = {
@@ -37,5 +37,5 @@ export const dbCheckout003: DbCheckout = {
   ch_company: dbFittersOriginal,
   ch_amount_to_pay: 859.12,
   ch_currency_amount: 'USD',
-  ch_payment_methods: [DbCashSample, DbBankTransferSample],
+  ch_payment_methods: [DbBankTransferSample, DbCashSample, DbCreditCardSample],
 };
