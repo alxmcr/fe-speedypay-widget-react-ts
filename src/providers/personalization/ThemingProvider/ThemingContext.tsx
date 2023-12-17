@@ -1,7 +1,7 @@
 import React from 'react';
-import { getThemeByColorScale } from '../../helpers/personalization/helpers-theme';
-import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
-import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
+import { getThemeByColorScale } from '../../../helpers/personalization/helpers-theme';
+import { CodesForColorScales } from '../../../types/personalization/enumsPersonalization';
+import { AppTheme, ThemeModes } from '../../../types/personalization/typesThemes';
 
 export const DARK_THEME_ATOLL: AppTheme = getThemeByColorScale(
   ThemeModes.dark,

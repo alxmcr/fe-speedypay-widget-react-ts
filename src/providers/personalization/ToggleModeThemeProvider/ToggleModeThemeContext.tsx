@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeModes } from '../../types/personalization/typesThemes';
+import { ThemeModes } from '../../../types/personalization/typesThemes';
 
 export type ToggleModeThemeContextData = {
   themeMode: ThemeModes;

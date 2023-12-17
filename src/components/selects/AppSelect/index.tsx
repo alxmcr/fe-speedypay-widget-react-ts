@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppSelectStyled } from './AppSelect.styled';
 import { AppSelectOptionStyled } from './AppSelectOption.styled';
-import { AppOptionOnSelect } from '../../../types/typesApp';
+import { AppOptionOnSelect } from '../../../types/appTypes';
 
 type AppSelectProps = {
   name: string;
