@@ -5,7 +5,7 @@ import { FormFieldsGroupStyled } from './FormFieldsGroup.styled';
 export default function FormElementsContactInfo() {
   return (
     <FormFieldsGroupStyled $flexDirection="column">
-      <FormField labelText="Email" id="email">
+      <FormField labelText="Email" id="email" $width="100%">
         <AppInput
           type="email"
           id="email"
@@ -14,7 +14,7 @@ export default function FormElementsContactInfo() {
           required
         />
       </FormField>
-      <FormField labelText="Full name" id="full-name">
+      <FormField labelText="Full name" id="full-name" $width="100%">
         <AppInput
           type="text"
           id="full-name"

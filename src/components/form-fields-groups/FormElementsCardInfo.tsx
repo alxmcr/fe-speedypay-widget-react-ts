@@ -30,7 +30,11 @@ export default function FormElementsCardInfo() {
           fullWidth={true}
         />
       </FormField>
-      <FormField labelText="Installments" id="select-installments">
+      <FormField
+        labelText="Installments"
+        id="select-installments"
+        $width="100%"
+      >
         <AppSelect
           id="select-installments"
           name="select-installments"
