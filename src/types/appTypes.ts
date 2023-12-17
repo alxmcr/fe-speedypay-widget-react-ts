@@ -4,6 +4,12 @@ export type AppOptionOnSelect = {
   text: string;
 };
 
+export type Company = {
+  id: string;
+  name: string;
+  logo_url: string;
+};
+
 export type PaymentMethod = {
   id: string;
   code: string;

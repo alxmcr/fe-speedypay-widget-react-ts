@@ -1,5 +1,5 @@
-import { PaymentMethod } from '../types/appTypes';
-import { DbPaymentMethod } from '../types/serviceTypes';
+import { Company, PaymentMethod } from '../types/appTypes';
+import { DbCompany, DbPaymentMethod } from '../types/serviceTypes';
 
 export const mapperDbPaymentMethodToAppPaymentMethod = (
   dbPaymentMethod: DbPaymentMethod,
@@ -12,4 +12,14 @@ export const mapperDbPaymentMethodToAppPaymentMethod = (
   };
 
   return paymentMethod;
+};
+
+export const mapperDbCompanyToCompany = (dbCompany: DbCompany) => {
+  const company: Company = {
+    id: dbCompany.co_company,
+    name: dbCompany.co_name,
+    logo_url: dbCompany.co_logo_url,
+  };
+
+  return company;
 };
