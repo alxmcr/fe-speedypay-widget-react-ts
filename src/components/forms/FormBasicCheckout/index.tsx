@@ -1,17 +1,17 @@
 import BoxContactInfoElements from '../../boxes/BoxContactInfoElements';
 import BoxPaymentMethods from '../../boxes/BoxPaymentMethods';
 import ButtonSolid from '../../buttons/ButtonSolid';
-import { FormCheckoutStyled } from './FormCheckout.styled';
+import { FormBasicCheckoutStyled } from './FormBasicCheckout.styled';
 
-type FormCheckoutProps = {
+type FormBasicCheckoutProps = {
   amountToPayValue: number;
   amountToPayCurrency: string;
 };
 
-export default function FormCheckout({
+export default function FormBasicCheckout({
   amountToPayValue = 0.0,
   amountToPayCurrency = 'MXN',
-}: FormCheckoutProps) {
+}: FormBasicCheckoutProps) {
   const amountText = `Pay for ${amountToPayCurrency} ${amountToPayValue}`;
 
   const handlerMakePayment = (ev: React.FormEvent) => {
@@ -20,10 +20,10 @@ export default function FormCheckout({
   };
 
   return (
-    <FormCheckoutStyled onSubmit={handlerMakePayment}>
+    <FormBasicCheckoutStyled onSubmit={handlerMakePayment}>
       <BoxPaymentMethods subtitle="Payment method" />
       <BoxContactInfoElements />
       <ButtonSolid btnText={amountText} />
-    </FormCheckoutStyled>
+    </FormBasicCheckoutStyled>
   );
 }

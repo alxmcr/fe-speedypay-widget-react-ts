@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FormCheckoutStyled = styled.form`
+export const FormBasicCheckoutStyled = styled.form`
   display: flex;
   gap: 1.875rem;
   flex-direction: column;
