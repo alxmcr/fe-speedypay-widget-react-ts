@@ -2,13 +2,13 @@ import ThemingProvider from '../ThemingProvider';
 import ToggleCodeColorScalesProvider from '../ToggleCodeColorScalesProvider';
 import ToggleModeThemeProvider from '../ToggleModeThemeProvider';
 
-type AppProvidersProps = {
+type PersonalizationProvidersProps = {
   children: React.ReactNode;
 };
 
 export default function PersonalizationProviders({
   children,
-}: AppProvidersProps) {
+}: PersonalizationProvidersProps) {
   return (
     <ToggleModeThemeProvider>
       <ToggleCodeColorScalesProvider>
