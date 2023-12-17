@@ -36,7 +36,9 @@ export const mapperDbPaymentMethodsToPaymentMethods = (
   return paymentMethods;
 };
 
-export const mapperDbCheckoutToCheckout = (dbCheckout: DbCheckout) => {
+export const mapperDbCheckoutToCheckout = (dbCheckout: DbCheckout | null) => {
+  if (dbCheckout === null) return null;
+
   const {
     ch_checkout,
     ch_amount_to_pay,
