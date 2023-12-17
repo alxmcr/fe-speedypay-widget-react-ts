@@ -1,10 +1,11 @@
+import React from 'react';
 import FormCheckout from '../../components/forms/FormCheckout';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
-import {
-  checkout002
-} from '../../mock/data/mock-checkouts';
+import { CheckoutContext } from '../../providers/checkout/CheckoutProvider/CheckoutContext';
 
 export default function HomePage() {
+  const { checkout } = React.useContext(CheckoutContext);
+
   return (
     <div
       style={{
@@ -15,11 +16,7 @@ export default function HomePage() {
       }}
     >
       <ThemeModeToggler />
-      {/* <FormCheckout checkout={checkout001} /> */}
-      <hr />
-      <FormCheckout checkout={checkout002} />
-      <hr />
-      {/* <FormCheckout checkout={checkout003} /> */}
+      <FormCheckout checkout={checkout} />
     </div>
   );
 }
