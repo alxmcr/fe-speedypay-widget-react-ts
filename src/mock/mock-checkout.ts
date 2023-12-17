@@ -4,13 +4,14 @@ import {
   mockCompanyFinberry,
   mockCompanyFittersOriginal,
 } from './mock-companies';
+import { DbCashSample } from './mock-db-payment-methods';
 
 export const checkout001: DbCheckout = {
   ch_checkout: 'checkout-001',
   ch_company: mockCompanyBetsson,
   ch_amount_to_pay: 1265.89,
   ch_currency_amount: '$',
-  ch_payment_methods: [],
+  ch_payment_methods: [DbCashSample],
 };
 
 export const checkout002: DbCheckout = {

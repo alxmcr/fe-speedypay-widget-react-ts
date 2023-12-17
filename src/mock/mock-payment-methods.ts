@@ -1,12 +1,12 @@
 import { mapperDbPaymentMethodToAppPaymentMethod } from '../helpers/helpers-mappers';
 import {
-  BankTransferSample,
-  CashSample,
-  CreditCardSample,
+  DbBankTransferSample,
+  DbCashSample,
+  DbCreditCardSample,
 } from './mock-db-payment-methods';
 
-export const cashSample = mapperDbPaymentMethodToAppPaymentMethod(CashSample);
+export const cashSample = mapperDbPaymentMethodToAppPaymentMethod(DbCashSample);
 export const bankTransferSample =
-  mapperDbPaymentMethodToAppPaymentMethod(BankTransferSample);
+  mapperDbPaymentMethodToAppPaymentMethod(DbBankTransferSample);
 export const cardSample =
-  mapperDbPaymentMethodToAppPaymentMethod(CreditCardSample);
+  mapperDbPaymentMethodToAppPaymentMethod(DbCreditCardSample);
