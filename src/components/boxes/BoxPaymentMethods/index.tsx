@@ -1,44 +1,44 @@
 import React from 'react';
 import { LoadingStates } from '../../../helpers/constants/constants-services';
 import { CheckoutContext } from '../../../providers/checkout/CheckoutProvider/CheckoutContext';
+import TabsPaymentMethods from '../../tabs/TabsPaymentMethods';
 import { BodyTextTwo } from '../../typography/BodyTexts';
 import { SubtitleOne } from '../../typography/Subtitles';
-import TabsPaymentMethods from '../TabsPaymentMethods';
-import { TabPaymentMethodsBoxStyled } from './TabPaymentMethodsBox.styled';
+import { BoxPaymentMethodsStyled } from './BoxPaymentMethods.styled';
 
-type TabPaymentMethodsBoxProps = {
+type BoxPaymentMethodsProps = {
   subtitle: string;
 };
 
-export default function TabPaymentMethodsBox({
+export default function BoxPaymentMethods({
   subtitle = '',
-}: TabPaymentMethodsBoxProps) {
+}: BoxPaymentMethodsProps) {
   const { checkout, loadingCheckout } = React.useContext(CheckoutContext);
 
   if (LoadingStates.PENDING === loadingCheckout) {
     return (
-      <TabPaymentMethodsBoxStyled>
+      <BoxPaymentMethodsStyled>
         <SubtitleOne>{subtitle}</SubtitleOne>
         <BodyTextTwo>Loading...</BodyTextTwo>
-      </TabPaymentMethodsBoxStyled>
+      </BoxPaymentMethodsStyled>
     );
   }
 
   if (LoadingStates.SUCCESS === loadingCheckout) {
     if (checkout === null) {
       return (
-        <TabPaymentMethodsBoxStyled>
+        <BoxPaymentMethodsStyled>
           <SubtitleOne>{subtitle}</SubtitleOne>
           <BodyTextTwo>No checkout</BodyTextTwo>
-        </TabPaymentMethodsBoxStyled>
+        </BoxPaymentMethodsStyled>
       );
     } else {
       if (checkout.payment_methods?.length > 0) {
         return (
-          <TabPaymentMethodsBoxStyled>
+          <BoxPaymentMethodsStyled>
             <SubtitleOne>{subtitle}</SubtitleOne>
             <TabsPaymentMethods paymentMethods={checkout.payment_methods} />
-          </TabPaymentMethodsBoxStyled>
+          </BoxPaymentMethodsStyled>
         );
       }
     }
