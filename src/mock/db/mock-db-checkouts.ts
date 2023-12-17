@@ -10,7 +10,7 @@ import {
   DbCreditCardSample,
 } from './mock-db-payment-methods';
 
-export const checkout001: DbCheckout = {
+export const dbCheckout001: DbCheckout = {
   ch_checkout: 'checkout-001',
   ch_company: dbCompanyBetsson,
   ch_amount_to_pay: 1265.89,
@@ -18,7 +18,7 @@ export const checkout001: DbCheckout = {
   ch_payment_methods: [DbCreditCardSample, DbBankTransferSample, DbCashSample],
 };
 
-export const checkout002: DbCheckout = {
+export const dbCheckout002: DbCheckout = {
   ch_checkout: 'checkout-002',
   ch_company: dbCompanyFinberry,
   ch_amount_to_pay: 787.36,
@@ -26,7 +26,7 @@ export const checkout002: DbCheckout = {
   ch_payment_methods: [DbCreditCardSample, DbCashSample],
 };
 
-export const checkout003: DbCheckout = {
+export const dbCheckout003: DbCheckout = {
   ch_checkout: 'checkout-003',
   ch_company: dbFittersOriginal,
   ch_amount_to_pay: 859.12,
