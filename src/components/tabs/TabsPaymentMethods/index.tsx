@@ -28,7 +28,7 @@ export default function TabsPaymentMethods({
       {paymentMethods.map((paymentMethod) => (
         <TabPaymentMethod
           key={paymentMethod.id}
-          nameIcon={paymentMethod.code}
+          nameIcon={`icon-${paymentMethod.code}`}
           paymentMethodName={paymentMethod.name}
           isSelected={paymentMethod.code === currentPaymentMethodCode}
           handlerClick={() =>
