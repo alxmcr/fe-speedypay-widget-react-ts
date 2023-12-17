@@ -1,4 +1,4 @@
-import { PaymentMethod } from '../../../types/appTypes';
+import { Checkout } from '../../../types/appTypes';
 import BoxCardInfoElements from '../../boxes/BoxCardInfoElements';
 import BoxContactInfoElements from '../../boxes/BoxContactInfoElements';
 import BoxPaymentMethods from '../../boxes/BoxPaymentMethods';
@@ -6,32 +6,28 @@ import ButtonSolid from '../../buttons/ButtonSolid';
 import { FormCheckoutStyled } from './FormCheckout.styled';
 
 type FormCheckoutProps = {
-  amountToPayValue: number;
-  amountToPayCurrency: string;
-  paymentMethods: PaymentMethod[];
+  checkout: Checkout | null;
 };
 
-export default function FormCheckout({
-  amountToPayValue = 0.0,
-  amountToPayCurrency = 'MXN',
-  paymentMethods = [],
-}: FormCheckoutProps) {
-  const amountText = `Pay for ${amountToPayCurrency} ${amountToPayValue}`;
+export default function FormCheckout({ checkout }: FormCheckoutProps) {
+  if (checkout === null) return null;
 
   const handlerMakePayment = (ev: React.FormEvent) => {
     ev.preventDefault();
-    console.log(`Paying ${amountToPayValue}`);
+    console.log(`Paying`);
   };
 
   return (
     <FormCheckoutStyled onSubmit={handlerMakePayment}>
       <BoxPaymentMethods
         subtitle="Payment method"
-        paymentMethods={paymentMethods}
+        paymentMethods={checkout.payment_methods}
       />
       <BoxContactInfoElements />
       <BoxCardInfoElements />
-      <ButtonSolid btnText={amountText} />
+      <ButtonSolid
+        btnText={`Pay for ${checkout.currency_amount} ${checkout.amount_to_pay}`}
+      />
     </FormCheckoutStyled>
   );
 }

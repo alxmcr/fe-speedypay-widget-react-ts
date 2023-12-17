@@ -1,6 +1,10 @@
-import FormBasicCheckout from '../../components/forms/FormBasicCheckout';
-import FormCardCheckout from '../../components/forms/FormCardCheckout';
+import FormCheckout from '../../components/forms/FormCheckout';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
+import {
+  checkout001,
+  checkout002,
+  checkout003,
+} from '../../mock/data/mock-checkouts';
 
 export default function HomePage() {
   return (
@@ -13,9 +17,11 @@ export default function HomePage() {
       }}
     >
       <ThemeModeToggler />
-      <FormBasicCheckout amountToPayValue={2559.56} amountToPayCurrency="MXN" />
+      <FormCheckout checkout={checkout001} />
       <hr />
-      <FormCardCheckout amountToPayValue={2559.56} amountToPayCurrency="MXN" />
+      <FormCheckout checkout={checkout002} />
+      <hr />
+      <FormCheckout checkout={checkout003} />
     </div>
   );
 }
