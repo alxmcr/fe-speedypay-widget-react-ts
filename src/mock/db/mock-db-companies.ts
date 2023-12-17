@@ -1,4 +1,4 @@
-import { DbCompany } from '../types/serviceTypes';
+import { DbCompany } from '../../types/serviceTypes';
 
 export const BASE_URL_LOGOS =
   'https://res.cloudinary.com/images-alex-projects/image/upload';

@@ -3,7 +3,7 @@ import {
   mockCompanyBetsson,
   mockCompanyFinberry,
   mockCompanyFittersOriginal,
-} from '../mock-companies';
+} from './mock-db-companies';
 import {
   DbBankTransferSample,
   DbCashSample,
