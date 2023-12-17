@@ -8,6 +8,7 @@ type TabPaymentMethodProps = {
   paymentMethodName: string;
   isSelected?: boolean;
   disabled?: boolean;
+  handlerClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
 export default function TabPaymentMethod({
@@ -15,9 +16,14 @@ export default function TabPaymentMethod({
   paymentMethodName = '',
   isSelected = false,
   disabled = false,
+  handlerClick,
 }: TabPaymentMethodProps) {
   return (
-    <TabPaymentMethodStyled $isSelected={isSelected} disabled={disabled}>
+    <TabPaymentMethodStyled
+      $isSelected={isSelected}
+      disabled={disabled}
+      onClick={handlerClick}
+    >
       <AppIcon iconName={nameIcon} />
       <BodyTextTwo>{paymentMethodName}</BodyTextTwo>
     </TabPaymentMethodStyled>
