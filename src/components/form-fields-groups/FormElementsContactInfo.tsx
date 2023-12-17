@@ -11,6 +11,7 @@ export default function FormElementsContactInfo() {
           id="email"
           placeholder="Enter your email"
           fullWidth={true}
+          required
         />
       </FormField>
       <FormField labelText="Full name" id="full-name">
@@ -19,6 +20,7 @@ export default function FormElementsContactInfo() {
           id="full-name"
           placeholder="Enter your first and last name"
           fullWidth={true}
+          required
         />
       </FormField>
     </FormFieldsGroupStyled>
