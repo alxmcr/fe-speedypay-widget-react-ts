@@ -1,12 +1,12 @@
 import FormElementsContactInfo from '../../form-fields-groups/FormElementsContactInfo';
 import { SubtitleOne } from '../../typography/Subtitles';
-import { BoxContactElementsStyled } from './BoxContactElements.styled';
+import { BoxContactInfoElementsStyled } from './BoxContactInfoElements.styled';
 
-export default function BoxContactElements() {
+export default function BoxContactInfoElements() {
   return (
-    <BoxContactElementsStyled>
+    <BoxContactInfoElementsStyled>
       <SubtitleOne>Contact information</SubtitleOne>
       <FormElementsContactInfo />
-    </BoxContactElementsStyled>
+    </BoxContactInfoElementsStyled>
   );
 }
