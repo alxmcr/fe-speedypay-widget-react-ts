@@ -1,3 +1,4 @@
+import React from 'react';
 import { Checkout } from '../../../types/appTypes';
 import BoxCardInfoElements from '../../boxes/BoxCardInfoElements';
 import BoxContactInfoElements from '../../boxes/BoxContactInfoElements';
