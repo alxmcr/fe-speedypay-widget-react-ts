@@ -27,6 +27,7 @@ export default function TabsPaymentMethods({
     <TabsPaymentMethodsStyled>
       {paymentMethods.map((paymentMethod) => (
         <TabPaymentMethod
+          key={paymentMethod.id}
           nameIcon={paymentMethod.code}
           paymentMethodName={paymentMethod.name}
           isSelected={paymentMethod.code === currentPaymentMethodCode}
