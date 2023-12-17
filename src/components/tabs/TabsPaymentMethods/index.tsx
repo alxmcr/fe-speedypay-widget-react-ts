@@ -1,8 +1,9 @@
 import React from 'react';
+import { PaymentMethodsContext } from '../../../providers/checkout/PaymentMethodsProvider/PaymentMethodsContext';
 import { PaymentMethod } from '../../../types/appTypes';
 import { BodyTextTwo } from '../../typography/BodyTexts';
 import TabPaymentMethod from '../TabPaymentMethod';
-import { PaymentMethodsContext } from '../../../providers/checkout/PaymentMethodsProvider/PaymentMethodsContext';
+import { TabsPaymentMethodsStyled } from './TabsPaymentMethods.styled';
 
 type TabsPaymentMethodsProps = {
   paymentMethods: PaymentMethod[];
@@ -23,7 +24,7 @@ export default function TabsPaymentMethods({
   }
 
   return (
-    <div>
+    <TabsPaymentMethodsStyled>
       {paymentMethods.map((paymentMethod) => (
         <TabPaymentMethod
           nameIcon={paymentMethod.code}
@@ -34,6 +35,6 @@ export default function TabsPaymentMethods({
           }
         />
       ))}
-    </div>
+    </TabsPaymentMethodsStyled>
   );
 }
