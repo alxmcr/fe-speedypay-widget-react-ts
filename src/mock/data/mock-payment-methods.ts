@@ -1,4 +1,4 @@
-import { mapperDbPaymentMethodToAppPaymentMethod } from '../../helpers/helpers-mappers';
+import { mapperDbPaymentMethodToAppPaymentMethod } from '../helpers-mappers';
 import {
   DbBankTransferSample,
   DbCashSample,
