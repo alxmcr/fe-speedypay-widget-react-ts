@@ -1,9 +1,9 @@
-import { DbCheckout } from '../types/serviceTypes';
+import { DbCheckout } from '../../types/serviceTypes';
 import {
   mockCompanyBetsson,
   mockCompanyFinberry,
   mockCompanyFittersOriginal,
-} from './mock-companies';
+} from '../mock-companies';
 import {
   DbBankTransferSample,
   DbCashSample,

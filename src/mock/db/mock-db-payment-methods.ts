@@ -1,4 +1,4 @@
-import { DbPaymentMethod } from '../types/serviceTypes';
+import { DbPaymentMethod } from '../../types/serviceTypes';
 
 export const DbBankTransferSample: DbPaymentMethod = {
   pm_payment_method: 'pay-method-001',
