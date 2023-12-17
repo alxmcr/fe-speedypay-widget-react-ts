@@ -16,3 +16,11 @@ export type PaymentMethod = {
   name: string;
   isDisabled: boolean;
 };
+
+export type Checkout = {
+  id: string;
+  amount_to_pay: number;
+  currency_amount: string;
+  company: Company;
+  payment_methods: PaymentMethod[];
+};

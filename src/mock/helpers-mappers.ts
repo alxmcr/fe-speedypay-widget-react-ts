@@ -1,7 +1,7 @@
-import { Company, PaymentMethod } from '../types/appTypes';
-import { DbCompany, DbPaymentMethod } from '../types/serviceTypes';
+import { Checkout, Company, PaymentMethod } from '../types/appTypes';
+import { DbCheckout, DbCompany, DbPaymentMethod } from '../types/serviceTypes';
 
-export const mapperDbPaymentMethodToAppPaymentMethod = (
+export const mapperDbPaymentMethodToPaymentMethod = (
   dbPaymentMethod: DbPaymentMethod,
 ): PaymentMethod => {
   const paymentMethod: PaymentMethod = {
@@ -22,4 +22,36 @@ export const mapperDbCompanyToCompany = (dbCompany: DbCompany) => {
   };
 
   return company;
+};
+
+export const mapperDbPaymentMethodsToPaymentMethods = (
+  dbPaymentMethods: DbPaymentMethod[],
+) => {
+  let paymentMethods: PaymentMethod[] = [];
+
+  dbPaymentMethods.forEach((dbPaymentMethod) => {
+    paymentMethods.push(mapperDbPaymentMethodToPaymentMethod(dbPaymentMethod));
+  });
+
+  return paymentMethods;
+};
+
+export const mapperDbCheckoutToCheckout = (dbCheckout: DbCheckout) => {
+  const {
+    ch_checkout,
+    ch_amount_to_pay,
+    ch_currency_amount,
+    ch_company,
+    ch_payment_methods,
+  } = dbCheckout;
+
+  const checkout: Checkout = {
+    id: ch_checkout,
+    amount_to_pay: ch_amount_to_pay,
+    currency_amount: ch_currency_amount,
+    company: mapperDbCompanyToCompany(ch_company),
+    payment_methods: mapperDbPaymentMethodsToPaymentMethods(ch_payment_methods),
+  };
+
+  return checkout;
 };
