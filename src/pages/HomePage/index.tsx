@@ -14,6 +14,7 @@ export default function HomePage() {
     >
       <ThemeModeToggler />
       <FormBasicCheckout amountToPayValue={2559.56} amountToPayCurrency="MXN" />
+      <hr />
       <FormCardCheckout amountToPayValue={2559.56} amountToPayCurrency="MXN" />
     </div>
   );
