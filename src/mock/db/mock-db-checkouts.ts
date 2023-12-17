@@ -37,5 +37,5 @@ export const dbCheckout003: DbCheckout = {
   ch_company: dbFittersOriginal,
   ch_amount_to_pay: 859.12,
   ch_currency_amount: 'USD',
-  ch_payment_methods: [DbCashSample],
+  ch_payment_methods: [DbCashSample, DbBankTransferSample],
 };
