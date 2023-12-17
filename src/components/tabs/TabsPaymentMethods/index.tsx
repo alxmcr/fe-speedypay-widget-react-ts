@@ -1,6 +1,9 @@
+import React from 'react';
+import { PaymentMethodsContext } from '../../../providers/checkout/PaymentMethodsProvider/PaymentMethodsContext';
 import { PaymentMethod } from '../../../types/appTypes';
 import { BodyTextTwo } from '../../typography/BodyTexts';
 import TabPaymentMethod from '../TabPaymentMethod';
+import { TabsPaymentMethodsStyled } from './TabsPaymentMethods.styled';
 
 type TabsPaymentMethodsProps = {
   paymentMethods: PaymentMethod[];
@@ -9,18 +12,30 @@ type TabsPaymentMethodsProps = {
 export default function TabsPaymentMethods({
   paymentMethods = [],
 }: TabsPaymentMethodsProps) {
+  const { currentPaymentMethodCode, setCurrentPaymentMethodCode } =
+    React.useContext(PaymentMethodsContext);
+
+  const handlerClickTab = (paymentMethod: PaymentMethod) => {
+    setCurrentPaymentMethodCode(paymentMethod.code);
+  };
+
   if (paymentMethods.length === 0) {
     return <BodyTextTwo>No payment methods allowed.</BodyTextTwo>;
   }
 
   return (
-    <div>
+    <TabsPaymentMethodsStyled>
       {paymentMethods.map((paymentMethod) => (
         <TabPaymentMethod
-          nameIcon={paymentMethod.code}
+          key={paymentMethod.id}
+          nameIcon={`icon-${paymentMethod.code}`}
           paymentMethodName={paymentMethod.name}
+          isSelected={paymentMethod.code === currentPaymentMethodCode}
+          handlerClick={() =>
+            paymentMethod.isDisabled ? null : handlerClickTab(paymentMethod)
+          }
         />
       ))}
-    </div>
+    </TabsPaymentMethodsStyled>
   );
 }

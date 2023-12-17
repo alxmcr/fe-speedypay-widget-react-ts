@@ -6,7 +6,7 @@ import InputList from '../../components/inputs/InputList';
 import MessagesList from '../../components/messages/MessagesList';
 import PillList from '../../components/pills/PillList';
 import SvgRemoteList from '../../components/svg/SvgRemoteList';
-import TabList from '../../components/tabs/TabList';
+import TabPaymentMethodsBox from '../../components/tabs/TabPaymentMethodsBox';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
 
 export default function HomePage() {
@@ -20,7 +20,7 @@ export default function HomePage() {
       }}
     >
       <ThemeModeToggler />
-      <TabList />
+      <TabPaymentMethodsBox subtitle="Payment methods" />
       <MessagesList />
       <FormElementsContactInfo />
       <FormElementsCardInfo />

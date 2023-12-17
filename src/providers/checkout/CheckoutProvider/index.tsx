@@ -1,4 +1,5 @@
 import useCheckout from '../../../hooks/useCheckout';
+import { CHECKOUTS_ID } from '../../../mock/db/mock-db-checkouts';
 import { CheckoutContext, CheckoutContextData } from './CheckoutContext';
 
 type CheckoutProviderProps = {
@@ -7,7 +8,7 @@ type CheckoutProviderProps = {
 
 export default function CheckoutProvider({ children }: CheckoutProviderProps) {
   const { checkout, loadingCheckout } = useCheckout({
-    checkoutId: 'checkout-001',
+    checkoutId: CHECKOUTS_ID.id001,
   });
 
   const value: CheckoutContextData = {
