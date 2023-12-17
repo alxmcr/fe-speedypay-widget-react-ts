@@ -14,6 +14,10 @@ export default function TabsPaymentMethods({
 }: TabsPaymentMethodsProps) {
   const { currentPaymentMethodCode, setCurrentPaymentMethodCode } =
     React.useContext(PaymentMethodsContext);
+  console.log(
+    '🚀 ~ file: index.tsx:16 ~ currentPaymentMethodCode:',
+    currentPaymentMethodCode,
+  );
 
   const handlerClickTab = (paymentMethod: PaymentMethod) => {
     setCurrentPaymentMethodCode(paymentMethod.code);

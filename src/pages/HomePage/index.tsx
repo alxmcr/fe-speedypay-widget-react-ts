@@ -1,9 +1,7 @@
 import FormCheckout from '../../components/forms/FormCheckout';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
 import {
-  checkout001,
-  checkout002,
-  checkout003,
+  checkout002
 } from '../../mock/data/mock-checkouts';
 
 export default function HomePage() {
@@ -17,11 +15,11 @@ export default function HomePage() {
       }}
     >
       <ThemeModeToggler />
-      <FormCheckout checkout={checkout001} />
+      {/* <FormCheckout checkout={checkout001} /> */}
       <hr />
       <FormCheckout checkout={checkout002} />
       <hr />
-      <FormCheckout checkout={checkout003} />
+      {/* <FormCheckout checkout={checkout003} /> */}
     </div>
   );
 }
