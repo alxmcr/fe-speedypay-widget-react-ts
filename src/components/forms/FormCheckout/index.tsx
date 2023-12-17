@@ -5,12 +5,16 @@ import BoxContactInfoElements from '../../boxes/BoxContactInfoElements';
 import BoxPaymentMethods from '../../boxes/BoxPaymentMethods';
 import ButtonSolid from '../../buttons/ButtonSolid';
 import { FormCheckoutStyled } from './FormCheckout.styled';
+import { PAYMENT_METHODS_CODES } from '../../../mock/db/mock-db-payment-methods';
+import { PaymentMethodsContext } from '../../../providers/checkout/PaymentMethodsProvider/PaymentMethodsContext';
 
 type FormCheckoutProps = {
   checkout: Checkout | null;
 };
 
 export default function FormCheckout({ checkout }: FormCheckoutProps) {
+  const { currentPaymentMethodCode } = React.useContext(PaymentMethodsContext);
+
   if (checkout === null) return null;
 
   const handlerMakePayment = (ev: React.FormEvent) => {
@@ -25,7 +29,9 @@ export default function FormCheckout({ checkout }: FormCheckoutProps) {
         paymentMethods={checkout.payment_methods}
       />
       <BoxContactInfoElements />
-      <BoxCardInfoElements />
+      {PAYMENT_METHODS_CODES.card === currentPaymentMethodCode ? (
+        <BoxCardInfoElements />
+      ) : null}
       <ButtonSolid
         btnText={`Pay for ${checkout.currency_amount} ${checkout.amount_to_pay}`}
       />
