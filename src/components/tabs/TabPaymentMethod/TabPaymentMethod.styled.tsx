@@ -20,7 +20,7 @@ export const TabPaymentMethodStyled = styled.button<TabPaymentMethodStyledStyled
 
   font-size: 0.875rem;
   height: 2.8125rem;
-  min-width: 10.1875rem;
+  min-width: 9.25rem;
   padding: 0.625rem 0.75rem;
 
   &:active {

@@ -1,10 +1,10 @@
 import FormField from '../form-fields/FormField';
 import AppInputWithMask from '../inputs/AppInputWithMask';
-import { FormFieldsGroupStyled } from './FormFieldsGroup.styled';
+import { FormFieldsGroupRowStyled } from './FormFieldsGroupRow.styled';
 
 export default function FormElementsCardDetails() {
   return (
-    <FormFieldsGroupStyled $flexDirection="row">
+    <FormFieldsGroupRowStyled>
       <FormField labelText="Expiration date" id="expiration-date">
         <AppInputWithMask
           id="expiration-date"
@@ -16,6 +16,6 @@ export default function FormElementsCardDetails() {
       <FormField labelText="CVC" id="CVC">
         <AppInputWithMask id="CVC" mask="999" placeholder="CVC" required />
       </FormField>
-    </FormFieldsGroupStyled>
+    </FormFieldsGroupRowStyled>
   );
 }

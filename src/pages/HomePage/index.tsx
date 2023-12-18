@@ -1,17 +1,11 @@
-import BoxCardInfoElements from '../../components/boxes/BoxCardInfoElements';
-import BoxContactInfoElements from '../../components/boxes/BoxContactInfoElements';
-import BoxPaymentMethods from '../../components/boxes/BoxPaymentMethods';
-import ButtonList from '../../components/buttons/ButtonList';
-import FormElementsCardInfo from '../../components/form-fields-groups/FormElementsCardInfo';
-import FormElementsContactInfo from '../../components/form-fields-groups/FormElementsContactInfo';
-import AppIconList from '../../components/icons/AppIconList';
-import InputList from '../../components/inputs/InputList';
-import MessagesList from '../../components/messages/MessagesList';
-import PillList from '../../components/pills/PillList';
-import SvgRemoteList from '../../components/svg/SvgRemoteList';
+import React from 'react';
+import FormCheckout from '../../components/forms/FormCheckout';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
+import { CheckoutContext } from '../../providers/checkout/CheckoutProvider/CheckoutContext';
 
 export default function HomePage() {
+  const { checkout } = React.useContext(CheckoutContext);
+
   return (
     <div
       style={{
@@ -22,17 +16,7 @@ export default function HomePage() {
       }}
     >
       <ThemeModeToggler />
-      <BoxPaymentMethods subtitle="Payment methods" />
-      <BoxContactInfoElements />
-      <BoxCardInfoElements />
-      <MessagesList />
-      <FormElementsContactInfo />
-      <FormElementsCardInfo />
-      <PillList />
-      <AppIconList />
-      <ButtonList />
-      <InputList />
-      <SvgRemoteList />
+      <FormCheckout checkout={checkout} />
     </div>
   );
 }

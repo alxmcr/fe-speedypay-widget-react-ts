@@ -17,6 +17,7 @@ export default function ButtonList() {
         gap: '1rem',
       }}
     >
+      <ButtonSolid btnText="Pay for $1234.56" />
       <ButtonSolid btnText="Pay for $1234.56" onClick={onClick} />
 
       <ButtonSolid

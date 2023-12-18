@@ -3,7 +3,7 @@ import { TextButton } from '../../typography/SupportingStyles';
 import { ButtonSolidStyled } from './ButtonBaseSolid.styled';
 
 type ButtonSolidProps = {
-  onClick: () => void;
+  onClick?: () => void;
   disabled?: boolean;
   fullWidth?: boolean;
   btnText?: string;

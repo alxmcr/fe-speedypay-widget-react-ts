@@ -9,7 +9,7 @@ import { FormFieldsGroupStyled } from './FormFieldsGroup.styled';
 export default function FormElementsCardInfo() {
   return (
     <FormFieldsGroupStyled $flexDirection="column">
-      <FormField labelText="Card number" id="card-number">
+      <FormField labelText="Card number" id="card-number" $width="100%">
         <AppInputWithMask
           id="card-number"
           mask="9999 9999 9999 9999"
@@ -18,7 +18,11 @@ export default function FormElementsCardInfo() {
         />
       </FormField>
       <FormElementsCardDetails />
-      <FormField labelText="Card holder name" id="card-holder-name">
+      <FormField
+        labelText="Card holder name"
+        id="card-holder-name"
+        $width="100%"
+      >
         <AppInput
           type="text"
           id="card-holder-name"
@@ -26,7 +30,11 @@ export default function FormElementsCardInfo() {
           fullWidth={true}
         />
       </FormField>
-      <FormField labelText="Installments" id="select-installments">
+      <FormField
+        labelText="Installments"
+        id="select-installments"
+        $width="100%"
+      >
         <AppSelect
           id="select-installments"
           name="select-installments"
