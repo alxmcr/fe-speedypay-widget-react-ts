@@ -14,6 +14,7 @@ export default function CustomerProvider({ children }: CustomerProviderProps) {
 
   const value: CustomerContextData = {
     customer,
+    setCustomer,
   };
 
   return (

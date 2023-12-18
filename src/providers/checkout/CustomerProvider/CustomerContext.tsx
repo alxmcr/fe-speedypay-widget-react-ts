@@ -3,7 +3,7 @@ import { Customer } from '../../../types/appTypes';
 
 export type CustomerContextData = {
   customer: Customer;
-  setThemeMode: React.Dispatch<React.SetStateAction<Customer>>;
+  setCustomer: React.Dispatch<React.SetStateAction<Customer>>;
 };
 
 export const initialCustomer: Customer = {
@@ -19,7 +19,7 @@ export const initialCustomer: Customer = {
 
 const initialCustomerData: CustomerContextData = {
   customer: initialCustomer,
-  setThemeMode: () => {},
+  setCustomer: () => {},
 };
 
 export const CustomerContext = React.createContext(initialCustomerData);
