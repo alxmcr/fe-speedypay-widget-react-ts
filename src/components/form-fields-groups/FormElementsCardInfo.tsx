@@ -4,6 +4,8 @@ import { AppInputWithMaskStyled } from '../inputs/AppInputWithMask/AppInputWithM
 import { AppInputStyled } from '../inputs/common/AppInput/AppInput.styled';
 import FormElementsCardDetails from './FormElementsCardDetails';
 import { FormFieldsGroupStyled } from './FormFieldsGroup.styled';
+import { mockInstallmentsFull } from '../../mock/mock-installments';
+import AppSelect from '../selects/AppSelect';
 
 export default function FormElementsCardInfo() {
   const [cardNumber, setCardNumber] = React.useState('');
@@ -19,7 +21,9 @@ export default function FormElementsCardInfo() {
     setCardHolderName(ev.target.value);
   };
 
-  const handleOptionInstallments = (ev: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleOptionInstallments = (
+    ev: React.ChangeEvent<HTMLSelectElement>,
+  ) => {
     setInstallmentSelected(ev.target.value);
   };
 
@@ -55,15 +59,15 @@ export default function FormElementsCardInfo() {
         id="select-installments"
         $width="100%"
       >
-        {/* <AppSelect
+        <AppSelect
           id="select-installments"
           name="select-installments"
           placeholder="Choose an installment"
           options={mockInstallmentsFull}
-          value={installmentSelected}
-          onChange={handleOptionInstallments}
+          valueOption={installmentSelected}
+          handleSelect={handleOptionInstallments}
           width="100%"
-        /> */}
+        />
       </FormField>
     </FormFieldsGroupStyled>
   );
