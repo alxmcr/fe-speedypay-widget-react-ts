@@ -1,7 +1,11 @@
-import { mockInstallmentsFull } from '../../mock/mock-options';
+import {
+  OnePayment,
+  SixMonths,
+  ThreeMonths,
+} from '../../mock/data/mock-installments';
 import AppInputWithMask from '../inputs/AppInputWithMask';
 import AppInput from '../inputs/common/AppInput';
-import AppSelect from '../selects/AppSelect';
+import SelectInstallments from '../selects/SelectInstallments';
 import FormField from './FormField';
 
 export default function FormFieldList() {
@@ -40,6 +44,7 @@ export default function FormFieldList() {
       </FormField>
       <FormField labelText="Card number" id="card-number">
         <AppInputWithMask
+          id="card-number"
           mask="9999 9999 9999 9999"
           placeholder="Enter your card number"
           required
@@ -54,18 +59,24 @@ export default function FormFieldList() {
         }}
       >
         <FormField labelText="Expiration date" id="expiration-date">
-          <AppInputWithMask mask="99/99" placeholder="MM/DD" required />
+          <AppInputWithMask
+            id="expiration-date"
+            mask="99/99"
+            placeholder="MM/DD"
+            required
+          />
         </FormField>
         <FormField labelText="CVC" id="CVC">
-          <AppInputWithMask mask="999" placeholder="CVC" required />
+          <AppInputWithMask id="CVC" mask="999" placeholder="CVC" required />
         </FormField>
       </div>
       <FormField labelText="Installments" id="select-installments">
-        <AppSelect
+        <SelectInstallments
           id="select-installments"
           name="select-installments"
           placeholder="Choose an installment"
-          options={mockInstallmentsFull}
+          installments={[OnePayment, ThreeMonths, SixMonths]}
+          valueInstallmentSelected=""
           width="100%"
         />
       </FormField>
