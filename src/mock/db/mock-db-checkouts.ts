@@ -18,7 +18,9 @@ import {
 } from './mock-db-payment-methods';
 
 export const CHECKOUTS_ID = {
-  empty: 'checkout-001',
+  empty: 'empty',
+  emptyPaymentMethods: 'empty-payment-methods',
+  emptyInstallments: 'empty-installments',
   id001: 'checkout-001',
   id002: 'checkout-002',
   id003: 'checkout-003',
