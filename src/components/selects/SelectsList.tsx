@@ -1,7 +1,8 @@
 import {
-  mockInstallmentsBasic,
-  mockInstallmentsFull,
-} from '../../mock/mock-options';
+  OnePayment,
+  SixMonths,
+  ThreeMonths,
+} from '../../mock/data/mock-installments';
 import SelectInstallments from './SelectInstallments';
 
 export default function SelectsList() {
@@ -17,14 +18,14 @@ export default function SelectsList() {
         id="select-installments"
         name="select-installments"
         placeholder="Choose an installment"
-        installments={mockInstallmentsFull}
+        installments={[OnePayment, ThreeMonths, SixMonths]}
         width="100%"
       />
       <SelectInstallments
         id="select-installments"
         name="select-installments"
         placeholder="Choose an installment"
-        installments={mockInstallmentsBasic}
+        installments={[OnePayment, ThreeMonths]}
         width="100%"
       />
     </div>

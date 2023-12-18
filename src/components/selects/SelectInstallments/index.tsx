@@ -1,6 +1,6 @@
 import { Installment } from '../../../types/appTypes';
-import { AppSelectStyled } from '../AppSelect/AppSelect.styled';
-import { AppSelectOptionStyled } from '../AppSelect/AppSelectOption.styled';
+import { AppSelectStyled } from '../AppSelect.styled';
+import { AppSelectOptionStyled } from '../AppSelectOption.styled';
 
 type SelectInstallmentsProps = {
   name: string;
