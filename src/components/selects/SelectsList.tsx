@@ -1,7 +1,7 @@
 import {
   mockInstallmentsBasic,
   mockInstallmentsFull,
-} from '../../mock/mock-installments';
+} from '../../mock/mock-options';
 import AppSelect from './AppSelect';
 
 export default function SelectsList() {

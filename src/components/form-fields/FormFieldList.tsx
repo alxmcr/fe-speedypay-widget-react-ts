@@ -1,4 +1,4 @@
-import { mockInstallmentsFull } from '../../mock/mock-installments';
+import { mockInstallmentsFull } from '../../mock/mock-options';
 import AppInputWithMask from '../inputs/AppInputWithMask';
 import AppInput from '../inputs/common/AppInput';
 import AppSelect from '../selects/AppSelect';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { mockInstallmentsFull } from '../../mock/mock-installments';
+import { mockInstallmentsFull } from '../../mock/mock-options';
 import { CustomerContext } from '../../providers/checkout/CustomerProvider/CustomerContext';
 import FormField from '../form-fields/FormField';
 import { AppInputWithMaskStyled } from '../inputs/AppInputWithMask/AppInputWithMask.styled';
