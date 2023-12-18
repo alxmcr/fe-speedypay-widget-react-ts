@@ -29,6 +29,7 @@ export default function AppInputWithMask({
       placeholder={placeholder}
       required={required}
       onChange={handlerInput}
+      autoComplete="off"
     />
   );
 }

@@ -35,6 +35,7 @@ export default function AppInputText({
       maxLength={maxLength}
       onChange={handlerInput}
       value={valueInput}
+      autoComplete="off"
     />
   ) : (
     <AppInputStyled
@@ -46,6 +47,7 @@ export default function AppInputText({
       required={required}
       onChange={handlerInput}
       value={valueInput}
+      autoComplete="off"
     />
   );
 }
