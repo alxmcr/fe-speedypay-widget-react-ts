@@ -18,13 +18,14 @@ import {
 } from './mock-db-payment-methods';
 
 export const CHECKOUTS_ID = {
+  empty: 'checkout-001',
   id001: 'checkout-001',
   id002: 'checkout-002',
   id003: 'checkout-003',
 };
 
 export const dbCheckoutEmpty: DbCheckout = {
-  ch_checkout: CHECKOUTS_ID.id003,
+  ch_checkout: CHECKOUTS_ID.empty,
   ch_company: dbFittersOriginal,
   ch_amount_to_pay: 859.12,
   ch_currency_amount: 'USD',
