@@ -10,19 +10,22 @@ import { PaymentMethodsContext } from '../../../providers/checkout/PaymentMethod
 import MessageCheckout from '../../messages/MessageCheckout';
 import { MESSAGES } from '../../../helpers/constants/constants-messages';
 import { IconNames } from '../../../types/enumsApp';
+import { CustomerContext } from '../../../providers/checkout/CustomerProvider/CustomerContext';
 
 type FormCheckoutProps = {
   checkout: Checkout | null;
 };
 
 export default function FormCheckout({ checkout }: FormCheckoutProps) {
+  const { customer } = React.useContext(CustomerContext);
   const { currentPaymentMethodCode } = React.useContext(PaymentMethodsContext);
 
   if (checkout === null) return null;
 
   const handlerMakePayment = (ev: React.FormEvent) => {
     ev.preventDefault();
-    console.log(`Paying`);
+    console.log(`Paying with ${currentPaymentMethodCode}`);
+    console.log(`Customer: ${customer}`);
   };
 
   return (
