@@ -1,5 +1,5 @@
 import { Checkout, Company, PaymentMethod } from '../types/appTypes';
-import { DbCheckout, DbCompany, DbPaymentMethod } from '../types/serviceTypes';
+import { DbCheckout, DbCompany, DbPaymentMethod } from '../types/databaseTypes';
 
 export const mapperDbPaymentMethodToPaymentMethod = (
   dbPaymentMethod: DbPaymentMethod,

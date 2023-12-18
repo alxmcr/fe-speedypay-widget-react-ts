@@ -1,4 +1,4 @@
-import { DbCheckout } from '../../types/serviceTypes';
+import { DbCheckout } from '../../types/databaseTypes';
 import {
   dbCompanyBetsson,
   dbCompanyFinberry,

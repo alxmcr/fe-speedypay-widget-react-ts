@@ -1,7 +1,7 @@
 import React from 'react';
 import { Checkout } from '../types/appTypes';
 import { LoadingStates } from '../helpers/constants/constants-services';
-import { DbCheckout } from '../types/serviceTypes';
+import { DbCheckout } from '../types/databaseTypes';
 import {
   dbCheckout001,
   dbCheckout002,
