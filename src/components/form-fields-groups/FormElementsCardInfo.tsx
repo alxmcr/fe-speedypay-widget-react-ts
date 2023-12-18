@@ -73,21 +73,23 @@ export default function FormElementsCardInfo() {
           onChange={handleCardHolderName}
         />
       </FormField>
-      <FormField
-        labelText="Installments"
-        id="select-installments"
-        $width="100%"
-      >
-        <SelectInstallments
+      {checkout?.installments?.length > 0 ? (
+        <FormField
+          labelText="Installments"
           id="select-installments"
-          name="select-installments"
-          placeholder="Choose an installment"
-          installments={checkout?.installments}
-          valueInstallmentSelected={installmentSelected}
-          handleSelect={handleOptionInstallments}
-          width="100%"
-        />
-      </FormField>
+          $width="100%"
+        >
+          <SelectInstallments
+            id="select-installments"
+            name="select-installments"
+            placeholder="Choose an installment"
+            installments={checkout?.installments}
+            valueInstallmentSelected={installmentSelected}
+            handleSelect={handleOptionInstallments}
+            width="100%"
+          />
+        </FormField>
+      ) : null}
     </AppLayoutStyled>
   );
 }
