@@ -1,4 +1,3 @@
-import { IRON_COLOR_SCALES } from '../../styles/colors-scales';
 import { ColorScales } from '../../types/personalization/typesColors';
 import { TabStyles, TabStylesByState } from '../../types/personalization/typesStylesElements';
 import { ThemeModes } from '../../types/personalization/typesThemes';
