@@ -1,29 +1,25 @@
 import React from 'react';
-
-export type Customer = {
-  fullname: string;
-  email: string;
-  cardNumber: string;
-  expirationDate: string;
-  cvc: string;
-  cardHolderName: string;
-  installments: string;
-};
+import { Customer } from '../../../types/appTypes';
 
 export type CustomerContextData = {
   customer: Customer;
+  setThemeMode: React.Dispatch<React.SetStateAction<Customer>>;
 };
 
-const initialCustomer: CustomerContextData = {
-  customer: {
-    fullname: '',
-    email: '',
-    cardNumber: '',
-    expirationDate: '',
-    cvc: '',
-    cardHolderName: '',
-    installments: '',
-  },
+export const initialCustomer: Customer = {
+  id: '',
+  fullname: '',
+  email: '',
+  cardNumber: '',
+  expirationDate: '',
+  cvc: '',
+  cardHolderName: '',
+  installments: '',
 };
 
-export const CustomerContext = React.createContext(initialCustomer);
+const initialCustomerData: CustomerContextData = {
+  customer: initialCustomer,
+  setThemeMode: () => {},
+};
+
+export const CustomerContext = React.createContext(initialCustomerData);
