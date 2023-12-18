@@ -16,6 +16,11 @@ export const AppInputStyled = styled.input<AppInputStyledProps>`
   font-size: 16px;
   padding: 0.75rem 1.5rem;
 
+  &:autofill {
+    background-color: ${(props) =>
+    props.theme.styles.inputs.default.backgroundColor};
+  }
+
   &::placeholder {
     color: ${(props) => props.theme.styles.inputs.default.placeholderColor};
   }

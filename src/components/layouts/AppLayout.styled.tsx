@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-type FormFieldsGroupStyledProps = {
+type AppLayoutStyledProps = {
   $flexDirection: 'row' | 'column';
+  $gapInRem: number;
 };
 
-export const FormFieldsGroupStyled = styled.div<FormFieldsGroupStyledProps>`
+export const AppLayoutStyled = styled.div<AppLayoutStyledProps>`
   display: flex;
   flex-direction: ${(props) => props.$flexDirection};
-  gap: 1.25rem;
+  gap: ${(props) => props.$gapInRem}rem;
 `;

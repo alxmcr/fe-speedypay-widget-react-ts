@@ -6,8 +6,12 @@ export const TabsPaymentMethodsStyled = styled.div`
   overflow-x: auto;
   padding: 0.5rem 0;
 
+  scrollbar-color: ${(props) => props.theme.styles.scrollBarTrackColor} ${(props) => props.theme.styles.scrollBarBackground};
+  scrollbar-width: thin;
+
   &::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 1px ${(props) => props.theme.styles.scrollBarTrackColor};
+    box-shadow: inset 0 0 1px
+      ${(props) => props.theme.styles.scrollBarTrackColor};
     -webkit-box-shadow: inset 0 0 1px
       ${(props) => props.theme.styles.scrollBarTrackColor};
     background-color: ${(props) => props.theme.styles.scrollBarBackground};

@@ -37,6 +37,7 @@ export default function AppInputEmail({
       maxLength={maxLength}
       onChange={handlerInput}
       value={valueInput}
+      autoComplete="off"
     />
   ) : (
     <AppInputStyled
@@ -49,6 +50,7 @@ export default function AppInputEmail({
       required={required}
       onChange={handlerInput}
       value={valueInput}
+      autoComplete="off"
     />
   );
 }

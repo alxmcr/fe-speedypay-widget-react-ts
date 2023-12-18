@@ -24,8 +24,8 @@ export default function FormCheckout({ checkout }: FormCheckoutProps) {
 
   const handlerMakePayment = (ev: React.FormEvent) => {
     ev.preventDefault();
-    console.log(`Paying with ${currentPaymentMethodCode}`);
-    console.log(`Customer: ${customer}`);
+    console.log(`Paying with '${currentPaymentMethodCode}'`);
+    console.log({ customer });
   };
 
   return (

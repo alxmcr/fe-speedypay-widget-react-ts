@@ -9,6 +9,8 @@ type AppSelectProps = {
   placeholder: string;
   options: AppOptionOnSelect[];
   width: string;
+  valueOption?: string;
+  handleSelect?: (ev: React.ChangeEvent<HTMLSelectElement>) => void;
 };
 
 export default function AppSelect({
@@ -17,20 +19,16 @@ export default function AppSelect({
   options = [],
   placeholder = 'Choose some option',
   width = '100%',
+  valueOption = '',
+  handleSelect,
 }: AppSelectProps) {
-  const [optionSelected, setOptionSelected] = React.useState('');
-
-  const handleOptionSelected = (ev: React.ChangeEvent<HTMLSelectElement>) => {
-    setOptionSelected(ev.target.value);
-  };
-
   return (
     <AppSelectStyled
       name={name}
       id={id}
       $width={width}
-      value={optionSelected}
-      onChange={handleOptionSelected}
+      value={valueOption}
+      onChange={handleSelect}
     >
       <AppSelectOptionStyled value="" disabled>
         {placeholder}
