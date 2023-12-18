@@ -2,7 +2,7 @@ import {
   mockInstallmentsBasic,
   mockInstallmentsFull,
 } from '../../mock/mock-options';
-import AppSelect from './AppSelect';
+import SelectInstallments from './SelectInstallments';
 
 export default function SelectsList() {
   return (
@@ -13,18 +13,18 @@ export default function SelectsList() {
         gap: '1rem',
       }}
     >
-      <AppSelect
+      <SelectInstallments
         id="select-installments"
         name="select-installments"
         placeholder="Choose an installment"
-        options={mockInstallmentsFull}
+        installments={mockInstallmentsFull}
         width="100%"
       />
-      <AppSelect
+      <SelectInstallments
         id="select-installments"
         name="select-installments"
         placeholder="Choose an installment"
-        options={mockInstallmentsBasic}
+        installments={mockInstallmentsBasic}
         width="100%"
       />
     </div>

@@ -1,24 +1,24 @@
 import { DbInstallment } from '../../types/databaseTypes';
 
-export const onePayment: DbInstallment = {
+export const dbOnePayment: DbInstallment = {
   in_installment: 'installments-1',
   in_name: 'One payment',
   in_code: 'one-payment',
 };
 
-export const threeMonths: DbInstallment = {
+export const dbThreeMonths: DbInstallment = {
   in_installment: 'installments-2',
   in_name: '3 months installments',
   in_code: '3-months',
 };
 
-export const sixMonths: DbInstallment = {
+export const dbSixMonths: DbInstallment = {
   in_installment: 'installments-3',
   in_name: '6 months installments',
   in_code: '6-months',
 };
 
-export const nineMonths: DbInstallment = {
+export const dbNineMonths: DbInstallment = {
   in_installment: 'installments-4',
   in_name: '9 months installments',
   in_code: '9-months',
