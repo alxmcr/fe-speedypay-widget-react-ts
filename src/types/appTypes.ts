@@ -39,4 +39,5 @@ export type Checkout = {
   currency_amount: string;
   company: Company;
   payment_methods: PaymentMethod[];
+  installments: Installment[];
 };
