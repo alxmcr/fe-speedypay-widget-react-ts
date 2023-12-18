@@ -1,13 +1,15 @@
 import React from 'react';
 import { mockInstallmentsFull } from '../../mock/mock-installments';
+import { CustomerContext } from '../../providers/checkout/CustomerProvider/CustomerContext';
 import FormField from '../form-fields/FormField';
 import { AppInputWithMaskStyled } from '../inputs/AppInputWithMask/AppInputWithMask.styled';
 import { AppInputStyled } from '../inputs/common/AppInput/AppInput.styled';
+import { AppLayoutStyled } from '../layouts/AppLayout.styled';
 import AppSelect from '../selects/AppSelect';
 import FormElementsCardDetails from './FormElementsCardDetails';
-import { AppLayoutStyled } from '../layouts/AppLayout.styled';
 
 export default function FormElementsCardInfo() {
+  const { setCustomer } = React.useContext(CustomerContext);
   const [cardNumber, setCardNumber] = React.useState('');
   const [cardHolderName, setCardHolderName] = React.useState('');
 
@@ -15,16 +17,28 @@ export default function FormElementsCardInfo() {
 
   const handleCardNumber = (ev: React.ChangeEvent<HTMLInputElement>) => {
     setCardNumber(ev.target.value);
+    setCustomer((prevState) => ({
+      ...prevState,
+      cardNumber: ev.target.value,
+    }));
   };
 
   const handleCardHolderName = (ev: React.ChangeEvent<HTMLInputElement>) => {
     setCardHolderName(ev.target.value);
+    setCustomer((prevState) => ({
+      ...prevState,
+      cardHolderName: ev.target.value,
+    }));
   };
 
   const handleOptionInstallments = (
     ev: React.ChangeEvent<HTMLSelectElement>,
   ) => {
     setInstallmentSelected(ev.target.value);
+    setCustomer((prevState) => ({
+      ...prevState,
+      installments: ev.target.value,
+    }));
   };
 
   return (

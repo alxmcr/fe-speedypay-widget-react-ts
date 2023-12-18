@@ -1,18 +1,22 @@
 import React from 'react';
+import { CustomerContext } from '../../providers/checkout/CustomerProvider/CustomerContext';
 import FormField from '../form-fields/FormField';
 import { AppInputStyled } from '../inputs/common/AppInput/AppInput.styled';
 import { AppLayoutStyled } from '../layouts/AppLayout.styled';
 
 export default function FormElementsContactInfo() {
+  const { setCustomer } = React.useContext(CustomerContext);
   const [email, setEmail] = React.useState('');
   const [fullname, setFullname] = React.useState('');
 
   const handleEmail = (ev: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(ev.target.value);
+    setCustomer((prevState) => ({ ...prevState, email: ev.target.value }));
   };
 
   const handleFullname = (ev: React.ChangeEvent<HTMLInputElement>) => {
     setFullname(ev.target.value);
+    setCustomer((prevState) => ({ ...prevState, fullname: ev.target.value }));
   };
 
   return (
