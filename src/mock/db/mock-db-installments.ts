@@ -1,6 +1,6 @@
 import { DbInstallment } from '../../types/databaseTypes';
 
-export const onePayments: DbInstallment = {
+export const onePayment: DbInstallment = {
   in_installment: 'installments-1',
   in_name: 'One payment',
   in_code: 'one-payment',

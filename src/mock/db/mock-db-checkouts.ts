@@ -5,6 +5,13 @@ import {
   dbFittersOriginal,
 } from './mock-db-companies';
 import {
+  nineMonths,
+  onePayment,
+  sixMonths,
+  threeMonths,
+  twelveMonths,
+} from './mock-db-installments';
+import {
   DbBankTransferSample,
   DbCashSample,
   DbCreditCardSample,
@@ -22,7 +29,13 @@ export const dbCheckout001: DbCheckout = {
   ch_amount_to_pay: 1265.89,
   ch_currency_amount: '$',
   ch_payment_methods: [DbCreditCardSample, DbBankTransferSample, DbCashSample],
-  ch_installments: [],
+  ch_installments: [
+    onePayment,
+    threeMonths,
+    sixMonths,
+    nineMonths,
+    twelveMonths,
+  ],
 };
 
 export const dbCheckout002: DbCheckout = {
@@ -31,7 +44,7 @@ export const dbCheckout002: DbCheckout = {
   ch_amount_to_pay: 787.36,
   ch_currency_amount: 'MXN',
   ch_payment_methods: [DbCashSample, DbCreditCardSample],
-  ch_installments: [],
+  ch_installments: [onePayment, threeMonths, sixMonths],
 };
 
 export const dbCheckout003: DbCheckout = {
@@ -40,5 +53,5 @@ export const dbCheckout003: DbCheckout = {
   ch_amount_to_pay: 859.12,
   ch_currency_amount: 'USD',
   ch_payment_methods: [DbBankTransferSample, DbCashSample, DbCreditCardSample],
-  ch_installments: [],
+  ch_installments: [onePayment, threeMonths, sixMonths, nineMonths],
 };
