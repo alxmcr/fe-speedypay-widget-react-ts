@@ -1,7 +1,7 @@
 import React from 'react';
 import FormField from '../form-fields/FormField';
 import { AppInputWithMaskStyled } from '../inputs/AppInputWithMask/AppInputWithMask.styled';
-import { FormFieldsGroupRowStyled } from './FormFieldsGroupRow.styled';
+import { AppLayoutStyled } from '../layouts/AppLayout.styled';
 
 export default function FormElementsCardDetails() {
   const [expirationDate, setExpirationDate] = React.useState('');
@@ -16,7 +16,7 @@ export default function FormElementsCardDetails() {
   };
 
   return (
-    <FormFieldsGroupRowStyled>
+    <AppLayoutStyled $flexDirection="row" $gapInRem={0.25}>
       <FormField labelText="Expiration date" id="expiration-date">
         <AppInputWithMaskStyled
           id="expiration-date"
@@ -37,6 +37,6 @@ export default function FormElementsCardDetails() {
           required
         />
       </FormField>
-    </FormFieldsGroupRowStyled>
+    </AppLayoutStyled>
   );
 }

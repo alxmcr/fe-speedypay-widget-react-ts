@@ -1,11 +1,11 @@
 import React from 'react';
+import { mockInstallmentsFull } from '../../mock/mock-installments';
 import FormField from '../form-fields/FormField';
 import { AppInputWithMaskStyled } from '../inputs/AppInputWithMask/AppInputWithMask.styled';
 import { AppInputStyled } from '../inputs/common/AppInput/AppInput.styled';
-import FormElementsCardDetails from './FormElementsCardDetails';
-import { FormFieldsGroupStyled } from './FormFieldsGroup.styled';
-import { mockInstallmentsFull } from '../../mock/mock-installments';
 import AppSelect from '../selects/AppSelect';
+import FormElementsCardDetails from './FormElementsCardDetails';
+import { AppLayoutStyled } from '../layouts/AppLayout.styled';
 
 export default function FormElementsCardInfo() {
   const [cardNumber, setCardNumber] = React.useState('');
@@ -28,7 +28,7 @@ export default function FormElementsCardInfo() {
   };
 
   return (
-    <FormFieldsGroupStyled $flexDirection="column">
+    <AppLayoutStyled $flexDirection="column" $gapInRem={1.25}>
       <FormField labelText="Card number" id="card-number" $width="100%">
         <AppInputWithMaskStyled
           id="card-number"
@@ -69,6 +69,6 @@ export default function FormElementsCardInfo() {
           width="100%"
         />
       </FormField>
-    </FormFieldsGroupStyled>
+    </AppLayoutStyled>
   );
 }

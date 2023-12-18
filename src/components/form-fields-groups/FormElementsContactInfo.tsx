@@ -1,7 +1,7 @@
 import React from 'react';
 import FormField from '../form-fields/FormField';
 import { AppInputStyled } from '../inputs/common/AppInput/AppInput.styled';
-import { FormFieldsGroupStyled } from './FormFieldsGroup.styled';
+import { AppLayoutStyled } from '../layouts/AppLayout.styled';
 
 export default function FormElementsContactInfo() {
   const [email, setEmail] = React.useState('');
@@ -16,7 +16,7 @@ export default function FormElementsContactInfo() {
   };
 
   return (
-    <FormFieldsGroupStyled $flexDirection="column">
+    <AppLayoutStyled $flexDirection="column" $gapInRem={1.25}>
       <FormField labelText="Email" id="email" $width="100%">
         <AppInputStyled
           type="email"
@@ -39,6 +39,6 @@ export default function FormElementsContactInfo() {
           required
         />
       </FormField>
-    </FormFieldsGroupStyled>
+    </AppLayoutStyled>
   );
 }
