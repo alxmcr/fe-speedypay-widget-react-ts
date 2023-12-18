@@ -1,4 +1,5 @@
 import CheckoutProvider from '../CheckoutProvider';
+import CustomerProvider from '../CustomerProvider';
 import PaymentMethodsProvider from '../PaymentMethodsProvider';
 
 type CheckoutProvidersProps = {
@@ -10,7 +11,9 @@ export default function CheckoutProviders({
 }: CheckoutProvidersProps) {
   return (
     <CheckoutProvider>
-      <PaymentMethodsProvider>{children}</PaymentMethodsProvider>
+      <CustomerProvider>
+        <PaymentMethodsProvider>{children}</PaymentMethodsProvider>
+      </CustomerProvider>
     </CheckoutProvider>
   );
 }

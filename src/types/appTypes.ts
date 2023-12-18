@@ -4,6 +4,17 @@ export type AppOptionOnSelect = {
   text: string;
 };
 
+export type Customer = {
+  id: string;
+  fullname: string;
+  email: string;
+  cardNumber: string;
+  expirationDate: string;
+  cvc: string;
+  cardHolderName: string;
+  installments: string;
+};
+
 export type Company = {
   id: string;
   name: string;
