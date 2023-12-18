@@ -35,6 +35,24 @@ export const dbCheckoutEmpty: DbCheckout = {
   ch_installments: [],
 };
 
+export const dbCheckoutNoPaymentMethods: DbCheckout = {
+  ch_checkout: CHECKOUTS_ID.emptyPaymentMethods,
+  ch_company: dbFittersOriginal,
+  ch_amount_to_pay: 859.12,
+  ch_currency_amount: 'USD',
+  ch_payment_methods: [],
+  ch_installments: [],
+};
+
+export const dbCheckoutNoInstallments: DbCheckout = {
+  ch_checkout: CHECKOUTS_ID.emptyInstallments,
+  ch_company: dbFittersOriginal,
+  ch_amount_to_pay: 859.12,
+  ch_currency_amount: 'USD',
+  ch_payment_methods: [DbCreditCardSample, DbBankTransferSample, DbCashSample],
+  ch_installments: [],
+};
+
 export const dbCheckout001: DbCheckout = {
   ch_checkout: CHECKOUTS_ID.id001,
   ch_company: dbCompanyBetsson,

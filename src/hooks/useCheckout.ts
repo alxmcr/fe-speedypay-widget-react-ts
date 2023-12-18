@@ -1,15 +1,17 @@
 import React from 'react';
-import { Checkout } from '../types/appTypes';
 import { LoadingStates } from '../helpers/constants/constants-services';
-import { DbCheckout } from '../types/databaseTypes';
 import {
   CHECKOUTS_ID,
   dbCheckout001,
   dbCheckout002,
   dbCheckout003,
   dbCheckoutEmpty,
+  dbCheckoutNoInstallments,
+  dbCheckoutNoPaymentMethods,
 } from '../mock/db/mock-db-checkouts';
 import { mapperDbCheckoutToCheckout } from '../mock/helpers-mappers';
+import { Checkout } from '../types/appTypes';
+import { DbCheckout } from '../types/databaseTypes';
 
 export default function useCheckout({ checkoutId = '' }) {
   const [checkout, setCheckout] = React.useState<Checkout | null>(null);
@@ -34,6 +36,12 @@ export default function useCheckout({ checkoutId = '' }) {
         break;
       case CHECKOUTS_ID.empty:
         dbCheckoutFound = dbCheckoutEmpty;
+        break;
+      case CHECKOUTS_ID.emptyInstallments:
+        dbCheckoutFound = dbCheckoutNoInstallments;
+        break;
+      case CHECKOUTS_ID.emptyPaymentMethods:
+        dbCheckoutFound = dbCheckoutNoPaymentMethods;
         break;
     }
 
