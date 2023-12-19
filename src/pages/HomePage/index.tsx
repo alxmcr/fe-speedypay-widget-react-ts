@@ -1,11 +1,7 @@
-import React from 'react';
-import FormCheckout from '../../components/forms/FormCheckout';
-import HeaderList from '../../components/headers/HeaderList';
+import CheckoutTemplate from '../../components/@templates/CheckoutTemplate';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
-import { CheckoutContext } from '../../providers/checkout/CheckoutProvider/CheckoutContext';
 
 export default function HomePage() {
-  const { checkout } = React.useContext(CheckoutContext);
 
   return (
     <div
@@ -17,8 +13,7 @@ export default function HomePage() {
       }}
     >
       <ThemeModeToggler />
-      <HeaderList />
-      <FormCheckout checkout={checkout} />
+      <CheckoutTemplate />
     </div>
   );
 }
