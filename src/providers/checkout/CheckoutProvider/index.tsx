@@ -8,7 +8,7 @@ type CheckoutProviderProps = {
 
 export default function CheckoutProvider({ children }: CheckoutProviderProps) {
   const { checkout, loadingCheckout } = useCheckout({
-    checkoutId: CHECKOUTS_ID.emptyInstallments,
+    checkoutId: CHECKOUTS_ID.id001,
   });
 
   const value: CheckoutContextData = {
