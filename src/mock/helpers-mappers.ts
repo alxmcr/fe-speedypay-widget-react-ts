@@ -1,5 +1,15 @@
-import { Checkout, Company, PaymentMethod } from '../types/appTypes';
-import { DbCheckout, DbCompany, DbPaymentMethod } from '../types/serviceTypes';
+import {
+  Checkout,
+  Company,
+  Installment,
+  PaymentMethod,
+} from '../types/appTypes';
+import {
+  DbCheckout,
+  DbCompany,
+  DbInstallment,
+  DbPaymentMethod,
+} from '../types/databaseTypes';
 
 export const mapperDbPaymentMethodToPaymentMethod = (
   dbPaymentMethod: DbPaymentMethod,
@@ -12,6 +22,18 @@ export const mapperDbPaymentMethodToPaymentMethod = (
   };
 
   return paymentMethod;
+};
+
+export const mapperDbInstallmentToInstallment = (
+  dbInstallment: DbInstallment,
+): Installment => {
+  const installment: Installment = {
+    id: dbInstallment.in_installment,
+    name: dbInstallment.in_name,
+    code: dbInstallment.in_code,
+  };
+
+  return installment;
 };
 
 export const mapperDbCompanyToCompany = (dbCompany: DbCompany) => {
@@ -36,6 +58,18 @@ export const mapperDbPaymentMethodsToPaymentMethods = (
   return paymentMethods;
 };
 
+export const mapperDbInstallmentsToInstallments = (
+  dbInstallments: DbInstallment[],
+) => {
+  let installments: Installment[] = [];
+
+  dbInstallments.forEach((dbInstallment) => {
+    installments.push(mapperDbInstallmentToInstallment(dbInstallment));
+  });
+
+  return installments;
+};
+
 export const mapperDbCheckoutToCheckout = (dbCheckout: DbCheckout | null) => {
   if (dbCheckout === null) return null;
 
@@ -45,6 +79,7 @@ export const mapperDbCheckoutToCheckout = (dbCheckout: DbCheckout | null) => {
     ch_currency_amount,
     ch_company,
     ch_payment_methods,
+    ch_installments,
   } = dbCheckout;
 
   const checkout: Checkout = {
@@ -53,6 +88,7 @@ export const mapperDbCheckoutToCheckout = (dbCheckout: DbCheckout | null) => {
     currency_amount: ch_currency_amount,
     company: mapperDbCompanyToCompany(ch_company),
     payment_methods: mapperDbPaymentMethodsToPaymentMethods(ch_payment_methods),
+    installments: mapperDbInstallmentsToInstallments(ch_installments),
   };
 
   return checkout;

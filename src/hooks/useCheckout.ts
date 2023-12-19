@@ -1,13 +1,17 @@
 import React from 'react';
-import { Checkout } from '../types/appTypes';
 import { LoadingStates } from '../helpers/constants/constants-services';
-import { DbCheckout } from '../types/serviceTypes';
 import {
+  CHECKOUTS_ID,
   dbCheckout001,
   dbCheckout002,
   dbCheckout003,
+  dbCheckoutEmpty,
+  dbCheckoutNoInstallments,
+  dbCheckoutNoPaymentMethods,
 } from '../mock/db/mock-db-checkouts';
 import { mapperDbCheckoutToCheckout } from '../mock/helpers-mappers';
+import { Checkout } from '../types/appTypes';
+import { DbCheckout } from '../types/databaseTypes';
 
 export default function useCheckout({ checkoutId = '' }) {
   const [checkout, setCheckout] = React.useState<Checkout | null>(null);
@@ -21,14 +25,23 @@ export default function useCheckout({ checkoutId = '' }) {
     let dbCheckoutFound: DbCheckout | null = null;
 
     switch (checkoutId) {
-      case 'checkout-001':
+      case CHECKOUTS_ID.id001:
         dbCheckoutFound = dbCheckout001;
         break;
-      case 'checkout-002':
+      case CHECKOUTS_ID.id002:
         dbCheckoutFound = dbCheckout002;
         break;
-      case 'checkout-003':
+      case CHECKOUTS_ID.id003:
         dbCheckoutFound = dbCheckout003;
+        break;
+      case CHECKOUTS_ID.empty:
+        dbCheckoutFound = dbCheckoutEmpty;
+        break;
+      case CHECKOUTS_ID.emptyInstallments:
+        dbCheckoutFound = dbCheckoutNoInstallments;
+        break;
+      case CHECKOUTS_ID.emptyPaymentMethods:
+        dbCheckoutFound = dbCheckoutNoPaymentMethods;
         break;
     }
 

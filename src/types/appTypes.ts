@@ -28,10 +28,16 @@ export type PaymentMethod = {
   isDisabled: boolean;
 };
 
+export type Installment = {
+  id: string;
+  name: string;
+  code: string;
+};
 export type Checkout = {
   id: string;
   amount_to_pay: number;
   currency_amount: string;
   company: Company;
   payment_methods: PaymentMethod[];
+  installments: Installment[];
 };

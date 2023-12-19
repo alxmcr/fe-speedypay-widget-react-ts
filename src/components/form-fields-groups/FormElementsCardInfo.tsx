@@ -1,14 +1,15 @@
 import React from 'react';
-import { mockInstallmentsFull } from '../../mock/mock-installments';
+import { CheckoutContext } from '../../providers/checkout/CheckoutProvider/CheckoutContext';
 import { CustomerContext } from '../../providers/checkout/CustomerProvider/CustomerContext';
 import FormField from '../form-fields/FormField';
 import { AppInputWithMaskStyled } from '../inputs/AppInputWithMask/AppInputWithMask.styled';
 import { AppInputStyled } from '../inputs/common/AppInput/AppInput.styled';
 import { AppLayoutStyled } from '../layouts/AppLayout.styled';
-import AppSelect from '../selects/AppSelect';
+import SelectInstallments from '../selects/SelectInstallments';
 import FormElementsCardDetails from './FormElementsCardDetails';
 
 export default function FormElementsCardInfo() {
+  const { checkout } = React.useContext(CheckoutContext);
   const { setCustomer } = React.useContext(CustomerContext);
   const [cardNumber, setCardNumber] = React.useState('');
   const [cardHolderName, setCardHolderName] = React.useState('');
@@ -41,6 +42,10 @@ export default function FormElementsCardInfo() {
     }));
   };
 
+  if (checkout === null) {
+    return null;
+  }
+
   return (
     <AppLayoutStyled $flexDirection="column" $gapInRem={1.25}>
       <FormField labelText="Card number" id="card-number" $width="100%">
@@ -68,21 +73,23 @@ export default function FormElementsCardInfo() {
           onChange={handleCardHolderName}
         />
       </FormField>
-      <FormField
-        labelText="Installments"
-        id="select-installments"
-        $width="100%"
-      >
-        <AppSelect
+      {checkout?.installments?.length > 0 ? (
+        <FormField
+          labelText="Installments"
           id="select-installments"
-          name="select-installments"
-          placeholder="Choose an installment"
-          options={mockInstallmentsFull}
-          valueOption={installmentSelected}
-          handleSelect={handleOptionInstallments}
-          width="100%"
-        />
-      </FormField>
+          $width="100%"
+        >
+          <SelectInstallments
+            id="select-installments"
+            name="select-installments"
+            placeholder="Choose an installment"
+            installments={checkout?.installments}
+            valueInstallmentSelected={installmentSelected}
+            handleSelect={handleOptionInstallments}
+            width="100%"
+          />
+        </FormField>
+      ) : null}
     </AppLayoutStyled>
   );
 }

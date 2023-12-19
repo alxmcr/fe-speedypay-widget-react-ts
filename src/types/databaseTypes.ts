@@ -22,10 +22,17 @@ export type DbPaymentMethod = {
   pm_is_disabled: boolean;
 };
 
+export type DbInstallment = {
+  in_installment: string;
+  in_name: string;
+  in_code: string;
+};
+
 export type DbCheckout = {
   ch_checkout: string;
   ch_amount_to_pay: number;
   ch_currency_amount: string;
   ch_company: DbCompany;
   ch_payment_methods: DbPaymentMethod[];
+  ch_installments: DbInstallment[];
 };

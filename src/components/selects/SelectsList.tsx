@@ -1,8 +1,9 @@
 import {
-  mockInstallmentsBasic,
-  mockInstallmentsFull,
-} from '../../mock/mock-installments';
-import AppSelect from './AppSelect';
+  OnePayment,
+  SixMonths,
+  ThreeMonths,
+} from '../../mock/data/mock-installments';
+import SelectInstallments from './SelectInstallments';
 
 export default function SelectsList() {
   return (
@@ -13,18 +14,18 @@ export default function SelectsList() {
         gap: '1rem',
       }}
     >
-      <AppSelect
+      <SelectInstallments
         id="select-installments"
         name="select-installments"
         placeholder="Choose an installment"
-        options={mockInstallmentsFull}
+        installments={[OnePayment, ThreeMonths, SixMonths]}
         width="100%"
       />
-      <AppSelect
+      <SelectInstallments
         id="select-installments"
         name="select-installments"
         placeholder="Choose an installment"
-        options={mockInstallmentsBasic}
+        installments={[OnePayment, ThreeMonths]}
         width="100%"
       />
     </div>

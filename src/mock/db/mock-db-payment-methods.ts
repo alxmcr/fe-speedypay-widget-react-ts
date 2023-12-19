@@ -1,4 +1,4 @@
-import { DbPaymentMethod } from '../../types/serviceTypes';
+import { DbPaymentMethod } from '../../types/databaseTypes';
 
 export const PAYMENT_METHODS_CODES = {
   cash: 'cash',
