@@ -13,7 +13,6 @@ export type ButtonCommonStylesByState = {
   disabled: ButtonCommonStyles;
 };
 
-
 export type ButtonGradientStyles = {
   colorText: string;
   gradientColors: {
@@ -106,4 +105,14 @@ export type TabStylesByState = {
   hover: TabStyles;
   disabled: TabStyles;
   selected: TabStyles;
+};
+
+// Headers
+export type HeaderStyles = {
+  backgroundColor: string;
+  colorText: string;
+};
+
+export type HeaderStylesByState = {
+  default: HeaderStyles;
 };

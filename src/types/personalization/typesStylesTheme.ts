@@ -1,5 +1,6 @@
 import { ButtonStylesVariants } from './typeVariants';
 import {
+  HeaderStylesByState,
   InputStylesByState,
   MessageStylesByState,
   PillStylesByState,
@@ -24,6 +25,7 @@ export type AppStylesByElements = {
   selects: SelectStylesByState;
   messages: MessageStylesByState;
   tabs: TabStylesByState;
+  headers: HeaderStylesByState;
 };
 
 export type AppStyles = AppCommonStyles & AppStylesByElements;

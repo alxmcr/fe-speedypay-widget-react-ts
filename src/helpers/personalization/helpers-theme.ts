@@ -3,6 +3,7 @@ import { ColorScales } from '../../types/personalization/typesColors';
 import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
 import { getBtnStylesVariants } from '../styles/helpers-styles-button';
 import { getCommonStylesByColorScale } from '../styles/helpers-styles-common';
+import { getHeaderStyles } from '../styles/helpers-styles-headers';
 import { getInputStyles } from '../styles/helpers-styles-inputs';
 import { getMessagesStyles } from '../styles/helpers-styles-messages';
 import { getPillStyles } from '../styles/helpers-styles-pills';
@@ -30,6 +31,7 @@ export const getThemeByColorScale = (
       selects: getSelectStyles(theme, colorScales),
       messages: getMessagesStyles(theme, colorScales),
       tabs: getTabStyles(theme, colorScales),
+      headers: getHeaderStyles(theme, colorScales),
     },
   };
 
