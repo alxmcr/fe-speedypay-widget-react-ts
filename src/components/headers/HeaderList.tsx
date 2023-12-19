@@ -1,4 +1,5 @@
 import HeaderCheckoutForm from './HeaderCheckoutForm';
+import HeaderPayment from './HeaderPayment';
 
 export default function HeaderList() {
   return (
@@ -11,6 +12,7 @@ export default function HeaderList() {
       }}
     >
       <HeaderCheckoutForm />
+      <HeaderPayment />
     </div>
   );
 }

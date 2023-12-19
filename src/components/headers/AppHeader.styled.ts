@@ -4,4 +4,5 @@ export const AppHeaderStyled = styled.header`
   align-items: center;
   display: flex;
   height: 4.375rem;
+  width: 22.5rem;
 `;
