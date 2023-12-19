@@ -31,11 +31,12 @@ export default function InputList() {
         fullWidth={true}
       />
       <AppInputWithMask
+        id="card-number"
         mask="9999 9999 9999 9999"
         placeholder="Enter your card number"
       />
-      <AppInputWithMask mask="999" placeholder="CVC" />
-      <AppInputWithMask mask="99/99" placeholder="MM/DD" />
+      <AppInputWithMask id="cvc" mask="999" placeholder="CVC" />
+      <AppInputWithMask id="expiration-date" mask="99/99" placeholder="MM/DD" />
     </div>
   );
 }

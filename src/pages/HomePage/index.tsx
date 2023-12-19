@@ -1,5 +1,6 @@
 import React from 'react';
 import FormCheckout from '../../components/forms/FormCheckout';
+import HeaderList from '../../components/headers/HeaderList';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
 import { CheckoutContext } from '../../providers/checkout/CheckoutProvider/CheckoutContext';
 
@@ -16,6 +17,7 @@ export default function HomePage() {
       }}
     >
       <ThemeModeToggler />
+      <HeaderList />
       <FormCheckout checkout={checkout} />
     </div>
   );
