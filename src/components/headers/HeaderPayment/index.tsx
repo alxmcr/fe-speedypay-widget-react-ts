@@ -1,0 +1,17 @@
+import { BASE_URL_LOCAL } from '../../../helpers/constants/constants-assets';
+import PillPaymentStatus from '../../pills/PillPaymentStatus';
+import SvgRemote from '../../svg/SvgRemote';
+import { AppHeaderStyled } from '../AppHeader.styled';
+
+export default function HeaderPayment() {
+  return (
+    <AppHeaderStyled>
+      <SvgRemote
+        url={`${BASE_URL_LOCAL}/logos/Logo-Fitters.svg`}
+        width={154}
+        height={42}
+      />
+      <PillPaymentStatus status="success" />
+    </AppHeaderStyled>
+  );
+}
