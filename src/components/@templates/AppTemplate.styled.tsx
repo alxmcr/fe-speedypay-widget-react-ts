@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const AppTemplateStyled = styled.article`
-  border: 1px solid #ff6ad7;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
