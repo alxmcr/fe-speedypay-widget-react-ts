@@ -1,3 +1,4 @@
+import ResultsTemplate from '../../components/@templates/ResultsTemplate';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
 import { HeadingOne } from '../../components/typography/Headings';
 
@@ -15,6 +16,7 @@ export default function ResultsPage() {
     >
       <HeadingOne>Results</HeadingOne>
       <ThemeModeToggler />
+      <ResultsTemplate />
     </div>
   );
 }
