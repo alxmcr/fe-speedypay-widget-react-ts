@@ -1,4 +1,5 @@
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
+import { HeadingOne } from '../../components/typography/Headings';
 
 export default function ResultsPage() {
   return (
@@ -12,6 +13,7 @@ export default function ResultsPage() {
         minHeight: '100vh',
       }}
     >
+      <HeadingOne>Results</HeadingOne>
       <ThemeModeToggler />
     </div>
   );
