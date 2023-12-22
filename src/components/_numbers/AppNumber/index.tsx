@@ -2,6 +2,7 @@ import { NumberNames } from '../../../types/enumsApp';
 import NumberOne from '../NumberOne';
 import NumberThree from '../NumberThree';
 import NumberTwo from '../NumberTwo';
+import { AppNumberStyled } from './AppNumber.styled';
 
 type AppNumberProps = {
   numberName: string;
@@ -12,12 +13,28 @@ export default function AppNumber({
 }: AppNumberProps) {
   switch (numberName) {
     case NumberNames.one:
-      return <NumberOne />;
+      return (
+        <AppNumberStyled>
+          <NumberOne />
+        </AppNumberStyled>
+      );
     case NumberNames.two:
-      return <NumberTwo />;
+      return (
+        <AppNumberStyled>
+          <NumberTwo />
+        </AppNumberStyled>
+      );
     case NumberNames.three:
-      return <NumberThree />;
+      return (
+        <AppNumberStyled>
+          <NumberThree />
+        </AppNumberStyled>
+      );
     default:
-      return <NumberOne />;
+      return (
+        <AppNumberStyled>
+          <NumberOne />
+        </AppNumberStyled>
+      );
   }
 }
