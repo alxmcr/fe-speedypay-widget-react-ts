@@ -5,6 +5,7 @@ import { getBtnStylesVariants } from '../styles/helpers-styles-button';
 import { getCommonStylesByColorScale } from '../styles/helpers-styles-common';
 import { getHeaderStyles } from '../styles/helpers-styles-headers';
 import { getInputStyles } from '../styles/helpers-styles-inputs';
+import { getInstructionssStyles } from '../styles/helpers-styles-instructions';
 import { getMessagesStyles } from '../styles/helpers-styles-messages';
 import { getNumbersStyles } from '../styles/helpers-styles-numbers';
 import { getPillStyles } from '../styles/helpers-styles-pills';
@@ -34,6 +35,7 @@ export const getThemeByColorScale = (
       tabs: getTabStyles(theme, colorScales),
       headers: getHeaderStyles(theme, colorScales),
       numbers: getNumbersStyles(theme, colorScales),
+      instructions: getInstructionssStyles(theme, colorScales),
     },
   };
 
