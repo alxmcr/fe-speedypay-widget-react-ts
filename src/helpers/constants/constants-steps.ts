@@ -9,3 +9,11 @@ export const CASH_TWO_STEP =
   'Menciona que realizarás un pago en efectivo con OXXO Pay.';
 export const CASH_THREE_STEP =
   'Realiza tu pago usando la referencia antes de la fecha de expiración.';
+
+export const BANK_TRANSFER_STEPS = [
+  BANK_TRANSFER_ONE_STEP,
+  BANK_TRANSFER_TWO_STEP,
+  BANK_TRANSFER_THREE_STEP,
+];
+
+export const CASH_STEPS = [CASH_ONE_STEP, CASH_TWO_STEP, CASH_THREE_STEP];
