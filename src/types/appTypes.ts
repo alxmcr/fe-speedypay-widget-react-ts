@@ -14,11 +14,6 @@ export type Customer = {
   id: string;
   fullname: string;
   email: string;
-  cardNumber: string;
-  expirationDate: string;
-  cvc: string;
-  cardHolderName: string;
-  installments: string;
 };
 
 export type Company = {
@@ -50,9 +45,9 @@ export type Checkout = {
 
 export type Order = {
   id: string;
-  expiration_date: string;
+  expiration_date: number;
   payment_method: PaymentMethod;
   customer: Customer;
   status: string;
-  checkout: Checkout;
+  checkout: Checkout | null;
 };
