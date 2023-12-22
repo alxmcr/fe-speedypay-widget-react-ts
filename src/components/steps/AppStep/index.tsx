@@ -1,6 +1,7 @@
 import { NumberNames } from '../../../types/enumsApp';
 import AppNumber from '../../_numbers/AppNumber';
 import { BodyTextOne } from '../../_typography/BodyTexts';
+import { AppStepStyled } from './AppStep.styled';
 
 type AppStepProps = {
   stepNumber: string;
@@ -12,9 +13,9 @@ export default function AppStep({
   stepNumber = NumberNames.one,
 }: AppStepProps) {
   return (
-    <div>
+    <AppStepStyled>
       <AppNumber numberName={stepNumber} />
       <BodyTextOne>{text}</BodyTextOne>
-    </div>
+    </AppStepStyled>
   );
 }
