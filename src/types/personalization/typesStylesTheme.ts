@@ -8,7 +8,7 @@ import {
   SelectStylesByState,
   TabStylesByState,
   ToggleStylesByState,
-} from './typesStylesElements';
+} from '../styles/typesStylesElements';
 
 export type AppCommonStyles = {
   backgroundColor: string;

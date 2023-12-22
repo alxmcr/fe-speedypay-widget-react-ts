@@ -3,7 +3,7 @@ import { ColorScales } from '../../../types/personalization/typesColors';
 import {
   ButtonCommonStyles,
   ButtonCommonStylesByState,
-} from '../../../types/personalization/typesStylesElements';
+} from '../../../types/styles/typesStylesElements';
 import { ThemeModes } from '../../../types/personalization/typesThemes';
 
 export const getBtnSolidStyles = (

@@ -126,3 +126,14 @@ export type NumbersStyles = {
 export type NumbersStylesByState = {
   default: NumbersStyles;
 };
+
+// Instructions
+export type InstructionsStyles = {
+  backgroundColor: string;
+  colorText: string;
+  borderColor: string;
+};
+
+export type InstructionsStylesByState = {
+  default: InstructionsStyles;
+};

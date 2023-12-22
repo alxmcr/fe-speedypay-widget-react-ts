@@ -1,32 +1,32 @@
 import { ColorScales } from '../../types/personalization/typesColors';
-import {
-  ToggleStyles,
-  ToggleStylesByState,
-} from '../../types/styles/typesStylesElements';
 import { ThemeModes } from '../../types/personalization/typesThemes';
+import {
+    InstructionsStyles,
+    InstructionsStylesByState,
+} from '../../types/styles/typesStylesElements';
 
-export const getToggleStyles = (
+export const getInstructionssStyles = (
   theme: ThemeModes,
   colorScales: ColorScales,
-): ToggleStylesByState => {
-  const defaultStyles: ToggleStyles = {
+): InstructionsStylesByState => {
+  const defaultStyles: InstructionsStyles = {
     backgroundColor:
       theme === ThemeModes.light
         ? colorScales.scales[100]
-        : colorScales.scales[300],
-    ballBackground:
-      theme === ThemeModes.light
-        ? colorScales.scales[950]
-        : colorScales.scales[300],
+        : colorScales.scales[900],
     borderColor:
       theme === ThemeModes.light
         ? colorScales.scales[950]
         : colorScales.scales[300],
+    colorText:
+      theme === ThemeModes.light
+        ? colorScales.scales[700]
+        : colorScales.scales[300],
   };
 
-  const togglerStylesByStates: ToggleStylesByState = {
+  const instructionsStylesByStates: InstructionsStylesByState = {
     default: defaultStyles,
   };
 
-  return togglerStylesByStates;
+  return instructionsStylesByStates;
 };

@@ -1,7 +1,7 @@
 import {
   ButtonCommonStylesByState,
   ButtonGradientStylesByState,
-} from './typesStylesElements';
+} from '../styles/typesStylesElements';
 
 export type ButtonStylesVariants = {
   solid: ButtonCommonStylesByState;
