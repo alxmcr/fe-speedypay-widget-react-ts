@@ -7,6 +7,7 @@ import { CheckoutContext } from '../../../providers/checkout/CheckoutProvider/Ch
 import BarcodeGroup from '../../barcodes/BarcodeGroup';
 import Instructions from '../../steps/Instructions';
 import { AppTemplateStyled } from '../AppTemplate.styled';
+import AppInfo from '../../info/AppInfo';
 
 export default function ResultsTemplate() {
   const { checkout } = React.useContext(CheckoutContext);
@@ -14,6 +15,7 @@ export default function ResultsTemplate() {
   return (
     <AppTemplateStyled>
       <BarcodeGroup text={checkout?.id || '13123'} />
+      <AppInfo labelText="Order ID" valueText="ord-ab7vbx3dsa2ewqe1321" />
       <div>
         <Instructions steps={CASH_STEPS} />
       </div>
