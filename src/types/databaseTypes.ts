@@ -1,3 +1,5 @@
+import { Checkout } from './appTypes';
+
 export type DbCustomer = {
   cu_customer: string;
   cu_fullname: string;
@@ -35,4 +37,13 @@ export type DbCheckout = {
   ch_company: DbCompany;
   ch_payment_methods: DbPaymentMethod[];
   ch_installments: DbInstallment[];
+};
+
+export type DbOrder = {
+  or_order: string;
+  or_expiration_date: string;
+  or_payment_method: DbPaymentMethod;
+  or_customer: DbCustomer;
+  or_status: string;
+  or_checkout: Checkout;
 };

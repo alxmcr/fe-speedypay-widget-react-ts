@@ -1,3 +1,9 @@
+export type ResultStep = {
+  id: string;
+  code: string;
+  name: string;
+};
+
 export type AppOptionOnSelect = {
   id: string;
   value: string;
@@ -42,8 +48,11 @@ export type Checkout = {
   installments: Installment[];
 };
 
-export type ResultStep = {
+export type Order = {
   id: string;
-  code: string;
-  name: string;
+  expiration_date: string;
+  payment_method: PaymentMethod;
+  customer: Customer;
+  status: string;
+  checkout: Checkout;
 };
