@@ -1,3 +1,5 @@
+import React from 'react';
+import { ThemingContext } from '../../../providers/personalization/ThemingProvider/ThemingContext';
 import { NumberNames } from '../../../types/enumsApp';
 import NumberOne from '../NumberOne';
 import NumberThree from '../NumberThree';
@@ -11,29 +13,39 @@ type AppNumberProps = {
 export default function AppNumber({
   numberName = NumberNames.one,
 }: AppNumberProps) {
+  const { themePersonalized } = React.useContext(ThemingContext);
+
   switch (numberName) {
     case NumberNames.one:
       return (
         <AppNumberStyled>
-          <NumberOne />
+          <NumberOne
+            fillColor={themePersonalized.styles.numbers.default.fillColor}
+          />
         </AppNumberStyled>
       );
     case NumberNames.two:
       return (
         <AppNumberStyled>
-          <NumberTwo />
+          <NumberTwo
+            fillColor={themePersonalized.styles.numbers.default.fillColor}
+          />
         </AppNumberStyled>
       );
     case NumberNames.three:
       return (
         <AppNumberStyled>
-          <NumberThree />
+          <NumberThree
+            fillColor={themePersonalized.styles.numbers.default.fillColor}
+          />
         </AppNumberStyled>
       );
     default:
       return (
         <AppNumberStyled>
-          <NumberOne />
+          <NumberOne
+            fillColor={themePersonalized.styles.numbers.default.fillColor}
+          />
         </AppNumberStyled>
       );
   }
