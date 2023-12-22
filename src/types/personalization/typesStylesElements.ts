@@ -116,3 +116,13 @@ export type HeaderStyles = {
 export type HeaderStylesByState = {
   default: HeaderStyles;
 };
+
+// Numbers
+export type NumbersStyles = {
+  fillColor: string;
+  colorText: string;
+};
+
+export type NumbersStylesByState = {
+  default: NumbersStyles;
+};
