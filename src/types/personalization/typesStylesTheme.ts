@@ -3,6 +3,7 @@ import {
   HeaderStylesByState,
   InputStylesByState,
   MessageStylesByState,
+  NumbersStylesByState,
   PillStylesByState,
   SelectStylesByState,
   TabStylesByState,
@@ -26,6 +27,7 @@ export type AppStylesByElements = {
   messages: MessageStylesByState;
   tabs: TabStylesByState;
   headers: HeaderStylesByState;
+  numbers: NumbersStylesByState;
 };
 
 export type AppStyles = AppCommonStyles & AppStylesByElements;
