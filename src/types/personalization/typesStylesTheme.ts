@@ -1,14 +1,15 @@
-import { ButtonStylesVariants } from './typeVariants';
 import {
   HeaderStylesByState,
   InputStylesByState,
+  InstructionsStylesByState,
   MessageStylesByState,
   NumbersStylesByState,
   PillStylesByState,
   SelectStylesByState,
   TabStylesByState,
   ToggleStylesByState,
-} from './typesStylesElements';
+} from '../styles/typesStylesElements';
+import { ButtonStylesVariants } from './typeVariants';
 
 export type AppCommonStyles = {
   backgroundColor: string;
@@ -28,6 +29,7 @@ export type AppStylesByElements = {
   tabs: TabStylesByState;
   headers: HeaderStylesByState;
   numbers: NumbersStylesByState;
+  instructions: InstructionsStylesByState;
 };
 
 export type AppStyles = AppCommonStyles & AppStylesByElements;
