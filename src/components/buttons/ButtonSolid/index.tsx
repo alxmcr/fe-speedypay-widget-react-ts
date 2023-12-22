@@ -1,4 +1,4 @@
-import AppIcon from '../../icons/AppIcon';
+import AppIcon from '../../_icons/AppIcon';
 import { TextButton } from '../../typography/SupportingStyles';
 import { ButtonSolidStyled } from './ButtonBaseSolid.styled';
 

@@ -1,4 +1,4 @@
-import CheckoutTemplate from '../../components/@templates/CheckoutTemplate';
+import CheckoutTemplate from '../../components/_templates/CheckoutTemplate';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
 
 export default function HomePage() {

@@ -1,6 +1,6 @@
 import { BASE_URL_LOCAL } from '../../../helpers/constants/constants-assets';
 import PillPaymentStatus from '../../pills/PillPaymentStatus';
-import SvgRemote from '../../svg/SvgRemote';
+import SvgRemote from '../../_svg/SvgRemote';
 import { AppHeaderStyled } from '../AppHeader.styled';
 
 export default function HeaderPayment() {

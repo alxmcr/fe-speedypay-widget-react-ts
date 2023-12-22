@@ -1,5 +1,5 @@
 import { IconNames } from '../../../types/enumsApp';
-import AppIcon from '../../icons/AppIcon';
+import AppIcon from '../../_icons/AppIcon';
 import { BodyTextTwo } from '../../typography/BodyTexts';
 import { MessageCheckoutStyled } from './MessageCheckout.styled';
 
