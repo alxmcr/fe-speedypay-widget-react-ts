@@ -1,6 +1,6 @@
 import { IconNames } from '../../../types/enumsApp';
 import AppIcon from '../../_icons/AppIcon';
-import { BodyTextTwo } from '../../typography/BodyTexts';
+import { BodyTextTwo } from '../../_typography/BodyTexts';
 import { MessageCheckoutStyled } from './MessageCheckout.styled';
 
 type MessageCheckoutProps = {

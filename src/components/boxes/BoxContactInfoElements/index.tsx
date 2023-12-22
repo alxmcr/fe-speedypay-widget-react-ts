@@ -1,5 +1,5 @@
 import FormElementsContactInfo from '../../form-fields-groups/FormElementsContactInfo';
-import { SubtitleOne } from '../../typography/Subtitles';
+import { SubtitleOne } from '../../_typography/Subtitles';
 import { BoxContactInfoElementsStyled } from './BoxContactInfoElements.styled';
 
 export default function BoxContactInfoElements() {

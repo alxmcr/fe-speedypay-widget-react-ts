@@ -4,7 +4,7 @@ import { CustomerContext } from '../../providers/checkout/CustomerProvider/Custo
 import FormField from '../form-fields/FormField';
 import { AppInputWithMaskStyled } from '../inputs/AppInputWithMask/AppInputWithMask.styled';
 import { AppInputStyled } from '../inputs/common/AppInput/AppInput.styled';
-import { AppLayoutStyled } from '../layouts/AppLayout.styled';
+import { AppLayoutStyled } from '../_layouts/AppLayout.styled';
 import SelectInstallments from '../selects/SelectInstallments';
 import FormElementsCardDetails from './FormElementsCardDetails';
 

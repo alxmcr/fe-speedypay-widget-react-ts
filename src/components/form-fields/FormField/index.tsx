@@ -1,4 +1,4 @@
-import { TextLabel } from '../../typography/SupportingStyles';
+import { TextLabel } from '../../_typography/SupportingStyles';
 import { FormFieldStyled } from './FormField.styled';
 
 type FormFieldProps = {
