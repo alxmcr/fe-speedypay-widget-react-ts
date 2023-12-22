@@ -5,7 +5,7 @@ import {
 } from '../../../helpers/constants/constants-steps';
 import { CheckoutContext } from '../../../providers/checkout/CheckoutProvider/CheckoutContext';
 import BarcodeGroup from '../../barcodes/BarcodeGroup';
-import StepsGroup from '../../steps/StepsGroup';
+import Instructions from '../../steps/Instructions';
 import { AppTemplateStyled } from '../AppTemplate.styled';
 
 export default function ResultsTemplate() {
@@ -15,10 +15,10 @@ export default function ResultsTemplate() {
     <AppTemplateStyled>
       <BarcodeGroup text={checkout?.id || '13123'} />
       <div>
-        <StepsGroup steps={CASH_STEPS} />
+        <Instructions steps={CASH_STEPS} />
       </div>
       <div>
-        <StepsGroup steps={BANK_TRANSFER_STEPS} />
+        <Instructions steps={BANK_TRANSFER_STEPS} />
       </div>
     </AppTemplateStyled>
   );
