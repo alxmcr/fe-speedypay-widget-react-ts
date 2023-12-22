@@ -1,32 +1,28 @@
 import { ColorScales } from '../../types/personalization/typesColors';
 import {
-  MessageStyles,
-  MessageStylesByState,
+  NumbersStyles,
+  NumbersStylesByState,
 } from '../../types/personalization/typesStylesElements';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 
-export const getMessagesStyles = (
+export const getNumbersStyles = (
   theme: ThemeModes,
   colorScales: ColorScales,
-): MessageStylesByState => {
-  const defaultStyles: MessageStyles = {
-    backgroundColor:
+): NumbersStylesByState => {
+  const defaultStyles: NumbersStyles = {
+    fillColor:
       theme === ThemeModes.light
         ? colorScales.scales[100]
         : colorScales.scales[900],
-    borderColor:
-      theme === ThemeModes.light
-        ? colorScales.scales[950]
-        : colorScales.scales[300],
     colorText:
       theme === ThemeModes.light
         ? colorScales.scales[700]
         : colorScales.scales[300],
   };
 
-  const messagesStylesByStates: MessageStylesByState = {
+  const numbersStylesByStates: NumbersStylesByState = {
     default: defaultStyles,
   };
 
-  return messagesStylesByStates;
+  return numbersStylesByStates;
 };
