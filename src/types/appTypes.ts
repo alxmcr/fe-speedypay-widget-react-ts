@@ -44,5 +44,6 @@ export type Checkout = {
 
 export type ResultStep = {
   id: string;
+  code: string;
   name: string;
 };

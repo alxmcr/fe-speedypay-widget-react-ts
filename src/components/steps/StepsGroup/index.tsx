@@ -10,7 +10,7 @@ export default function StepsGroup({ steps = [] }: StepsGroupProps) {
   return (
     <StepsGroupStyled>
       {steps.map((step: ResultStep) => (
-        <AppStep key={step.id} text={step.name} stepNumber="1" />
+        <AppStep key={step.id} text={step.name} stepNumber={step.code} />
       ))}
     </StepsGroupStyled>
   );
