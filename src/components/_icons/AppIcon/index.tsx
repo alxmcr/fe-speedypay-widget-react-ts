@@ -1,16 +1,16 @@
 import { IconNames } from '../../../types/enumsApp';
-import IconArrowDown from '../IconArrowDown';
-import IconArrowUp from '../IconArrowUp';
-import IconBankTransfer from '../IconBankTransfer';
-import IconCheck from '../IconCheck';
-import IconCoin from '../IconCoin';
-import IconCopy from '../IconCopy';
-import IconCreditCard from '../IconCreditCard';
-import IconDropdownSelected from '../IconDropdownSelected';
-import IconDropdownUnselected from '../IconDropdownUnselected';
-import IconEmailOutline from '../IconEmailOutline';
-import IconGift from '../IconGift';
-import IconPending from '../IconPending';
+import IconArrowDown from '../small/IconArrowDown';
+import IconArrowUp from '../small/IconArrowUp';
+import IconBankTransfer from '../small/IconBankTransfer';
+import IconCheck from '../small/IconCheck';
+import IconCoin from '../small/IconCoin';
+import IconCopy from '../small/IconCopy';
+import IconCreditCard from '../small/IconCreditCard';
+import IconDropdownSelected from '../small/IconDropdownSelected';
+import IconDropdownUnselected from '../small/IconDropdownUnselected';
+import IconEmailOutline from '../small/IconEmailOutline';
+import IconGift from '../small/IconGift';
+import IconPending from '../small/IconPending';
 import { AppIconStyled } from './AppIcon.styled';
 
 type AppIconProps = {
