@@ -14,7 +14,7 @@ export enum IconNames {
 }
 
 export enum NumberNames {
-  one = 'number-one',
-  two = 'number-two',
-  three = 'number-three',
+  one = '1',
+  two = '2',
+  three = '3',
 }

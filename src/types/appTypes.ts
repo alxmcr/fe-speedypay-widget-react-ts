@@ -41,3 +41,9 @@ export type Checkout = {
   payment_methods: PaymentMethod[];
   installments: Installment[];
 };
+
+export type ResultStep = {
+  id: string;
+  code: string;
+  name: string;
+};
