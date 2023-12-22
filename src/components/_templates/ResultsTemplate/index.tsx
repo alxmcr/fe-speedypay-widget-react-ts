@@ -1,16 +1,11 @@
 import React from 'react';
 import {
-  BANK_TRANSFER_ONE_STEP,
-  BANK_TRANSFER_THREE_STEP,
-  BANK_TRANSFER_TWO_STEP,
-  CASH_ONE_STEP,
-  CASH_THREE_STEP,
-  CASH_TWO_STEP,
+  BANK_TRANSFER_STEPS,
+  CASH_STEPS,
 } from '../../../helpers/constants/constants-steps';
 import { CheckoutContext } from '../../../providers/checkout/CheckoutProvider/CheckoutContext';
-import { NumberNames } from '../../../types/enumsApp';
 import BarcodeGroup from '../../barcodes/BarcodeGroup';
-import AppStep from '../../steps/AppStep';
+import StepsGroup from '../../steps/StepsGroup';
 import { AppTemplateStyled } from '../AppTemplate.styled';
 
 export default function ResultsTemplate() {
@@ -20,23 +15,10 @@ export default function ResultsTemplate() {
     <AppTemplateStyled>
       <BarcodeGroup text={checkout?.id || '13123'} />
       <div>
-        <AppStep text={CASH_ONE_STEP.name} stepNumber={NumberNames.one} />
-        <AppStep text={CASH_TWO_STEP.name} stepNumber={NumberNames.two} />
-        <AppStep text={CASH_THREE_STEP.name} stepNumber={NumberNames.three} />
+        <StepsGroup steps={CASH_STEPS} />
       </div>
       <div>
-        <AppStep
-          text={BANK_TRANSFER_ONE_STEP.name}
-          stepNumber={NumberNames.one}
-        />
-        <AppStep
-          text={BANK_TRANSFER_TWO_STEP.name}
-          stepNumber={NumberNames.two}
-        />
-        <AppStep
-          text={BANK_TRANSFER_THREE_STEP.name}
-          stepNumber={NumberNames.three}
-        />
+        <StepsGroup steps={BANK_TRANSFER_STEPS} />
       </div>
     </AppTemplateStyled>
   );
