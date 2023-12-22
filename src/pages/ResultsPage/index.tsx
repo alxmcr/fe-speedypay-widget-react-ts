@@ -1,6 +1,6 @@
-import ResultsTemplate from '../../components/@templates/ResultsTemplate';
+import ResultsTemplate from '../../components/_templates/ResultsTemplate';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
-import { HeadingOne } from '../../components/typography/Headings';
+import { HeadingOne } from '../../components/_typography/Headings';
 
 export default function ResultsPage() {
   return (

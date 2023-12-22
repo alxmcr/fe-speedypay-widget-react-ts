@@ -2,7 +2,7 @@ import React from 'react';
 import { CustomerContext } from '../../providers/checkout/CustomerProvider/CustomerContext';
 import FormField from '../form-fields/FormField';
 import { AppInputWithMaskStyled } from '../inputs/AppInputWithMask/AppInputWithMask.styled';
-import { AppLayoutStyled } from '../layouts/AppLayout.styled';
+import { AppLayoutStyled } from '../_layouts/AppLayout.styled';
 
 export default function FormElementsCardDetails() {
   const { setCustomer } = React.useContext(CustomerContext);

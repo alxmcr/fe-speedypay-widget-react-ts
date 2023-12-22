@@ -1,4 +1,4 @@
-import { BodyTextOne } from '../../typography/BodyTexts';
+import { BodyTextOne } from '../../_typography/BodyTexts';
 import { PillBaseStyled } from '../PillBase.styled';
 
 type PillAmountToPayProps = {

@@ -1,5 +1,5 @@
-import AppIcon from '../../icons/AppIcon';
-import { TextButton } from '../../typography/SupportingStyles';
+import AppIcon from '../../_icons/AppIcon';
+import { TextButton } from '../../_typography/SupportingStyles';
 import { ButtonSolidStyled } from './ButtonBaseSolid.styled';
 
 type ButtonSolidProps = {

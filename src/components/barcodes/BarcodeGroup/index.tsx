@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemingContext } from '../../../providers/personalization/ThemingProvider/ThemingContext';
-import { BodyTextOne } from '../../typography/BodyTexts';
+import { BodyTextOne } from '../../_typography/BodyTexts';
 import Barcode from '../Barcode';
 import { BardcodeGroupStyled } from './BarcodeGroup.styled';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { PaymentMethod } from '../../../types/appTypes';
 import TabsPaymentMethods from '../../tabs/TabsPaymentMethods';
-import { SubtitleOne } from '../../typography/Subtitles';
+import { SubtitleOne } from '../../_typography/Subtitles';
 import { BoxPaymentMethodsStyled } from './BoxPaymentMethods.styled';
 import { PaymentMethodsContext } from '../../../providers/checkout/PaymentMethodsProvider/PaymentMethodsContext';
 

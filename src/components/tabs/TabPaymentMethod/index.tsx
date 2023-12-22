@@ -1,6 +1,6 @@
 import { IconNames } from '../../../types/enumsApp';
-import AppIcon from '../../icons/AppIcon';
-import { BodyTextTwo } from '../../typography/BodyTexts';
+import AppIcon from '../../_icons/AppIcon';
+import { BodyTextTwo } from '../../_typography/BodyTexts';
 import { TabPaymentMethodStyled } from './TabPaymentMethod.styled';
 
 type TabPaymentMethodProps = {

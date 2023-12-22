@@ -1,7 +1,7 @@
 import React from 'react';
 import { PaymentMethodsContext } from '../../../providers/checkout/PaymentMethodsProvider/PaymentMethodsContext';
 import { PaymentMethod } from '../../../types/appTypes';
-import { BodyTextTwo } from '../../typography/BodyTexts';
+import { BodyTextTwo } from '../../_typography/BodyTexts';
 import TabPaymentMethod from '../TabPaymentMethod';
 import { TabsPaymentMethodsStyled } from './TabsPaymentMethods.styled';
 

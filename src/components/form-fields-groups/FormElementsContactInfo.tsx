@@ -2,7 +2,7 @@ import React from 'react';
 import { CustomerContext } from '../../providers/checkout/CustomerProvider/CustomerContext';
 import FormField from '../form-fields/FormField';
 import { AppInputStyled } from '../inputs/common/AppInput/AppInput.styled';
-import { AppLayoutStyled } from '../layouts/AppLayout.styled';
+import { AppLayoutStyled } from '../_layouts/AppLayout.styled';
 
 export default function FormElementsContactInfo() {
   const { setCustomer } = React.useContext(CustomerContext);

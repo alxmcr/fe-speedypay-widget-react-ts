@@ -10,7 +10,7 @@ import BoxContactInfoElements from '../../boxes/BoxContactInfoElements';
 import BoxPaymentMethods from '../../boxes/BoxPaymentMethods';
 import ButtonSolid from '../../buttons/ButtonSolid';
 import MessageCheckout from '../../messages/MessageCheckout';
-import { BodyTextOne } from '../../typography/BodyTexts';
+import { BodyTextOne } from '../../_typography/BodyTexts';
 import { FormCheckoutStyled } from './FormCheckout.styled';
 
 type FormCheckoutProps = {
