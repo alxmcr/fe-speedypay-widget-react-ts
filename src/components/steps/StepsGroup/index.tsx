@@ -1,5 +1,6 @@
 import { ResultStep } from '../../../types/appTypes';
 import AppStep from '../AppStep';
+import { StepsGroupStyled } from './StepsGroup.styled';
 
 type StepsGroupProps = {
   steps: ResultStep[];
@@ -7,10 +8,10 @@ type StepsGroupProps = {
 
 export default function StepsGroup({ steps = [] }: StepsGroupProps) {
   return (
-    <div>
+    <StepsGroupStyled>
       {steps.map((step: ResultStep) => (
         <AppStep key={step.id} text={step.name} stepNumber="1" />
       ))}
-    </div>
+    </StepsGroupStyled>
   );
 }
