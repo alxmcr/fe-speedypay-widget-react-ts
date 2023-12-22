@@ -12,3 +12,9 @@ export enum IconNames {
   gift = 'icon-gift',
   email = 'icon-email',
 }
+
+export enum NumberNames {
+  one = 'number-one',
+  two = 'number-two',
+  three = 'number-three',
+}
