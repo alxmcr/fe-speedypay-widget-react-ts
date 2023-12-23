@@ -114,10 +114,10 @@ export const mapperDbOrderToOrder = (dbOrder: DbOrder) => {
     payment_method: mapperDbPaymentMethodToPaymentMethod(
       dbOrder.or_payment_method,
     ),
-    status: dbOrder.or_status,
-    expiration_date: dbOrder.or_expiration_date,
     checkout: mapperDbCheckoutToCheckout(dbOrder.or_checkout),
     customer: mapperDbCustomerToCustomer(dbOrder.or_customer),
+    expiration_date: dbOrder.or_expiration_date,
+    status: dbOrder.or_status,
   };
 
   return order;
