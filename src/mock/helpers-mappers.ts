@@ -1,13 +1,17 @@
 import {
   Checkout,
   Company,
+  Customer,
   Installment,
+  Order,
   PaymentMethod,
 } from '../types/appTypes';
 import {
   DbCheckout,
   DbCompany,
+  DbCustomer,
   DbInstallment,
+  DbOrder,
   DbPaymentMethod,
 } from '../types/databaseTypes';
 
@@ -92,4 +96,32 @@ export const mapperDbCheckoutToCheckout = (dbCheckout: DbCheckout | null) => {
   };
 
   return checkout;
+};
+
+export const mapperDbCustomerToCustomer = (dbCustomer: DbCustomer) => {
+  const customer: Customer = {
+    id: dbCustomer.cu_customer,
+    fullname: dbCustomer.cu_fullname,
+    email: dbCustomer.cu_email,
+  };
+
+  return customer;
+};
+
+export const mapperDbOrderToOrder = (dbOrder: DbOrder) => {
+  const order: Order = {
+    id: dbOrder.or_order,
+    payment_method: mapperDbPaymentMethodToPaymentMethod(
+      dbOrder.or_payment_method,
+    ),
+    status: dbOrder.or_status,
+    expiration_date: dbOrder.or_expiration_date,
+    checkout:
+      dbOrder.or_checkout !== null
+        ? mapperDbCheckoutToCheckout(dbOrder.or_checkout)
+        : null,
+    customer: mapperDbCustomerToCustomer(dbOrder.or_customer),
+  };
+
+  return order;
 };
