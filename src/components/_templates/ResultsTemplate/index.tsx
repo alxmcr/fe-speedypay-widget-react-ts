@@ -8,13 +8,19 @@ import BarcodeGroup from '../../barcodes/BarcodeGroup';
 import BoxOrderInfo from '../../orders/BoxOrderInfo';
 import Instructions from '../../steps/Instructions';
 import { AppTemplateStyled } from '../AppTemplate.styled';
+import HeaderPayment from '../../headers/HeaderPayment';
 
 export default function ResultsTemplate() {
   const { order } = React.useContext(OrderContext);
 
+  if (order === null) {
+    return null;
+  }
+
   return (
     <AppTemplateStyled>
       <BarcodeGroup text={order?.reference_number || '13123'} />
+      <HeaderPayment status={order?.status} />
       {order !== null ? <BoxOrderInfo /> : null}
       <div>
         <Instructions steps={CASH_STEPS} />

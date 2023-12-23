@@ -3,7 +3,13 @@ import PillPaymentStatus from '../../pills/PillPaymentStatus';
 import SvgRemote from '../../_svg/SvgRemote';
 import { AppHeaderStyled } from '../AppHeader.styled';
 
-export default function HeaderPayment() {
+type HeaderPaymentProps = {
+  status: string;
+};
+
+export default function HeaderPayment({
+  status = 'pending',
+}: HeaderPaymentProps) {
   return (
     <AppHeaderStyled>
       <SvgRemote
@@ -11,7 +17,7 @@ export default function HeaderPayment() {
         width={154}
         height={42}
       />
-      <PillPaymentStatus status="success" />
+      <PillPaymentStatus status={status} />
     </AppHeaderStyled>
   );
 }

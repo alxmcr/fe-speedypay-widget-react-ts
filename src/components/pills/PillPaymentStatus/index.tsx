@@ -4,7 +4,7 @@ import { BodyTextOne } from '../../_typography/BodyTexts';
 import { PillBaseStyled } from '../PillBase.styled';
 
 type PillPaymentStatusProps = {
-  status: 'pending' | 'success';
+  status: string;
 };
 
 export default function PillPaymentStatus({
