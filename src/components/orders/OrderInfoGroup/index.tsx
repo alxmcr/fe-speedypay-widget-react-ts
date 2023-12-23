@@ -1,4 +1,5 @@
-import { Order } from '../../../types/appTypes';
+import { formatterOrderLikeAnArray } from '../../../helpers/helpers-formatters';
+import { DataOrder, Order } from '../../../types/appTypes';
 import AppInfo from '../../info/AppInfo';
 
 type OrderInfoGroupProps = {
@@ -6,13 +7,15 @@ type OrderInfoGroupProps = {
 };
 
 export default function OrderInfoGroup({ order }: OrderInfoGroupProps) {
+  if (order === null) {
+    return null;
+  }
+
   return (
     <div>
-      <AppInfo labelText="Order ID" valueText={order?.id || ''} />
-      <AppInfo
-        labelText="Expiration date"
-        valueText={order?.expiration_date.toString() || ''}
-      />
+      {formatterOrderLikeAnArray(order).map((data: DataOrder) => (
+        <AppInfo labelText={data.label} valueText={data.value} />
+      ))}
     </div>
   );
 }

@@ -4,6 +4,11 @@ export type ResultStep = {
   name: string;
 };
 
+export type DataOrder = {
+  label: string;
+  value: string;
+};
+
 export type AppOptionOnSelect = {
   id: string;
   value: string;
