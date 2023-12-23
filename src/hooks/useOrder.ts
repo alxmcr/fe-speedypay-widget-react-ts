@@ -6,7 +6,7 @@ import {
   dbOrder002,
   dbOrder003,
 } from '../mock/db/mock-db-orders';
-import { mapperDbOrderToOrder } from '../mock/helpers-mappers';
+import { mapperDbOrderToOrder } from '../helpers/helpers-mappers';
 import { Order } from '../types/appTypes';
 import { DbOrder } from '../types/databaseTypes';
 

@@ -1,4 +1,4 @@
-import { mapperDbCompanyToCompany } from '../helpers-mappers';
+import { mapperDbCompanyToCompany } from '../../helpers/helpers-mappers';
 import { Company } from '../../types/appTypes';
 import { dbCompanyBetsson, dbCompanyFinberry } from '../db/mock-db-companies';
 

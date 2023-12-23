@@ -1,6 +1,6 @@
 import { Order } from '../../types/appTypes';
 import { dbOrder001, dbOrder002, dbOrder003 } from '../db/mock-db-orders';
-import { mapperDbOrderToOrder } from '../helpers-mappers';
+import { mapperDbOrderToOrder } from '../../helpers/helpers-mappers';
 
 export const order001: Order = mapperDbOrderToOrder(dbOrder001);
 export const order002: Order = mapperDbOrderToOrder(dbOrder002);

@@ -3,7 +3,7 @@ import {
   dbCheckout002,
   dbCheckout003,
 } from '../db/mock-db-checkouts';
-import { mapperDbCheckoutToCheckout } from '../helpers-mappers';
+import { mapperDbCheckoutToCheckout } from '../../helpers/helpers-mappers';
 
 export const checkout001 = mapperDbCheckoutToCheckout(dbCheckout001);
 export const checkout002 = mapperDbCheckoutToCheckout(dbCheckout002);

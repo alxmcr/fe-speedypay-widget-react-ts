@@ -3,7 +3,7 @@ import {
   DbCashSample,
   DbCreditCardSample,
 } from '../db/mock-db-payment-methods';
-import { mapperDbPaymentMethodToPaymentMethod } from '../helpers-mappers';
+import { mapperDbPaymentMethodToPaymentMethod } from '../../helpers/helpers-mappers';
 
 export const cashSample = mapperDbPaymentMethodToPaymentMethod(DbCashSample);
 export const bankTransferSample =
