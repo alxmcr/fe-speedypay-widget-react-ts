@@ -10,6 +10,7 @@ type HeaderPaymentProps = {
 export default function HeaderPayment({
   status = 'pending',
 }: HeaderPaymentProps) {
+  console.log('🚀 ~ file: index.tsx:13 ~ status:', status);
   return (
     <AppHeaderStyled>
       <SvgRemote

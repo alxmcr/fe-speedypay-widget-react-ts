@@ -1,3 +1,4 @@
+import { LoadingStates } from '../../../helpers/constants/constants-services';
 import { IconNames } from '../../../types/enumsApp';
 import AppIcon from '../../_icons/AppIcon';
 import { BodyTextOne } from '../../_typography/BodyTexts';
@@ -13,10 +14,12 @@ export default function PillPaymentStatus({
   return (
     <PillBaseStyled>
       <AppIcon
-        iconName={status === 'pending' ? IconNames.pending : IconNames.check}
+        iconName={
+          status === LoadingStates.PENDING ? IconNames.pending : IconNames.check
+        }
       />
       <BodyTextOne>
-        {status === 'pending' ? 'Need to pay' : 'Success'}
+        {status === LoadingStates.PENDING ? 'Need to pay' : 'Success'}
       </BodyTextOne>
     </PillBaseStyled>
   );

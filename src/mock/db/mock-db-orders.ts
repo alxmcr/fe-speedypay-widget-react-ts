@@ -1,3 +1,4 @@
+import { LoadingStates } from '../../helpers/constants/constants-services';
 import { DbOrder } from '../../types/databaseTypes';
 import { dbCheckout001, dbCheckout002 } from './mock-db-checkouts';
 import {
@@ -25,7 +26,7 @@ export const dbOrder001: DbOrder = {
   or_expiration_date: 1671816214,
   or_checkout: dbCheckout001,
   or_reference_number: '4798173897297389',
-  or_status: 'Pending',
+  or_status: LoadingStates.PENDING,
 };
 
 export const dbOrder002: DbOrder = {
@@ -35,7 +36,7 @@ export const dbOrder002: DbOrder = {
   or_expiration_date: 1669224214,
   or_checkout: dbCheckout001,
   or_reference_number: '983432432574383',
-  or_status: 'Pending',
+  or_status: LoadingStates.SUCCESS,
 };
 
 export const dbOrder003: DbOrder = {
@@ -45,7 +46,7 @@ export const dbOrder003: DbOrder = {
   or_expiration_date: 1642958614,
   or_checkout: dbCheckout001,
   or_reference_number: '123245434535454',
-  or_status: 'Pending',
+  or_status: LoadingStates.PENDING,
 };
 
 export const dbOrder004: DbOrder = {
@@ -55,5 +56,5 @@ export const dbOrder004: DbOrder = {
   or_expiration_date: 1703352270,
   or_checkout: dbCheckout002,
   or_reference_number: '8743543534574587',
-  or_status: 'Pending',
+  or_status: LoadingStates.SUCCESS,
 };
