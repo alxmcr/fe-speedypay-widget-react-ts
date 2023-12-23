@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const OrderInfoGroupStyled = styled.div`
-  border: 1px solid red;
+  border: 1px solid ${(props) => props.theme.styles.borderColor};
   border-radius: 0.5rem;
 
   display: flex;
