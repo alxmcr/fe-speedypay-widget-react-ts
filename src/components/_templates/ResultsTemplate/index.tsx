@@ -5,7 +5,7 @@ import {
 } from '../../../helpers/constants/constants-steps';
 import { OrderContext } from '../../../providers/order/OrderProvider/OrderContext';
 import BarcodeGroup from '../../barcodes/BarcodeGroup';
-import OrderInfoGroup from '../../orders/OrderInfoGroup';
+import BoxOrderInfo from '../../orders/BoxOrderInfo';
 import Instructions from '../../steps/Instructions';
 import { AppTemplateStyled } from '../AppTemplate.styled';
 
@@ -15,7 +15,7 @@ export default function ResultsTemplate() {
   return (
     <AppTemplateStyled>
       <BarcodeGroup text={order?.reference_number || '13123'} />
-      {order !== null ? <OrderInfoGroup order={order} /> : null}
+      {order !== null ? <BoxOrderInfo /> : null}
       <div>
         <Instructions steps={CASH_STEPS} />
       </div>
