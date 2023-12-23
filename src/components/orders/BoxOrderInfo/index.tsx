@@ -2,6 +2,7 @@ import React from 'react';
 import { OrderContext } from '../../../providers/order/OrderProvider/OrderContext';
 import { HeadingSix } from '../../_typography/Headings';
 import OrderInfoGroup from '../OrderInfoGroup';
+import { BoxOrderInfoStyled } from './BoxOrderInfo.styled';
 
 export default function BoxOrderInfo() {
   const { order } = React.useContext(OrderContext);
@@ -11,9 +12,9 @@ export default function BoxOrderInfo() {
   }
 
   return (
-    <article>
+    <BoxOrderInfoStyled>
       <HeadingSix>Order details</HeadingSix>
       <OrderInfoGroup order={order} />
-    </article>
+    </BoxOrderInfoStyled>
   );
 }
