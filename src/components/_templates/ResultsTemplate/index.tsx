@@ -9,6 +9,7 @@ import BoxOrderInfo from '../../orders/BoxOrderInfo';
 import Instructions from '../../steps/Instructions';
 import { AppTemplateStyled } from '../AppTemplate.styled';
 import HeaderPayment from '../../headers/HeaderPayment';
+import BoxPaymentReference from '../../boxes/BoxPaymentReference';
 
 export default function ResultsTemplate() {
   const { order } = React.useContext(OrderContext);
@@ -22,6 +23,7 @@ export default function ResultsTemplate() {
       <BarcodeGroup text={order?.reference_number || '13123'} />
       <HeaderPayment status={order?.status} />
       {order !== null ? <BoxOrderInfo /> : null}
+      <BoxPaymentReference />
       <div>
         <Instructions steps={CASH_STEPS} />
       </div>
