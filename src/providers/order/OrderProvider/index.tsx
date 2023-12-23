@@ -8,7 +8,7 @@ type OrderProviderProps = {
 
 export default function OrderProvider({ children }: OrderProviderProps) {
   const { order, loadingOrder } = useOrder({
-    orderId: ORDERS_ID.id001,
+    orderId: ORDERS_ID.id002,
   });
 
   const value: OrderContextData = {
