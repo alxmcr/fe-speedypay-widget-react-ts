@@ -1,6 +1,6 @@
 export const LoadingStates = {
   IDLE: 'IDLE',
-  PENDING: 'PENDING',
-  SUCCESS: 'SUCCESS',
-  ERROR: 'ERROR',
+  PENDING: 'Pending',
+  SUCCESS: 'Success',
+  ERROR: 'Error',
 };
