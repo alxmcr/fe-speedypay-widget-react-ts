@@ -2,11 +2,6 @@ export type DbCustomer = {
   cu_customer: string;
   cu_fullname: string;
   cu_email: string;
-  cu_cardNumber: string;
-  cu_expirationDate: string;
-  cu_cvc: string;
-  cu_cardHolderName: string;
-  cu_installments: string;
 };
 
 export type DbCompany = {
