@@ -3,19 +3,20 @@ import {
   BANK_TRANSFER_STEPS,
   CASH_STEPS,
 } from '../../../helpers/constants/constants-steps';
-import { CheckoutContext } from '../../../providers/checkout/CheckoutProvider/CheckoutContext';
+import { OrderContext } from '../../../providers/order/OrderProvider/OrderContext';
 import BarcodeGroup from '../../barcodes/BarcodeGroup';
+import AppInfo from '../../info/AppInfo';
 import Instructions from '../../steps/Instructions';
 import { AppTemplateStyled } from '../AppTemplate.styled';
-import AppInfo from '../../info/AppInfo';
 
 export default function ResultsTemplate() {
-  const { checkout } = React.useContext(CheckoutContext);
+  const { order } = React.useContext(OrderContext);
+  console.log('🚀 ~ file: index.tsx:14 ~ ResultsTemplate ~ order:', order);
 
   return (
     <AppTemplateStyled>
-      <BarcodeGroup text={checkout?.id || '13123'} />
-      <AppInfo labelText="Order ID" valueText="ord-ab7vbx3dsa2ewqe1321" />
+      <BarcodeGroup text={order?.id || '13123'} />
+      <AppInfo labelText="Order ID" valueText={order?.id || ''} />
       <div>
         <Instructions steps={CASH_STEPS} />
       </div>

@@ -8,10 +8,10 @@ import {
 } from './mock-db-payment-methods';
 
 export const ORDERS_ID = {
-  id001: 'order-001',
-  id002: 'order-002',
-  id003: 'order-003',
-  id004: 'order-004',
+  id001: 'ord-898ewq312fasf321',
+  id002: 'ord-323jk2h3jk12h3kh',
+  id003: 'ord-78894123jk12j332',
+  id004: 'ord-98jk45j6k45j6k4j',
 };
 
 export const dbOrder001: DbOrder = {
