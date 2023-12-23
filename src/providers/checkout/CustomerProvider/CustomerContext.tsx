@@ -10,11 +10,6 @@ export const initialCustomer: Customer = {
   id: '',
   fullname: '',
   email: '',
-  cardNumber: '',
-  expirationDate: '',
-  cvc: '',
-  cardHolderName: '',
-  installments: '',
 };
 
 const initialCustomerData: CustomerContextData = {

@@ -36,3 +36,12 @@ export type DbCheckout = {
   ch_payment_methods: DbPaymentMethod[];
   ch_installments: DbInstallment[];
 };
+
+export type DbOrder = {
+  or_order: string;
+  or_expiration_date: number;
+  or_payment_method: DbPaymentMethod;
+  or_customer: DbCustomer;
+  or_status: string;
+  or_checkout: DbCheckout;
+};
