@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const BardcodeGroupStyled = styled.div`
+export const BarcodeGroupStyled = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;

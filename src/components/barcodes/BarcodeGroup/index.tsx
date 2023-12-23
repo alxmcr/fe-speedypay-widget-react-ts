@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemingContext } from '../../../providers/personalization/ThemingProvider/ThemingContext';
 import { BodyTextOne } from '../../_typography/BodyTexts';
 import Barcode from '../Barcode';
-import { BardcodeGroupStyled } from './BarcodeGroup.styled';
+import { BarcodeGroupStyled } from './BarcodeGroup.styled';
 
 type BarcodeGroupProps = {
   text: string;
@@ -14,9 +14,9 @@ export default function BarcodeGroup({ text = '' }: BarcodeGroupProps) {
   const { themePersonalized } = React.useContext(ThemingContext);
 
   return (
-    <BardcodeGroupStyled>
+    <BarcodeGroupStyled>
       <Barcode text={text} barcolor={themePersonalized.styles.colorText} />
       <BodyTextOne>{text}</BodyTextOne>
-    </BardcodeGroupStyled>
+    </BarcodeGroupStyled>
   );
 }
