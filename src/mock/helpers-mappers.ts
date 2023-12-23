@@ -74,7 +74,7 @@ export const mapperDbInstallmentsToInstallments = (
   return installments;
 };
 
-export const mapperDbCheckoutToCheckout = (dbCheckout: DbCheckout | null) => {
+export const mapperDbCheckoutToCheckout = (dbCheckout: DbCheckout) => {
   if (dbCheckout === null) return null;
 
   const {
@@ -116,10 +116,7 @@ export const mapperDbOrderToOrder = (dbOrder: DbOrder) => {
     ),
     status: dbOrder.or_status,
     expiration_date: dbOrder.or_expiration_date,
-    checkout:
-      dbOrder.or_checkout !== null
-        ? mapperDbCheckoutToCheckout(dbOrder.or_checkout)
-        : null,
+    checkout: mapperDbCheckoutToCheckout(dbOrder.or_checkout),
     customer: mapperDbCustomerToCustomer(dbOrder.or_customer),
   };
 

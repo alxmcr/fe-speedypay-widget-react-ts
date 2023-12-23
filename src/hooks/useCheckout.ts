@@ -45,7 +45,10 @@ export default function useCheckout({ checkoutId = '' }) {
         break;
     }
 
-    let checkout = mapperDbCheckoutToCheckout(dbCheckoutFound);
+    let checkout =
+      dbCheckoutFound !== null
+        ? mapperDbCheckoutToCheckout(dbCheckoutFound)
+        : null;
     setCheckout(checkout);
     setLoadingCheckout(LoadingStates.SUCCESS);
   }, [checkoutId]);
