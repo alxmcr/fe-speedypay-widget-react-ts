@@ -40,5 +40,5 @@ export default function useOrder({ orderId = '' }) {
     setLoadingOrder(LoadingStates.SUCCESS);
   }, [orderId]);
 
-  return { checkout: order, loadingCheckout: loadingOrder };
+  return { order, loadingOrder };
 }

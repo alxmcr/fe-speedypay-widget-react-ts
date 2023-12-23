@@ -49,5 +49,6 @@ export type Order = {
   payment_method: PaymentMethod;
   customer: Customer;
   status: string;
+  reference_number: string;
   checkout: Checkout | null;
 };

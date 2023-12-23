@@ -117,6 +117,7 @@ export const mapperDbOrderToOrder = (dbOrder: DbOrder) => {
     checkout: mapperDbCheckoutToCheckout(dbOrder.or_checkout),
     customer: mapperDbCustomerToCustomer(dbOrder.or_customer),
     expiration_date: dbOrder.or_expiration_date,
+    reference_number: dbOrder.or_reference_number,
     status: dbOrder.or_status,
   };
 

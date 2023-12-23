@@ -38,5 +38,6 @@ export type DbOrder = {
   or_payment_method: DbPaymentMethod;
   or_customer: DbCustomer;
   or_status: string;
+  or_reference_number: string;
   or_checkout: DbCheckout;
 };
