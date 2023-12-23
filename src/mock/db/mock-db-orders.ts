@@ -1,6 +1,10 @@
 import { DbOrder } from '../../types/databaseTypes';
 import { dbCheckout001, dbCheckout002 } from './mock-db-checkouts';
-import { dbCustomer001, dbCustomer002 } from './mock-db-customers';
+import {
+  dbCustomer001,
+  dbCustomer002,
+  dbCustomer003,
+} from './mock-db-customers';
 import {
   DbBankTransferSample,
   DbCashSample,
@@ -27,7 +31,7 @@ export const dbOrder001: DbOrder = {
 export const dbOrder002: DbOrder = {
   or_order: ORDERS_ID.id002,
   or_payment_method: DbCreditCardSample,
-  or_customer: dbCustomer001,
+  or_customer: dbCustomer002,
   or_expiration_date: 1669224214,
   or_checkout: dbCheckout001,
   or_reference_number: '983432432574383',
@@ -37,7 +41,7 @@ export const dbOrder002: DbOrder = {
 export const dbOrder003: DbOrder = {
   or_order: ORDERS_ID.id003,
   or_payment_method: DbBankTransferSample,
-  or_customer: dbCustomer002,
+  or_customer: dbCustomer003,
   or_expiration_date: 1642958614,
   or_checkout: dbCheckout001,
   or_reference_number: '123245434535454',

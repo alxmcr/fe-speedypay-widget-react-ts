@@ -9,7 +9,7 @@ import {
   dbCheckoutNoInstallments,
   dbCheckoutNoPaymentMethods,
 } from '../mock/db/mock-db-checkouts';
-import { mapperDbCheckoutToCheckout } from '../mock/helpers-mappers';
+import { mapperDbCheckoutToCheckout } from '../helpers/helpers-mappers';
 import { Checkout } from '../types/appTypes';
 import { DbCheckout } from '../types/databaseTypes';
 
