@@ -6,6 +6,7 @@ export type ResultStep = {
 
 export type DataOrder = {
   label: string;
+  type: 'date' | 'datetime' | 'string';
   value: string;
 };
 

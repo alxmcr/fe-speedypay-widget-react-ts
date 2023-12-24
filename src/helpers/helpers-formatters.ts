@@ -14,22 +14,27 @@ export const formatterOrderLikeAnArray = (order: Order) => {
   const formatted: DataOrder[] = [
     {
       label: 'Order id',
+      type: 'string',
       value: order.id,
     },
     {
       label: 'Expiration date',
+      type: 'datetime',
       value: order.expiration_date.toString(),
     },
     {
       label: 'Payment method',
+      type: 'string',
       value: order.payment_method.name,
     },
     {
       label: 'Customer',
+      type: 'string',
       value: order.customer.fullname,
     },
     {
       label: 'Status',
+      type: 'string',
       value: order.status,
     },
   ];
