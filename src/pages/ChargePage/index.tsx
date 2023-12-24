@@ -1,11 +1,14 @@
 import ChargeTemplate from '../../components/_templates/ChargeTemplate';
 import { HeadingOne } from '../../components/_typography/Headings';
+import ChargeProvider from '../../providers/charge/ChargeProvider';
 
 export default function ChargePage() {
   return (
-    <div>
-      <HeadingOne>Charge</HeadingOne>
-      <ChargeTemplate />
-    </div>
+    <ChargeProvider>
+      <div>
+        <HeadingOne>Charge</HeadingOne>
+        <ChargeTemplate />
+      </div>
+    </ChargeProvider>
   );
 }
