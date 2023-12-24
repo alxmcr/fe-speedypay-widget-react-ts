@@ -1,4 +1,5 @@
 import {
+  Charge,
   Checkout,
   Company,
   Customer,
@@ -7,6 +8,7 @@ import {
   PaymentMethod,
 } from '../types/appTypes';
 import {
+  DbCharge,
   DbCheckout,
   DbCompany,
   DbCustomer,
@@ -122,4 +124,20 @@ export const mapperDbOrderToOrder = (dbOrder: DbOrder) => {
   };
 
   return order;
+};
+
+export const mapperDbChargeToCharge = (dbCharge: DbCharge) => {
+  const charge: Charge = {
+    id: dbCharge.cha_charge,
+    payment_method: mapperDbPaymentMethodToPaymentMethod(
+      dbCharge.cha_payment_method,
+    ),
+    checkout: mapperDbCheckoutToCheckout(dbCharge.cha_checkout),
+    customer: mapperDbCustomerToCustomer(dbCharge.cha_customer),
+    expiration_date: dbCharge.cha_expiration_date,
+    reference_number: dbCharge.cha_reference_number,
+    status: dbCharge.cha_status,
+  };
+
+  return charge;
 };

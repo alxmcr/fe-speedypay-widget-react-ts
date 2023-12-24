@@ -66,5 +66,5 @@ export type Charge = {
   customer: Customer;
   status: string;
   reference_number: string;
-  checkout: Checkout;
+  checkout: Checkout | null;
 };
