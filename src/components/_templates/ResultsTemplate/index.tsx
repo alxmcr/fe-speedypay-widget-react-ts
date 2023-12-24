@@ -4,6 +4,7 @@ import {
   CASH_STEPS,
 } from '../../../helpers/constants/constants-steps';
 import { OrderContext } from '../../../providers/order/OrderProvider/OrderContext';
+import BoxClabe from '../../boxes/BoxClabe';
 import BoxPaymentReference from '../../boxes/BoxPaymentReference';
 import HeaderPayment from '../../headers/HeaderPayment';
 import BoxOrderInfo from '../../orders/BoxOrderInfo';
@@ -23,6 +24,7 @@ export default function ResultsTemplate() {
       <HeaderPayment status={order?.status} />
       <AppTemplateBodyStyled>
         <BoxPaymentReference />
+        <BoxClabe />
         {order !== null ? <BoxOrderInfo /> : null}
         <div>
           <Instructions steps={CASH_STEPS} />
