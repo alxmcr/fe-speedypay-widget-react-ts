@@ -58,3 +58,13 @@ export type Order = {
   reference_number: string;
   checkout: Checkout | null;
 };
+
+export type Charge = {
+  id: string;
+  expiration_date: number;
+  payment_method: PaymentMethod;
+  customer: Customer;
+  status: string;
+  reference_number: string;
+  checkout: Checkout | null;
+};

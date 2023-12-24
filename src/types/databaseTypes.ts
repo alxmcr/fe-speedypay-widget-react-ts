@@ -41,3 +41,13 @@ export type DbOrder = {
   or_reference_number: string;
   or_checkout: DbCheckout;
 };
+
+export type DbCharge = {
+  cha_charge: string;
+  cha_expiration_date: number;
+  cha_payment_method: DbPaymentMethod;
+  cha_customer: DbCustomer;
+  cha_status: string;
+  cha_reference_number: string;
+  cha_checkout: DbCheckout;
+};
