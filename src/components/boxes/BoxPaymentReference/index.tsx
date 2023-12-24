@@ -11,7 +11,7 @@ export default function BoxPaymentReference() {
 
   return (
     <BoxPaymentReferenceStyled>
-      <HeadingSix>Reference Number</HeadingSix>
+      <HeadingSix>REFERENCE NUMBER</HeadingSix>
       <BarcodeGroup text={order?.reference_number || ''} />
       <ButtonOutline
         btnText="Copy number"

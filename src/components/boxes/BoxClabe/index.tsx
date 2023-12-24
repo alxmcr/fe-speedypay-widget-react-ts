@@ -9,7 +9,7 @@ export default function BoxClabe() {
 
   return (
     <BoxPaymentReferenceStyled>
-      <HeadingSix>Clabe</HeadingSix>
+      <HeadingSix>CLABE</HeadingSix>
       <BarcodeGroup text={order?.reference_number || ''} />
     </BoxPaymentReferenceStyled>
   );

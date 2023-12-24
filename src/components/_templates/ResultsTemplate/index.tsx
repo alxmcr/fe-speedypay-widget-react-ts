@@ -3,6 +3,7 @@ import {
   BANK_TRANSFER_STEPS,
   CASH_STEPS,
 } from '../../../helpers/constants/constants-steps';
+import { PAYMENT_METHODS_CODES } from '../../../mock/db/mock-db-payment-methods';
 import { OrderContext } from '../../../providers/order/OrderProvider/OrderContext';
 import BoxClabe from '../../boxes/BoxClabe';
 import BoxPaymentReference from '../../boxes/BoxPaymentReference';
@@ -11,7 +12,6 @@ import BoxOrderInfo from '../../orders/BoxOrderInfo';
 import Instructions from '../../steps/Instructions';
 import { AppTemplateStyled } from '../AppTemplate.styled';
 import { AppTemplateBodyStyled } from '../AppTemplateBody.styled';
-import { PAYMENT_METHODS_CODES } from '../../../mock/db/mock-db-payment-methods';
 
 export default function ResultsTemplate() {
   const { order } = React.useContext(OrderContext);
