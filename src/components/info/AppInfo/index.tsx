@@ -1,3 +1,8 @@
+import { enUS } from 'date-fns/locale';
+import {
+  FORMAT_DATETIMES,
+  formatTimestamp,
+} from '../../../helpers/helpers-formatters';
 import { BodyTextOne } from '../../_typography/BodyTexts';
 import { HeadingSix } from '../../_typography/Headings';
 import { AppInfoStyled } from './AppInfo.styled';
@@ -8,11 +13,21 @@ type AppInfoProps = {
   value: string;
 };
 
-export default function AppInfo({ label = '', value = '' }: AppInfoProps) {
+export default function AppInfo({
+  label = '',
+  typeValue = 'string',
+  value = '',
+}: AppInfoProps) {
   return (
     <AppInfoStyled>
       <HeadingSix>{label}</HeadingSix>
-      <BodyTextOne>{value}</BodyTextOne>
+      {typeValue === 'datetime' ? (
+        <BodyTextOne>
+          {formatTimestamp(Number(value), FORMAT_DATETIMES.full, enUS)}
+        </BodyTextOne>
+      ) : (
+        <BodyTextOne>{value}</BodyTextOne>
+      )}
     </AppInfoStyled>
   );
 }

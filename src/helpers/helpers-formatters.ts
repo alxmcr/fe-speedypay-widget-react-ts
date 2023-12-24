@@ -55,9 +55,9 @@ export function formatDate(
 }
 
 export function formatTimestamp(
-  fbTimestamp: number,
+  fbTimestampMilliseconds: number,
   formatStr: string,
   localeFormat: Locale,
 ): string {
-  return formatDate(new Date(fbTimestamp), formatStr, localeFormat);
+  return formatDate(new Date(fbTimestampMilliseconds), formatStr, localeFormat);
 }
