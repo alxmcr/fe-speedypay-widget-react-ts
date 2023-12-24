@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-export const BarcodeGroupStyled = styled.div`
-  align-items: center;
+export const AppTemplateBodyStyled = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.3125rem;
+
+  padding: 0 1rem;
 `;
