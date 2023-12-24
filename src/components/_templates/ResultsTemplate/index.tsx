@@ -12,6 +12,7 @@ import BoxOrderInfo from '../../orders/BoxOrderInfo';
 import Instructions from '../../steps/Instructions';
 import { AppTemplateStyled } from '../AppTemplate.styled';
 import { AppTemplateBodyStyled } from '../AppTemplateBody.styled';
+import BoxChargeSuccess from '../../charges/BoxChargeSuccess';
 
 export default function ResultsTemplate() {
   const { order } = React.useContext(OrderContext);
@@ -23,6 +24,7 @@ export default function ResultsTemplate() {
   return (
     <AppTemplateStyled>
       <HeaderPayment status={order?.status} />
+      <BoxChargeSuccess />
       <AppTemplateBodyStyled>
         {order.payment_method.code === PAYMENT_METHODS_CODES.cash ? (
           <BoxPaymentReference />
