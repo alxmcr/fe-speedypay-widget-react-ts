@@ -4,6 +4,7 @@ import { AppInfoStyled } from './AppInfo.styled';
 
 type AppInfoProps = {
   label: string;
+  typeValue: 'date' | 'datetime' | 'string';
   value: string;
 };
 
