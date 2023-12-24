@@ -4,6 +4,7 @@ import { HeadingSix } from '../../_typography/Headings';
 import BarcodeGroup from '../../barcodes/BarcodeGroup';
 import ButtonOutline from '../../buttons/ButtonOutline';
 import { BoxPaymentReferenceStyled } from './BoxPaymentReference.styled';
+import { IconNames } from '../../../types/enumsApp';
 
 export default function BoxPaymentReference() {
   const { order } = React.useContext(OrderContext);
@@ -15,7 +16,7 @@ export default function BoxPaymentReference() {
       <ButtonOutline
         btnText="Copy number"
         fullWidth
-        leftIconName=""
+        leftIconName={IconNames.copy}
         onClick={() => {}}
       />
     </BoxPaymentReferenceStyled>
