@@ -3,18 +3,15 @@ import { HeadingSix } from '../../_typography/Headings';
 import { AppInfoStyled } from './AppInfo.styled';
 
 type AppInfoProps = {
-  labelText: string;
-  valueText: string;
+  label: string;
+  value: string;
 };
 
-export default function AppInfo({
-  labelText = '',
-  valueText = '',
-}: AppInfoProps) {
+export default function AppInfo({ label = '', value = '' }: AppInfoProps) {
   return (
     <AppInfoStyled>
-      <HeadingSix>{labelText}</HeadingSix>
-      <BodyTextOne>{valueText}</BodyTextOne>
+      <HeadingSix>{label}</HeadingSix>
+      <BodyTextOne>{value}</BodyTextOne>
     </AppInfoStyled>
   );
 }

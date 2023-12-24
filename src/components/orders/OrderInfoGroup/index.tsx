@@ -15,7 +15,7 @@ export default function OrderInfoGroup({ order }: OrderInfoGroupProps) {
   return (
     <OrderInfoGroupStyled>
       {formatterOrderLikeAnArray(order).map((data: DataOrder, index) => (
-        <AppInfo key={index} labelText={data.label} valueText={data.value} />
+        <AppInfo key={index} label={data.label} value={data.value} />
       ))}
     </OrderInfoGroupStyled>
   );
