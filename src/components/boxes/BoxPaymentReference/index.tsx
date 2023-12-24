@@ -1,18 +1,23 @@
+import React from 'react';
+import { OrderContext } from '../../../providers/order/OrderProvider/OrderContext';
 import { HeadingSix } from '../../_typography/Headings';
-import { BarcodeGroupStyled } from '../../barcodes/BarcodeGroup/BarcodeGroup.styled';
+import BarcodeGroup from '../../barcodes/BarcodeGroup';
 import ButtonOutline from '../../buttons/ButtonOutline';
+import { BoxPaymentReferenceStyled } from './BoxPaymentReference.styled';
 
 export default function BoxPaymentReference() {
+  const { order } = React.useContext(OrderContext);
+
   return (
-    <div>
+    <BoxPaymentReferenceStyled>
       <HeadingSix>Reference Number</HeadingSix>
-      <BarcodeGroupStyled />
+      <BarcodeGroup text={order?.reference_number || ''} />
       <ButtonOutline
         btnText="Copy number"
         fullWidth
         leftIconName=""
         onClick={() => {}}
       />
-    </div>
+    </BoxPaymentReferenceStyled>
   );
 }
