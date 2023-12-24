@@ -4,12 +4,11 @@ import {
   CASH_STEPS,
 } from '../../../helpers/constants/constants-steps';
 import { OrderContext } from '../../../providers/order/OrderProvider/OrderContext';
-import BarcodeGroup from '../../barcodes/BarcodeGroup';
+import BoxPaymentReference from '../../boxes/BoxPaymentReference';
+import HeaderPayment from '../../headers/HeaderPayment';
 import BoxOrderInfo from '../../orders/BoxOrderInfo';
 import Instructions from '../../steps/Instructions';
 import { AppTemplateStyled } from '../AppTemplate.styled';
-import HeaderPayment from '../../headers/HeaderPayment';
-import BoxPaymentReference from '../../boxes/BoxPaymentReference';
 
 export default function ResultsTemplate() {
   const { order } = React.useContext(OrderContext);
@@ -20,10 +19,9 @@ export default function ResultsTemplate() {
 
   return (
     <AppTemplateStyled>
-      <BarcodeGroup text={order?.reference_number || '13123'} />
       <HeaderPayment status={order?.status} />
-      {order !== null ? <BoxOrderInfo /> : null}
       <BoxPaymentReference />
+      {order !== null ? <BoxOrderInfo /> : null}
       <div>
         <Instructions steps={CASH_STEPS} />
       </div>
