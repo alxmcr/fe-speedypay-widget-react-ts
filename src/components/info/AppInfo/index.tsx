@@ -1,20 +1,33 @@
+import { enUS } from 'date-fns/locale';
+import {
+  FORMAT_DATETIMES,
+  formatTimestamp,
+} from '../../../helpers/helpers-formatters';
 import { BodyTextOne } from '../../_typography/BodyTexts';
 import { HeadingSix } from '../../_typography/Headings';
 import { AppInfoStyled } from './AppInfo.styled';
 
 type AppInfoProps = {
-  labelText: string;
-  valueText: string;
+  label: string;
+  typeValue: 'date' | 'datetime' | 'string';
+  value: string;
 };
 
 export default function AppInfo({
-  labelText = '',
-  valueText = '',
+  label = '',
+  typeValue = 'string',
+  value = '',
 }: AppInfoProps) {
   return (
     <AppInfoStyled>
-      <HeadingSix>{labelText}</HeadingSix>
-      <BodyTextOne>{valueText}</BodyTextOne>
+      <HeadingSix>{label}</HeadingSix>
+      {typeValue === 'datetime' ? (
+        <BodyTextOne>
+          {formatTimestamp(Number(value), FORMAT_DATETIMES.full, enUS)}
+        </BodyTextOne>
+      ) : (
+        <BodyTextOne>{value}</BodyTextOne>
+      )}
     </AppInfoStyled>
   );
 }
