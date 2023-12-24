@@ -16,7 +16,6 @@ export default function ResultsPage() {
           minHeight: '100vh',
         }}
       >
-        <HeadingOne>Results</HeadingOne>
         <ThemeModeToggler />
         <ResultsTemplate />
       </div>
