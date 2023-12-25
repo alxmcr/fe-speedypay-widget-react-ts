@@ -8,7 +8,7 @@ type ChargeProviderProps = {
 
 export default function ChargeProvider({ children }: ChargeProviderProps) {
   const { charge, loadingCharge } = useCharge({
-    chargeId: CHARGES_ID.id003,
+    chargeId: CHARGES_ID.id002,
   });
 
   const value: ChargeContextData = {

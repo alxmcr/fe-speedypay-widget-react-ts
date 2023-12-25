@@ -4,6 +4,7 @@ import BoxChargeInfo from '../../charges/BoxChargeInfo';
 import BoxChargeSuccess from '../../charges/BoxChargeSuccess';
 import HeaderPayment from '../../headers/HeaderPayment';
 import { AppTemplateStyled } from '../AppTemplate.styled';
+import { AppTemplateBodyStyled } from '../AppTemplateBody.styled';
 
 export default function ChargeTemplate() {
   const { charge } = React.useContext(ChargeContext);
@@ -15,8 +16,10 @@ export default function ChargeTemplate() {
   return (
     <AppTemplateStyled>
       <HeaderPayment status={charge?.status} />
-      <BoxChargeSuccess />
-      <BoxChargeInfo />
+      <AppTemplateBodyStyled>
+        <BoxChargeSuccess />
+        <BoxChargeInfo />
+      </AppTemplateBodyStyled>
     </AppTemplateStyled>
   );
 }
