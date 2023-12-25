@@ -1,4 +1,5 @@
 import { BLACK_HAZE } from '../../styles/colors';
+import { LIGHT_COLOR_SCALES } from '../../styles/colors-scales';
 import { ColorScales } from '../../types/personalization/typesColors';
 import { AppCommonStyles } from '../../types/personalization/typesStylesTheme';
 import { ThemeModes } from '../../types/personalization/typesThemes';
@@ -9,7 +10,9 @@ export const getCommonStylesByColorScale = (
 ): AppCommonStyles => {
   const baseTheme: AppCommonStyles = {
     backgroundColor:
-      theme === ThemeModes.light ? BLACK_HAZE[50] : colorScales.scales[950],
+      theme === ThemeModes.light
+        ? BLACK_HAZE[50]
+        : LIGHT_COLOR_SCALES.scales[950],
     borderColor:
       theme === ThemeModes.light
         ? colorScales.scales[950]

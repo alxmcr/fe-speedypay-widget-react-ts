@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const AppTemplateStyled = styled.article`
+  background-color: ${(props) => props.theme.styles.backgroundColor};
+
   border-radius: 0.5rem;
 
   display: flex;
