@@ -16,7 +16,7 @@ export const routes: RouteObject[] = [
   },
   {
     id: 'charge-page',
-    path: '/charge',
+    path: '/charges',
     element: <ChargePage />,
   },
 ];
