@@ -1,7 +1,7 @@
 import { RouteObject } from 'react-router-dom';
-import HomePage from '../pages/HomePage';
-import ResultsPage from '../pages/ResultsPage';
 import ChargePage from '../pages/ChargePage';
+import HomePage from '../pages/HomePage';
+import OrderPage from '../pages/OrderPage';
 
 export const routes: RouteObject[] = [
   {
@@ -10,9 +10,9 @@ export const routes: RouteObject[] = [
     element: <HomePage />,
   },
   {
-    id: 'results-page',
-    path: '/results',
-    element: <ResultsPage />,
+    id: 'orders-page',
+    path: '/orders',
+    element: <OrderPage />,
   },
   {
     id: 'charge-page',

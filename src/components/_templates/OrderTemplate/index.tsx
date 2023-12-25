@@ -1,17 +1,17 @@
 import React from 'react';
+import { OrderContext } from '../../../providers/order/OrderProvider/OrderContext';
+import { AppTemplateStyled } from '../AppTemplate.styled';
+import HeaderPayment from '../../headers/HeaderPayment';
+import { AppTemplateBodyStyled } from '../AppTemplateBody.styled';
+import BoxPaymentReference from '../../boxes/BoxPaymentReference';
+import BoxClabe from '../../boxes/BoxClabe';
+import BoxOrderInfo from '../../orders/BoxOrderInfo';
+import { PAYMENT_METHODS_CODES } from '../../../mock/db/mock-db-payment-methods';
 import {
   BANK_TRANSFER_STEPS,
   CASH_STEPS,
 } from '../../../helpers/constants/constants-steps';
-import { PAYMENT_METHODS_CODES } from '../../../mock/db/mock-db-payment-methods';
-import { OrderContext } from '../../../providers/order/OrderProvider/OrderContext';
-import BoxClabe from '../../boxes/BoxClabe';
-import BoxPaymentReference from '../../boxes/BoxPaymentReference';
-import HeaderPayment from '../../headers/HeaderPayment';
-import BoxOrderInfo from '../../orders/BoxOrderInfo';
 import Instructions from '../../steps/Instructions';
-import { AppTemplateStyled } from '../AppTemplate.styled';
-import { AppTemplateBodyStyled } from '../AppTemplateBody.styled';
 
 export default function ResultsTemplate() {
   const { order } = React.useContext(OrderContext);
@@ -30,9 +30,7 @@ export default function ResultsTemplate() {
         {order.payment_method.code === PAYMENT_METHODS_CODES.bankTransfer ? (
           <BoxClabe />
         ) : null}
-
         {order !== null ? <BoxOrderInfo /> : null}
-
         {order.payment_method.code === PAYMENT_METHODS_CODES.cash ? (
           <Instructions steps={CASH_STEPS} />
         ) : null}
