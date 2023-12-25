@@ -5,6 +5,7 @@ export enum CodesForColorScales {
   sea_buckthorn = 'sea_buckthorn',
   wineBerry = 'wine_berry',
   iron = 'iron',
+  light = 'light',
 }
 
 export enum CodeForBtnVariants {

@@ -1,4 +1,4 @@
-import { WHITE } from './white';
+import { LIGHT } from './light';
 import { ATOLL } from './atoll';
 import { IRON } from './iron';
 import { LIME } from './lime';
@@ -8,7 +8,7 @@ import { WINE_BERRY } from './wine-berry';
 import { BLACK_HAZE } from './black-haze';
 
 export {
-  WHITE,
+  LIGHT,
   ATOLL,
   IRON,
   LIME,

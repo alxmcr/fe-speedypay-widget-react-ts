@@ -1,6 +1,6 @@
 import { ScalesForColors } from '../../types/personalization/typesColors';
 
-export const WHITE: ScalesForColors = {
+export const LIGHT: ScalesForColors = {
   50: '#ffffff',
   100: '#efefef',
   200: '#dcdcdc',

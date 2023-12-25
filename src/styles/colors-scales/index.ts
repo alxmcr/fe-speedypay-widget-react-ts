@@ -3,6 +3,7 @@ import { ColorScales } from '../../types/personalization/typesColors';
 import {
   ATOLL,
   IRON,
+  LIGHT,
   LIME,
   SEA_BUCKTHORN,
   VALHALLA,
@@ -43,4 +44,10 @@ export const SEA_BUCKTHORN_COLOR_SCALES: ColorScales = {
   id: CodesForColorScales.sea_buckthorn,
   name: 'Sea Buckthorn',
   scales: SEA_BUCKTHORN,
+};
+
+export const LIGHT_COLOR_SCALES: ColorScales = {
+  id: CodesForColorScales.light,
+  name: 'Sea Buckthorn',
+  scales: LIGHT,
 };
