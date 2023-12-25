@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const AppTemplateStyled = styled.article`
   border-radius: 0.5rem;
+
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
