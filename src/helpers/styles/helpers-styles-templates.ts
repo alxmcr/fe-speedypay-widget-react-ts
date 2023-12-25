@@ -1,8 +1,9 @@
+import { LIGHT_COLOR_SCALES } from '../../styles/colors-scales';
 import { ColorScales } from '../../types/personalization/typesColors';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 import {
-    TemplatesStyles,
-    TemplatesStylesByState,
+  TemplatesStyles,
+  TemplatesStylesByState,
 } from '../../types/styles/typesStylesElements';
 
 export const getTemplatesStyles = (
@@ -12,8 +13,8 @@ export const getTemplatesStyles = (
   const defaultStyles: TemplatesStyles = {
     backgroundColor:
       theme === ThemeModes.light
-        ? colorScales.scales[100]
-        : colorScales.scales[900],
+        ? LIGHT_COLOR_SCALES.scales[50]
+        : colorScales.scales[950],
     borderColor:
       theme === ThemeModes.light
         ? colorScales.scales[950]
