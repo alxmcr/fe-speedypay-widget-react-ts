@@ -2,7 +2,7 @@ import ResultsTemplate from '../../components/_templates/ResultsTemplate';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
 import OrderProvider from '../../providers/order/OrderProvider';
 
-export default function ResultsPage() {
+export default function OrderPage() {
   return (
     <OrderProvider>
       <div
