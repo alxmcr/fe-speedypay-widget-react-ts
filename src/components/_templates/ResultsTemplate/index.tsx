@@ -30,15 +30,13 @@ export default function ResultsTemplate() {
         {order.payment_method.code === PAYMENT_METHODS_CODES.bankTransfer ? (
           <BoxClabe />
         ) : null}
-
-        {order !== null ? <BoxOrderInfo /> : null}
-
         {order.payment_method.code === PAYMENT_METHODS_CODES.cash ? (
           <Instructions steps={CASH_STEPS} />
         ) : null}
         {order.payment_method.code === PAYMENT_METHODS_CODES.bankTransfer ? (
           <Instructions steps={BANK_TRANSFER_STEPS} />
         ) : null}
+        {order !== null ? <BoxOrderInfo /> : null}
       </AppTemplateBodyStyled>
     </AppTemplateStyled>
   );
