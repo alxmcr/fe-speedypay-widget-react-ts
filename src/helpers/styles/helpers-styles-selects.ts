@@ -1,10 +1,10 @@
-import { IRON_COLOR_SCALES } from '../../styles/colors-scales';
+import { IRON_COLOR_SCALES, LIGHT_COLOR_SCALES } from '../../styles/colors-scales';
 import { ColorScales } from '../../types/personalization/typesColors';
+import { ThemeModes } from '../../types/personalization/typesThemes';
 import {
   SelectStyles,
   SelectStylesByState,
 } from '../../types/styles/typesStylesElements';
-import { ThemeModes } from '../../types/personalization/typesThemes';
 
 export const getSelectStyles = (
   theme: ThemeModes,
@@ -13,7 +13,7 @@ export const getSelectStyles = (
   const defaultStyles: SelectStyles = {
     backgroundColor:
       theme === ThemeModes.light
-        ? IRON_COLOR_SCALES.scales[50]
+        ? LIGHT_COLOR_SCALES.scales[50]
         : 'transparent',
     borderColor:
       theme === ThemeModes.light
