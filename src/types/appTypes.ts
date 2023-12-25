@@ -10,6 +10,12 @@ export type DataOrder = {
   value: string;
 };
 
+export type DataCharge = {
+  label: string;
+  type: 'date' | 'datetime' | 'string';
+  value: string;
+};
+
 export type AppOptionOnSelect = {
   id: string;
   value: string;

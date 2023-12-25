@@ -1,5 +1,5 @@
 import { Locale, format } from 'date-fns';
-import { DataOrder, Order } from '../types/appTypes';
+import { Charge, DataCharge, DataOrder, Order } from '../types/appTypes';
 
 export const FORMAT_DATETIMES = {
   full: 'MMMM do, yyyy HH:mm:ss',
@@ -9,6 +9,26 @@ export const FORMAT_DATES = {
   large: 'MMMM do, yyyy',
   short: 'MMM do, yyyy',
 };
+
+export function formatDate(
+  someDate: Date,
+  formatStr: string,
+  localeFormat: Locale,
+) {
+  if (someDate === null || someDate === undefined) {
+    return 'Error date';
+  }
+
+  return format(someDate, formatStr, { locale: localeFormat });
+}
+
+export function formatTimestamp(
+  fbTimestampMilliseconds: number,
+  formatStr: string,
+  localeFormat: Locale,
+): string {
+  return formatDate(new Date(fbTimestampMilliseconds), formatStr, localeFormat);
+}
 
 export const formatterOrderLikeAnArray = (order: Order) => {
   const formatted: DataOrder[] = [
@@ -42,22 +62,34 @@ export const formatterOrderLikeAnArray = (order: Order) => {
   return formatted;
 };
 
-export function formatDate(
-  someDate: Date,
-  formatStr: string,
-  localeFormat: Locale,
-) {
-  if (someDate === null || someDate === undefined) {
-    return 'Error date';
-  }
+export const formatterChargeLikeAnArray = (charge: Charge) => {
+  const formatted: DataCharge[] = [
+    {
+      label: 'Charge id',
+      type: 'string',
+      value: charge.id,
+    },
+    {
+      label: 'Pay confirmation date',
+      type: 'datetime',
+      value: charge.expiration_date.toString(),
+    },
+    {
+      label: 'Payment method',
+      type: 'string',
+      value: charge.payment_method.name,
+    },
+    {
+      label: 'Customer',
+      type: 'string',
+      value: charge.customer.fullname,
+    },
+    {
+      label: 'Status',
+      type: 'string',
+      value: charge.status,
+    },
+  ];
 
-  return format(someDate, formatStr, { locale: localeFormat });
-}
-
-export function formatTimestamp(
-  fbTimestampMilliseconds: number,
-  formatStr: string,
-  localeFormat: Locale,
-): string {
-  return formatDate(new Date(fbTimestampMilliseconds), formatStr, localeFormat);
-}
+  return formatted;
+};
