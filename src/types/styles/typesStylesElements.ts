@@ -137,3 +137,14 @@ export type InstructionsStyles = {
 export type InstructionsStylesByState = {
   default: InstructionsStyles;
 };
+
+// Templates
+export type TemplatesStyles = {
+  backgroundColor: string;
+  colorText: string;
+  borderColor: string;
+};
+
+export type TemplatesStylesByState = {
+  default: TemplatesStyles;
+};

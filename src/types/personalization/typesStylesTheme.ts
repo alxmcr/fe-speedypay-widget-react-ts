@@ -7,6 +7,7 @@ import {
   PillStylesByState,
   SelectStylesByState,
   TabStylesByState,
+  TemplatesStylesByState,
   ToggleStylesByState,
 } from '../styles/typesStylesElements';
 import { ButtonStylesVariants } from './typeVariants';
@@ -30,6 +31,7 @@ export type AppStylesByElements = {
   headers: HeaderStylesByState;
   numbers: NumbersStylesByState;
   instructions: InstructionsStylesByState;
+  templates: TemplatesStylesByState;
 };
 
 export type AppStyles = AppCommonStyles & AppStylesByElements;

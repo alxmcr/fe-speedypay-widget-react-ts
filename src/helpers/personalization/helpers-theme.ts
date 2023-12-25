@@ -11,6 +11,7 @@ import { getNumbersStyles } from '../styles/helpers-styles-numbers';
 import { getPillStyles } from '../styles/helpers-styles-pills';
 import { getSelectStyles } from '../styles/helpers-styles-selects';
 import { getTabStyles } from '../styles/helpers-styles-tabs';
+import { getTemplatesStyles } from '../styles/helpers-styles-templates';
 import { getToggleStyles } from '../styles/helpers-styles-toggles';
 import { getColorScalesByCode } from './helpers-color-scales';
 
@@ -36,6 +37,7 @@ export const getThemeByColorScale = (
       headers: getHeaderStyles(theme, colorScales),
       numbers: getNumbersStyles(theme, colorScales),
       instructions: getInstructionssStyles(theme, colorScales),
+      templates: getTemplatesStyles(theme, colorScales),
     },
   };
 
