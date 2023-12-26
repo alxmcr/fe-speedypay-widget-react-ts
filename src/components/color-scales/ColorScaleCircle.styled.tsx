@@ -9,6 +9,7 @@ export const ColorScaleCircleStyled = styled.div<ColorScaleCircleStyledProps>`
   width: 3.125rem;
 
   background-color: ${(props) => props.$backgroundColor};
+  border-radius: 50%;
 `;
 
 export const ColorScaleCircleSelectedStyled = styled.div<ColorScaleCircleStyledProps>`
@@ -16,4 +17,5 @@ export const ColorScaleCircleSelectedStyled = styled.div<ColorScaleCircleStyledP
   width: 4.375rem;
 
   background-color: ${(props) => props.$backgroundColor};
+  border-radius: 50%;
 `;

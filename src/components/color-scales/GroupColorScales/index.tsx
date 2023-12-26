@@ -1,5 +1,6 @@
 import { ColorScales } from '../../../types/personalization/typesColors';
 import BoxColorScaleCircle from '../BoxColorScaleCircle';
+import { GroupColorScalesStyled } from './GroupColorScales.styled';
 
 type GroupColorScalesProps = {
   colorScales: ColorScales[];
@@ -9,13 +10,13 @@ export default function GroupColorScales({
   colorScales = [],
 }: GroupColorScalesProps) {
   return (
-    <div>
+    <GroupColorScalesStyled>
       {colorScales.map((colorScale) => (
         <BoxColorScaleCircle
           key={colorScale.id}
           backgroundColor={colorScale.scales[900]}
         />
       ))}
-    </div>
+    </GroupColorScalesStyled>
   );
 }
