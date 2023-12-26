@@ -2,13 +2,13 @@ import React from 'react';
 import { CodesForColorScales } from '../../../types/personalization/enumsPersonalization';
 
 export type ToggleCodeColorScalesContextData = {
-  codeColorScales: CodesForColorScales;
-  setCodeColorScales: React.Dispatch<React.SetStateAction<CodesForColorScales>>;
+  codeColorScalesSelected: string;
+  setCodeColorScalesSelected: React.Dispatch<React.SetStateAction<string>>;
 };
 
 const initialCodeColorScale: ToggleCodeColorScalesContextData = {
-  codeColorScales: CodesForColorScales.atoll,
-  setCodeColorScales: () => {},
+  codeColorScalesSelected: CodesForColorScales.atoll,
+  setCodeColorScalesSelected: () => {},
 };
 
 export const ToggleCodeColorScalesContext = React.createContext(

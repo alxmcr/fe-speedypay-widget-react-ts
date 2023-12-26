@@ -1,5 +1,7 @@
 import ResultsTemplate from '../../components/_templates/ResultsTemplate';
+import GroupColorScales from '../../components/color-scales/GroupColorScales';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
+import { colorScales001 } from '../../mock/mock-color-scales';
 import OrderProvider from '../../providers/order/OrderProvider';
 
 export default function OrderPage() {
@@ -16,6 +18,7 @@ export default function OrderPage() {
         }}
       >
         <ThemeModeToggler />
+        <GroupColorScales colorScales={colorScales001} />
         <ResultsTemplate />
       </div>
     </OrderProvider>

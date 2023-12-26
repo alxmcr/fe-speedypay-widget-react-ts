@@ -1,4 +1,4 @@
-import { ScalesForColors } from '../../types/personalization/typesColors';
+import { ScalesForColors } from '../../types/personalization/typesColorScales';
 
 export const BLACK_HAZE: ScalesForColors = {
   50: '#f7fafc',

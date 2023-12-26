@@ -1,4 +1,4 @@
-import { ScalesForColors } from '../../types/personalization/typesColors';
+import { ScalesForColors } from '../../types/personalization/typesColorScales';
 
 export const WINE_BERRY: ScalesForColors = {
   50: '#faf5f9',

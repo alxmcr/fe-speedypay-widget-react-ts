@@ -1,6 +1,6 @@
 import React from 'react';
 import { ToggleCodeColorScalesContext } from '../../../providers/personalization/ToggleCodeColorScalesProvider/ToggleCodeColorScalesContext';
-import { ColorScales } from '../../../types/personalization/typesColors';
+import { ColorScales } from '../../../types/personalization/typesColorScales';
 import {
   ColorScaleCircleSelectedStyled,
   ColorScaleCircleStyled,
@@ -14,17 +14,23 @@ type BoxColorScaleCircleProps = {
 export default function BoxColorScaleCircle({
   colorScale,
 }: BoxColorScaleCircleProps) {
-  const { codeColorScales } = React.useContext(ToggleCodeColorScalesContext);
-  console.log({ colorScale, codeColorScales });
+  const { codeColorScalesSelected, setCodeColorScalesSelected } =
+    React.useContext(ToggleCodeColorScalesContext);
+
+  const handleSelectColorScale = (codeColorScale = '') => {
+    setCodeColorScalesSelected(codeColorScale);
+  };
 
   return (
-    <BoxColorScaleCircleStyled>
-      {codeColorScales === colorScale.id ? (
+    <BoxColorScaleCircleStyled
+      onClick={() => handleSelectColorScale(colorScale.id)}
+    >
+      {codeColorScalesSelected === colorScale.id ? (
         <ColorScaleCircleSelectedStyled
           $backgroundColor={colorScale.scales[900]}
         />
       ) : (
-        <ColorScaleCircleStyled $backgroundColor={colorScale.scales[900]} />
+        <ColorScaleCircleStyled $backgroundColor={colorScale.scales[500]} />
       )}
     </BoxColorScaleCircleStyled>
   );

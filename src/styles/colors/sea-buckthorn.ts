@@ -1,4 +1,4 @@
-import { ScalesForColors } from '../../types/personalization/typesColors';
+import { ScalesForColors } from '../../types/personalization/typesColorScales';
 
 export const SEA_BUCKTHORN: ScalesForColors = {
   50: '#fef7ec',

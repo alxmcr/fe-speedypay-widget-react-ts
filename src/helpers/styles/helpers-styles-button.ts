@@ -2,7 +2,7 @@ import { getBtnGradientStyles } from '../../components/buttons/ButtonGradient/Bu
 import { getBtnOutlineStyles } from '../../components/buttons/ButtonOutline/ButtonOutline.styles';
 import { getBtnSolidStyles } from '../../components/buttons/ButtonSolid/ButtonSolid.styles';
 import { ButtonStylesVariants } from '../../types/personalization/typeVariants';
-import { ColorScales } from '../../types/personalization/typesColors';
+import { ColorScales } from '../../types/personalization/typesColorScales';
 import {
   ButtonCommonStylesByState,
   ButtonGradientStylesByState,

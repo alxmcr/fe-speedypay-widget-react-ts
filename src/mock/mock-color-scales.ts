@@ -1,14 +1,14 @@
 import {
   ATOLL_COLOR_SCALES,
-  LIGHT_COLOR_SCALES,
   SEA_BUCKTHORN_COLOR_SCALES,
   VALHALLA_COLOR_SCALES,
-} from '../styles/colors-scales';
-import { ColorScales } from '../types/personalization/typesColors';
+  WINE_BERRY_COLOR_SCALES,
+} from '../styles/color-scales';
+import { ColorScales } from '../types/personalization/typesColorScales';
 
-export const mockColorScales: ColorScales[] = [
+export const colorScales001: ColorScales[] = [
   ATOLL_COLOR_SCALES,
-  LIGHT_COLOR_SCALES,
-  SEA_BUCKTHORN_COLOR_SCALES,
   VALHALLA_COLOR_SCALES,
+  SEA_BUCKTHORN_COLOR_SCALES,
+  WINE_BERRY_COLOR_SCALES,
 ];

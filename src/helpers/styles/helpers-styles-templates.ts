@@ -1,5 +1,5 @@
-import { LIGHT_COLOR_SCALES } from '../../styles/colors-scales';
-import { ColorScales } from '../../types/personalization/typesColors';
+import { LIGHT_COLOR_SCALES } from '../../styles/color-scales';
+import { ColorScales } from '../../types/personalization/typesColorScales';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 import {
   TemplatesStyles,

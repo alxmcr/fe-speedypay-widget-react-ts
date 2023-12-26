@@ -1,5 +1,5 @@
-import { IRON_COLOR_SCALES } from '../../../styles/colors-scales';
-import { ColorScales } from '../../../types/personalization/typesColors';
+import { IRON_COLOR_SCALES } from '../../../styles/color-scales';
+import { ColorScales } from '../../../types/personalization/typesColorScales';
 import {
   ButtonGradientStyles,
   ButtonGradientStylesByState,

@@ -12,13 +12,13 @@ type ToggleCodeColorScalesProviderProps = {
 export default function ToggleCodeColorScalesProvider({
   children,
 }: ToggleCodeColorScalesProviderProps) {
-  const [codeColorScales, setCodeColorScales] = React.useState(
+  const [codeColorScalesSelected, setCodeColorScalesSelected] = React.useState(
     CodesForColorScales.atoll,
   );
 
   const value: ToggleCodeColorScalesContextData = {
-    codeColorScales,
-    setCodeColorScales,
+    codeColorScalesSelected,
+    setCodeColorScalesSelected,
   };
 
   return (

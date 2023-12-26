@@ -1,4 +1,4 @@
-import { ScalesForColors } from '../../types/personalization/typesColors';
+import { ScalesForColors } from '../../types/personalization/typesColorScales';
 
 export const LIGHT: ScalesForColors = {
   50: '#ffffff',
