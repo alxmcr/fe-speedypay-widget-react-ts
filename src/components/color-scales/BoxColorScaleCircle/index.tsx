@@ -5,7 +5,7 @@ import {
 import { BoxColorScaleCircleStyled } from './BoxColorScaleCircle.styled';
 
 type BoxColorScaleCircleProps = {
-  selected: boolean;
+  selected?: boolean;
 };
 
 export default function BoxColorScaleCircle({
