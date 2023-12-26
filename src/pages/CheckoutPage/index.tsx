@@ -1,5 +1,7 @@
 import CheckoutTemplate from '../../components/_templates/CheckoutTemplate';
+import GroupColorScales from '../../components/color-scales/GroupColorScales';
 import ThemeModeToggler from '../../components/toggles/ThemeModeToggler';
+import { mockColorScales } from '../../mock/mock-color-scales';
 import CheckoutProviders from '../../providers/checkout/CheckoutProviders';
 
 export default function CheckoutPage() {
@@ -16,6 +18,7 @@ export default function CheckoutPage() {
         }}
       >
         <ThemeModeToggler />
+        <GroupColorScales colorScales={mockColorScales} />
         <CheckoutTemplate />
       </div>
     </CheckoutProviders>
