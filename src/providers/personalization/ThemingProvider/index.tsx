@@ -15,7 +15,7 @@ type ThemingProviderProps = {
 
 export default function ThemingProvider({ children }: ThemingProviderProps) {
   const { themeMode } = React.useContext(ToggleModeThemeContext);
-  const { codeColorScales } = React.useContext(ToggleCodeColorScalesContext);
+  const { codeColorScalesSelected: codeColorScales } = React.useContext(ToggleCodeColorScalesContext);
 
   const [themePersonalized, setThemePersonalized] =
     React.useState(DARK_THEME_ATOLL);
