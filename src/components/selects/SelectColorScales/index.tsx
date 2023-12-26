@@ -2,7 +2,7 @@ import { ColorScales } from '../../../types/personalization/typesColorScales';
 import { AppSelectStyled } from '../AppSelect.styled';
 import { AppSelectOptionStyled } from '../AppSelectOption.styled';
 
-type SelectInstallmentsProps = {
+type SelectColorScalesProps = {
   name: string;
   id: string;
   placeholder: string;
@@ -12,7 +12,7 @@ type SelectInstallmentsProps = {
   handleSelect?: (ev: React.ChangeEvent<HTMLSelectElement>) => void;
 };
 
-export default function SelectInstallments({
+export default function SelectColorScales({
   id = 'select',
   name = 'select',
   colorScales = [],
@@ -20,7 +20,7 @@ export default function SelectInstallments({
   width = '100%',
   valueColorScalesSelected = '',
   handleSelect,
-}: SelectInstallmentsProps) {
+}: SelectColorScalesProps) {
   return (
     <AppSelectStyled
       name={name}
