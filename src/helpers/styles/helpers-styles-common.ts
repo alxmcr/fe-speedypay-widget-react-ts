@@ -1,5 +1,5 @@
 import { BLACK_HAZE } from '../../styles/colors';
-import { LIGHT_COLOR_SCALES } from '../../styles/colors-scales';
+import { LIGHT_COLOR_SCALES } from '../../styles/color-scales';
 import { ColorScales } from '../../types/personalization/typesColorScales';
 import { AppCommonStyles } from '../../types/personalization/typesStylesTheme';
 import { ThemeModes } from '../../types/personalization/typesThemes';

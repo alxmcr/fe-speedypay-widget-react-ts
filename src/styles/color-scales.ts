@@ -1,5 +1,5 @@
-import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
-import { ColorScales } from '../../types/personalization/typesColorScales';
+import { CodesForColorScales } from '../types/personalization/enumsPersonalization';
+import { ColorScales } from '../types/personalization/typesColorScales';
 import {
   ATOLL,
   IRON,
@@ -8,7 +8,7 @@ import {
   SEA_BUCKTHORN,
   VALHALLA,
   WINE_BERRY,
-} from '../colors';
+} from './colors';
 
 export const IRON_COLOR_SCALES: ColorScales = {
   id: CodesForColorScales.iron,

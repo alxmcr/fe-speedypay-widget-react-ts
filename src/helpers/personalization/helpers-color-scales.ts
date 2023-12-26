@@ -5,7 +5,7 @@ import {
   SEA_BUCKTHORN_COLOR_SCALES,
   VALHALLA_COLOR_SCALES,
   WINE_BERRY_COLOR_SCALES,
-} from '../../styles/colors-scales';
+} from '../../styles/color-scales';
 
 export const getColorScalesByCode = (codeColorScale = '') => {
   switch (codeColorScale) {

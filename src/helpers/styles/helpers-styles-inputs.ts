@@ -1,4 +1,4 @@
-import { IRON_COLOR_SCALES, LIGHT_COLOR_SCALES } from '../../styles/colors-scales';
+import { IRON_COLOR_SCALES, LIGHT_COLOR_SCALES } from '../../styles/color-scales';
 import { ColorScales } from '../../types/personalization/typesColorScales';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 import {
