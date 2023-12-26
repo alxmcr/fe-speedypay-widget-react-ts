@@ -1,4 +1,4 @@
-import { ColorScales } from '../../../types/personalization/typesColors';
+import { ColorScales } from '../../../types/personalization/typesColorScales';
 import BoxColorScaleCircle from '../BoxColorScaleCircle';
 import { GroupColorScalesStyled } from './GroupColorScales.styled';
 
