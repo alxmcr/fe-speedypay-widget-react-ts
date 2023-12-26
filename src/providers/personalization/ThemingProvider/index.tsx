@@ -6,7 +6,7 @@ import { ToggleModeThemeContext } from '../ToggleModeThemeProvider/ToggleModeThe
 import {
   DARK_THEME_ATOLL,
   ThemingContext,
-  ThemingContextData
+  ThemingContextData,
 } from './ThemingContext';
 
 type ThemingProviderProps = {
@@ -15,7 +15,9 @@ type ThemingProviderProps = {
 
 export default function ThemingProvider({ children }: ThemingProviderProps) {
   const { themeMode } = React.useContext(ToggleModeThemeContext);
-  const { codeColorScalesSelected: codeColorScales } = React.useContext(ToggleCodeColorScalesContext);
+  const { codeColorScalesSelected } = React.useContext(
+    ToggleCodeColorScalesContext,
+  );
 
   const [themePersonalized, setThemePersonalized] =
     React.useState(DARK_THEME_ATOLL);
@@ -26,9 +28,9 @@ export default function ThemingProvider({ children }: ThemingProviderProps) {
   };
 
   React.useEffect(() => {
-    const theme = getThemeByColorScale(themeMode, codeColorScales);
+    const theme = getThemeByColorScale(themeMode, codeColorScalesSelected);
     setThemePersonalized(theme);
-  }, [themeMode]);
+  }, [themeMode, codeColorScalesSelected]);
 
   return (
     <ThemeProvider theme={themePersonalized}>
