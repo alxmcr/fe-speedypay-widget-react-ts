@@ -1,4 +1,4 @@
-import { ScalesForColors } from '../../types/personalization/typesColors';
+import { ScalesForColors } from '../../types/personalization/typesColorsScales';
 
 export const ATOLL: ScalesForColors = {
   50: '#ebfffd',

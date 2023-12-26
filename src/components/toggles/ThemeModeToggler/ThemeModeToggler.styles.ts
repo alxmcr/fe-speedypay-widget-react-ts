@@ -1,4 +1,4 @@
-import { ColorScales } from '../../../types/personalization/typesColors';
+import { ColorScales } from '../../../types/personalization/typesColorsScales';
 import {
   ToggleStyles,
   ToggleStylesByState,
