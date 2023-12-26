@@ -1,4 +1,4 @@
-import { ScalesForColors } from '../../types/personalization/typesColorsScales';
+import { ScalesForColors } from '../../types/personalization/typesColorScales';
 
 export const IRON: ScalesForColors = {
   50: '#f7f7f7',

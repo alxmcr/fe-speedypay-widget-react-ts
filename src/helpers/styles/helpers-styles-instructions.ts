@@ -1,4 +1,4 @@
-import { ColorScales } from '../../types/personalization/typesColorsScales';
+import { ColorScales } from '../../types/personalization/typesColorScales';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 import {
     InstructionsStyles,

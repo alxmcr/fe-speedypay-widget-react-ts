@@ -1,5 +1,5 @@
 import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
-import { ColorScales } from '../../types/personalization/typesColorsScales';
+import { ColorScales } from '../../types/personalization/typesColorScales';
 import { AppTheme, ThemeModes } from '../../types/personalization/typesThemes';
 import { getBtnStylesVariants } from '../styles/helpers-styles-button';
 import { getCommonStylesByColorScale } from '../styles/helpers-styles-common';

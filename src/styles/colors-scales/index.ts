@@ -1,5 +1,5 @@
 import { CodesForColorScales } from '../../types/personalization/enumsPersonalization';
-import { ColorScales } from '../../types/personalization/typesColorsScales';
+import { ColorScales } from '../../types/personalization/typesColorScales';
 import {
   ATOLL,
   IRON,

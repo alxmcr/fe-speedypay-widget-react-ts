@@ -1,4 +1,4 @@
-import { ColorScales } from '../../types/personalization/typesColorsScales';
+import { ColorScales } from '../../types/personalization/typesColorScales';
 import { TabStyles, TabStylesByState } from '../../types/styles/typesStylesElements';
 import { ThemeModes } from '../../types/personalization/typesThemes';
 
