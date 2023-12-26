@@ -1,9 +1,23 @@
-import { ColorScaleCircleStyled } from '../ColorScaleCircle.styled';
+import {
+  ColorScaleCircleSelectedStyled,
+  ColorScaleCircleStyled,
+} from '../ColorScaleCircle.styled';
+import { BoxColorScaleCircleStyled } from './BoxColorScaleCircle.styled';
 
-export default function BoxColorScaleCircle() {
+type BoxColorScaleCircleProps = {
+  selected: boolean;
+};
+
+export default function BoxColorScaleCircle({
+  selected = false,
+}: BoxColorScaleCircleProps) {
   return (
-    <div>
-      <ColorScaleCircleStyled />
-    </div>
+    <BoxColorScaleCircleStyled>
+      {selected ? (
+        <ColorScaleCircleSelectedStyled />
+      ) : (
+        <ColorScaleCircleStyled />
+      )}
+    </BoxColorScaleCircleStyled>
   );
 }
