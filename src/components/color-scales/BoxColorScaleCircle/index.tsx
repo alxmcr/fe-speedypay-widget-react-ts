@@ -5,18 +5,20 @@ import {
 import { BoxColorScaleCircleStyled } from './BoxColorScaleCircle.styled';
 
 type BoxColorScaleCircleProps = {
+  backgroundColor: string;
   selected?: boolean;
 };
 
 export default function BoxColorScaleCircle({
+  backgroundColor = '',
   selected = false,
 }: BoxColorScaleCircleProps) {
   return (
     <BoxColorScaleCircleStyled>
       {selected ? (
-        <ColorScaleCircleSelectedStyled />
+        <ColorScaleCircleSelectedStyled $backgroundColor={backgroundColor} />
       ) : (
-        <ColorScaleCircleStyled />
+        <ColorScaleCircleStyled $backgroundColor={backgroundColor} />
       )}
     </BoxColorScaleCircleStyled>
   );

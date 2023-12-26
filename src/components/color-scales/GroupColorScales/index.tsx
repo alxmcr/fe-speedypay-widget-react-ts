@@ -11,7 +11,10 @@ export default function GroupColorScales({
   return (
     <div>
       {colorScales.map((colorScale) => (
-        <BoxColorScaleCircle key={colorScale.id} />
+        <BoxColorScaleCircle
+          key={colorScale.id}
+          backgroundColor={colorScale.scales[900]}
+        />
       ))}
     </div>
   );
