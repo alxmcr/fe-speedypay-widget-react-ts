@@ -11,7 +11,7 @@ export default function Instructions({ steps }: InstructionsProps) {
   return (
     <InstructionsStyled>
       <BodyTextOne>
-        Por favor, realiza los siguientes pasos antes de la fecha de expiración.
+        Please, following these steps before payment due.
       </BodyTextOne>
       <StepsGroup steps={steps} />
     </InstructionsStyled>

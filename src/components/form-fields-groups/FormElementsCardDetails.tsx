@@ -27,7 +27,7 @@ export default function FormElementsCardDetails() {
 
   return (
     <AppLayoutStyled $flexDirection="row" $gapInRem={0.25}>
-      <FormField labelText="Expiration date" id="expiration-date">
+      <FormField labelText="Payment due date" id="expiration-date">
         <AppInputWithMaskStyled
           id="expiration-date"
           mask="99/99"
