@@ -9,7 +9,7 @@ export default function CheckoutTemplate() {
 
   return (
     <AppTemplateStyled>
-      <HeaderCheckoutForm />
+      <HeaderCheckoutForm logoRemoteUrl={checkout?.company.logo_url} />
       <FormCheckout checkout={checkout} />
     </AppTemplateStyled>
   );

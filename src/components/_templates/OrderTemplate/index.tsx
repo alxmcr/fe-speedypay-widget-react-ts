@@ -13,7 +13,7 @@ import {
 } from '../../../helpers/constants/constants-steps';
 import Instructions from '../../steps/Instructions';
 
-export default function ResultsTemplate() {
+export default function OrderTemplate() {
   const { order } = React.useContext(OrderContext);
 
   if (order === null) {
@@ -22,7 +22,10 @@ export default function ResultsTemplate() {
 
   return (
     <AppTemplateStyled>
-      <HeaderPayment status={order?.status} />
+      <HeaderPayment
+        status={order?.status}
+        logoRemoteUrl={order.checkout?.company.logo_url}
+      />
       <AppTemplateBodyStyled>
         {order.payment_method.code === PAYMENT_METHODS_CODES.cash ? (
           <BoxPaymentReference />

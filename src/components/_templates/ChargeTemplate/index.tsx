@@ -15,7 +15,10 @@ export default function ChargeTemplate() {
 
   return (
     <AppTemplateStyled>
-      <HeaderPayment status={charge?.status} />
+      <HeaderPayment
+        status={charge?.status}
+        logoRemoteUrl={charge.checkout?.company.logo_url}
+      />
       <AppTemplateBodyStyled>
         <BoxChargeSuccess />
         <BoxChargeInfo />
