@@ -1,8 +1,7 @@
 import { DbCheckout } from '../../types/databaseTypes';
 import {
-  dbCompanyBetsson,
-  dbCompanyFinberry,
-  dbFittersOriginal,
+  dbDefaultCompany,
+  dbFittersOriginal
 } from './mock-db-companies';
 import {
   dbNineMonths,
@@ -28,7 +27,7 @@ export const CHECKOUTS_ID = {
 
 export const dbCheckoutEmpty: DbCheckout = {
   ch_checkout: CHECKOUTS_ID.empty,
-  ch_company: dbFittersOriginal,
+  ch_company: dbDefaultCompany,
   ch_amount_to_pay: 859.12,
   ch_currency_amount: 'USD',
   ch_payment_methods: [],
@@ -46,7 +45,7 @@ export const dbCheckoutNoPaymentMethods: DbCheckout = {
 
 export const dbCheckoutNoInstallments: DbCheckout = {
   ch_checkout: CHECKOUTS_ID.emptyInstallments,
-  ch_company: dbFittersOriginal,
+  ch_company: dbDefaultCompany,
   ch_amount_to_pay: 859.12,
   ch_currency_amount: 'USD',
   ch_payment_methods: [DbCreditCardSample, DbBankTransferSample, DbCashSample],
@@ -55,7 +54,7 @@ export const dbCheckoutNoInstallments: DbCheckout = {
 
 export const dbCheckout001: DbCheckout = {
   ch_checkout: CHECKOUTS_ID.id001,
-  ch_company: dbCompanyBetsson,
+  ch_company: dbDefaultCompany,
   ch_amount_to_pay: 1265.89,
   ch_currency_amount: '$',
   ch_payment_methods: [DbCreditCardSample, DbBankTransferSample, DbCashSample],
@@ -70,7 +69,7 @@ export const dbCheckout001: DbCheckout = {
 
 export const dbCheckout002: DbCheckout = {
   ch_checkout: CHECKOUTS_ID.id002,
-  ch_company: dbCompanyFinberry,
+  ch_company: dbDefaultCompany,
   ch_amount_to_pay: 787.36,
   ch_currency_amount: 'MXN',
   ch_payment_methods: [DbCashSample, DbCreditCardSample],
@@ -79,7 +78,7 @@ export const dbCheckout002: DbCheckout = {
 
 export const dbCheckout003: DbCheckout = {
   ch_checkout: CHECKOUTS_ID.id003,
-  ch_company: dbFittersOriginal,
+  ch_company: dbDefaultCompany,
   ch_amount_to_pay: 859.12,
   ch_currency_amount: 'USD',
   ch_payment_methods: [DbBankTransferSample, DbCashSample, DbCreditCardSample],
