@@ -4,7 +4,7 @@ import { DbCompany } from '../../types/databaseTypes';
 export const dbDefaultCompany: DbCompany = {
   co_company: 'company-default',
   co_name: 'Default company',
-  co_logo_url: `${BASE_URL_REMOTE}/v1701489884/logos-react/Logo-Default.svg`,
+  co_logo_url: `${BASE_URL_REMOTE}/v1703635812/Logo-Default.svg`,
 };
 
 export const dbFittersOriginal: DbCompany = {

@@ -12,6 +12,7 @@ export default function HeaderPayment({
   status = 'pending',
   logoRemoteUrl = `${BASE_URL_LOCAL}/logos/Logo-Default.svg`,
 }: HeaderPaymentProps) {
+  console.log('🚀 ~ file: index.tsx:15 ~ logoRemoteUrl:', logoRemoteUrl);
   return (
     <AppHeaderStyled>
       <SvgRemote url={logoRemoteUrl} width={154} height={42} />
