@@ -38,7 +38,7 @@ export const formatterOrderLikeAnArray = (order: Order) => {
       value: order.id,
     },
     {
-      label: 'Expiration date',
+      label: 'Payment due date',
       type: 'datetime',
       value: order.expiration_date.toString(),
     },

@@ -58,7 +58,7 @@ export default function FormFieldList() {
           width: '100%',
         }}
       >
-        <FormField labelText="Expiration date" id="expiration-date">
+        <FormField labelText="Payment due date" id="expiration-date">
           <AppInputWithMask
             id="expiration-date"
             mask="99/99"
