@@ -13,7 +13,7 @@ import {
 } from '../../../helpers/constants/constants-steps';
 import Instructions from '../../steps/Instructions';
 
-export default function ResultsTemplate() {
+export default function OrderTemplate() {
   const { order } = React.useContext(OrderContext);
 
   if (order === null) {

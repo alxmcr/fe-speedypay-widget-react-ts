@@ -12,7 +12,7 @@ export default function HeaderList() {
       }}
     >
       <HeaderCheckoutForm />
-      <HeaderPayment />
+      <HeaderPayment status="success" />
     </div>
   );
 }
