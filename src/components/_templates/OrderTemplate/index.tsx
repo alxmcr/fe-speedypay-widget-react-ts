@@ -22,7 +22,10 @@ export default function OrderTemplate() {
 
   return (
     <AppTemplateStyled>
-      <HeaderPayment status={order?.status} />
+      <HeaderPayment
+        status={order?.status}
+        logoRemoteUrl={order.checkout?.company.logo_url}
+      />
       <AppTemplateBodyStyled>
         {order.payment_method.code === PAYMENT_METHODS_CODES.cash ? (
           <BoxPaymentReference />
