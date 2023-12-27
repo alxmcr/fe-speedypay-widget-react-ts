@@ -74,11 +74,10 @@ Start the server
 
 - Light
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://github.com/alxmcr/fe-payment-widget-ts/assets/8689897/c66246af-9f6d-45ab-ae65-716ec38912a0)
 
-- Dark
+![image](https://github.com/alxmcr/fe-payment-widget-ts/assets/8689897/315eff3f-b1df-4e93-b161-d9ae4ff5275c)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ### Charge
 
