@@ -1,5 +1,4 @@
 import React from 'react';
-import { CodesForColorScales } from '../../../types/personalization/enumsPersonalization';
 import {
   ToggleCodeColorScalesContext,
   ToggleCodeColorScalesContextData,
@@ -12,9 +11,8 @@ type ToggleCodeColorScalesProviderProps = {
 export default function ToggleCodeColorScalesProvider({
   children,
 }: ToggleCodeColorScalesProviderProps) {
-  const [codeColorScalesSelected, setCodeColorScalesSelected] = React.useState(
-    CodesForColorScales.atoll,
-  );
+  const [codeColorScalesSelected, setCodeColorScalesSelected] =
+    React.useState('atoll');
 
   const value: ToggleCodeColorScalesContextData = {
     codeColorScalesSelected,
