@@ -74,20 +74,20 @@ Start the server
 
 - Light
 
-![Payment reference light](https://fe-speedypay-widget-react-ts.netlify.app/screenshoots/02-speedypay-widget-reference-light.png "Payment reference light").
+![Payment reference light](https://fe-speedypay-widget-react-ts.netlify.app/screenshots/02-speedypay-widget-reference-light.png "Payment reference light").
 
-![Payment reference light](https://fe-speedypay-widget-react-ts.netlify.app/screenshoots/02-speedypay-widget-clabe-light.png "Payment reference light").
+![Payment reference light](https://fe-speedypay-widget-react-ts.netlify.app/screenshots/02-speedypay-widget-clabe-light.png "Payment reference light").
 
 
 ### Charge
 
 - Light
 
-![Charge - Payment confirmation light](https://fe-speedypay-widget-react-ts.netlify.app/public/screenshoots/04-speedypay-widget-charge-pay-confirmation-light.png "Charge - Payment confirmation light").
+![Charge - Payment confirmation light](https://fe-speedypay-widget-react-ts.netlify.app/public/screenshots/04-speedypay-widget-charge-pay-confirmation-light.png "Charge - Payment confirmation light").
 
 - Dark
 
-![Charge - Payment confirmation dark](https://fe-speedypay-widget-react-ts.netlify.app/public/screenshoots/04-speedypay-widget-charge-pay-confirmation-dark.png "Charge - Payment confirmation dark").
+![Charge - Payment confirmation dark](https://fe-speedypay-widget-react-ts.netlify.app/public/screenshots/04-speedypay-widget-charge-pay-confirmation-dark.png "Charge - Payment confirmation dark").
 
 ## Demo
 
