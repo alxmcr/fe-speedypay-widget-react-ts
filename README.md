@@ -64,30 +64,30 @@ Start the server
 
 - Light
 
-![Payment widget light](https://fe-speedypay-widget-react-ts.netlify.app/screenshots/01-speedypay-widget-light.png "Payment widget light").
+![Payment widget light](https://fe-speedypay-widget-app.netlify.app//screenshots/01-speedypay-widget-light.png "Payment widget light").
 
 - Dark
 
-![Payment widget dark](https://fe-speedypay-widget-react-ts.netlify.app/screenshots/01-speedypay-widget-dark.png "Payment widget dark").
+![Payment widget dark](https://fe-speedypay-widget-app.netlify.app/screenshots/01-speedypay-widget-dark.png "Payment widget dark").
 
 ### Order
 
 - Light
 
-![Payment reference light](https://fe-speedypay-widget-react-ts.netlify.app/screenshots/02-speedypay-widget-reference-light.png "Payment reference light").
+![Payment reference light](https://fe-speedypay-widget-app.netlify.app/screenshots/02-speedypay-widget-reference-light.png "Payment reference light").
 
-![Payment reference light](https://fe-speedypay-widget-react-ts.netlify.app/screenshots/02-speedypay-widget-clabe-light.png "Payment reference light").
+![Payment reference light](https://fe-speedypay-widget-app.netlify.app/screenshots/03-speedypay-widget-clabe-light.png "Payment reference light").
 
 
 ### Charge
 
 - Light
 
-![Charge - Payment confirmation light](https://fe-speedypay-widget-react-ts.netlify.app/public/screenshots/04-speedypay-widget-charge-pay-confirmation-light.png "Charge - Payment confirmation light").
+![Charge - Payment confirmation light](https://fe-speedypay-widget-app.netlify.app/screenshots/04-speedypay-widget-charge-pay-confirmation-light.png "Charge - Payment confirmation light").
 
 - Dark
 
-![Charge - Payment confirmation dark](https://fe-speedypay-widget-react-ts.netlify.app/public/screenshots/04-speedypay-widget-charge-pay-confirmation-dark.png "Charge - Payment confirmation dark").
+![Charge - Payment confirmation dark](https://fe-speedypay-widget-app.netlify.app/screenshots/04-speedypay-widget-charge-pay-confirmation-dark.png "Charge - Payment confirmation dark").
 
 ## Demo
 
