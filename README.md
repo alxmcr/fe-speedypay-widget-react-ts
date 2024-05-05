@@ -24,13 +24,13 @@ Customizing a Payment checkout, order, and charge.
 Clone the project
 
 ```bash
-  git clone https://github.com/alxmcr/fe-payment-widget-ts
+  git clone https://github.com/alxmcr/fe-speedypay-widget-react-ts
 ```
 
 Go to the project directory
 
 ```bash
-  cd fe-payment-widget-ts
+  cd fe-speedypay-widget-react-ts
 ```
 
 Install dependencies
@@ -64,34 +64,34 @@ Start the server
 
 - Light
 
-<img width="231" alt="image" src="https://github.com/alxmcr/fe-payment-widget-ts/assets/8689897/d0d0c8e6-cc0a-4337-bd3d-2d45daa2b10c">
+![Payment widget light](https://fe-speedypay-widget-react-ts.netlify.app/screenshots/01-speedypay-widget-light.png "Payment widget light").
 
 - Dark
 
-<img width="231" alt="image" src="https://github.com/alxmcr/fe-payment-widget-ts/assets/8689897/47a9282e-a492-4dbc-aec7-61a4cd6cf875">
+![Payment widget dark](https://fe-speedypay-widget-react-ts.netlify.app/screenshots/01-speedypay-widget-dark.png "Payment widget dark").
 
 ### Order
 
 - Light
 
-![image](https://github.com/alxmcr/fe-payment-widget-ts/assets/8689897/c66246af-9f6d-45ab-ae65-716ec38912a0)
+![Payment reference light](https://fe-speedypay-widget-react-ts.netlify.app/screenshoots/02-speedypay-widget-reference-light.png "Payment reference light").
 
-![image](https://github.com/alxmcr/fe-payment-widget-ts/assets/8689897/315eff3f-b1df-4e93-b161-d9ae4ff5275c)
+![Payment reference light](https://fe-speedypay-widget-react-ts.netlify.app/screenshoots/02-speedypay-widget-clabe-light.png "Payment reference light").
 
 
 ### Charge
 
 - Light
 
-<img width="365" alt="image" src="https://github.com/alxmcr/fe-payment-widget-ts/assets/8689897/180da490-14f5-479d-8807-c242d6edf340">
+![Charge - Payment confirmation light](https://fe-speedypay-widget-react-ts.netlify.app/public/screenshoots/04-speedypay-widget-charge-pay-confirmation-light.png "Charge - Payment confirmation light").
 
 - Dark
 
-<img width="365" alt="image" src="https://github.com/alxmcr/fe-payment-widget-ts/assets/8689897/3642e92b-c119-488e-800d-232f76611c2d">
+![Charge - Payment confirmation dark](https://fe-speedypay-widget-react-ts.netlify.app/public/screenshoots/04-speedypay-widget-charge-pay-confirmation-dark.png "Charge - Payment confirmation dark").
 
 ## Demo
 
-[https://fe-payment-widget-app.netlify.app/](https://fe-payment-widget-app.netlify.app/)
+[https://fe-speedypay-widget-app.netlify.app/](https://fe-speedypay-widget-app.netlify.app/)
 
 ## Authors
 
